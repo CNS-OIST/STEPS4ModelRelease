@@ -229,5 +229,5 @@ sim.run(SIM_END)
 
 if MPI.rank == 0:
     df = pd.DataFrame({"t":Vrs.time[0], "z_min":Vrs.data[0,:,0], "z_max":Vrs.data[0,:,1]})
-    df.to_csv(f'results/res{SEED}_STEPS{4 if USE_STEPS_4 else 3}.txt', sep=" ", index=False)
+    df.to_csv(f'results/STEPS{4 if USE_STEPS_4 else 3}/res{SEED}_STEPS{4 if USE_STEPS_4 else 3}.txt', sep=" ", index=False)
 
