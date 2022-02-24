@@ -6,7 +6,7 @@ NTASKS=#32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384
 
 #SBATCH --job-name="ca_full_${NTASKS}"
 #SBATCH --nodes=$((NTASKS / 32))
-#SBATCH --ntasks-per-node=${NTASKS}
+#SBATCH --ntasks-per-node=32
 
 #SBATCH --account=proj16
 #SBATCH --partition=prod
