@@ -16,7 +16,11 @@ For every case study, there is a job submission script that uses Caliper for fur
 
 ## How to perform a Roofline analysis
 
-We have chosen to perform the Roofline analysis for the CaBurstFullModel case study given that it combines all the computational kernels, i.e., SSA operator, Diffusion operator, and Efield operator. In the `./Roofline_Analysis` folder, one can find the job submission script for varying number of cores (always single node analysis). This script should be moved in the `STEPS4ModelRelease/CaBurstFullModel` folder like in the strong scaling case. Once the jobs are finished, one can extract the data from the `gather_likwid.py` python script. The data should be used in the corresponding cell (last one) of the `STEPS4_PerfGraphs.ipynb` jupyter notebook to generate the Roofline graph.
+We have chosen to perform the Roofline analysis for the CaBurstFullModel case study given that it combines all the computational kernels, i.e., SSA operator, Diffusion operator, and Efield operator. In the `./Roofline_Analysis` folder, one can find the job submission script for varying number of cores (always single node analysis), and the python scipt to run the CaBurstFullModel. These scripts should be moved in the `STEPS4ModelRelease/CaBurstFullModel` folder like in the strong scaling analysis, and execute the jobs from this folder. Once the jobs are finished, one can extract the data with the `gather_likwid.py` python script. The data should be used in the corresponding cell (last one) of the `STEPS4_PerfGraphs.ipynb` jupyter notebook to generate the Roofline graph.
+
+Two important things to highlight:
+1. The `caburstfull_single_script.py` script found in `./Roofline_Analysis` folder initializes correctly the LIKWID environment. This is done through LIKWID's python bindings (see, `import pylikwid, etc.`).
+2. It is very crticial to `export STEPS_INSTRUMENTOR_MPI_BARRIER="before;after"` in order to be sure that we profile with LIKWID the annotated regions. This happens in `likwid_X` job submission script.
 
 ## Jupyter Notebook
 
