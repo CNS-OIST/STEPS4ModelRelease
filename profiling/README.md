@@ -1,0 +1,23 @@
+This folder contains various scripts to perform the strong scaling & Roofline analysis, as presented in the STEPS 4 Release paper. These scripts need to be moved to the corresponding folders, i.e. `STEPS4ModelRelease/SimpleModel`, `STEPS4ModelRelease/CaBurstBackground`, `STEPS4ModelRelease/CaBurstFullModel`, following the steps below to generate the data for the graphs. Some minor modifications in the python scripts to run the various simulations (SimpleModel, CaBurstBackground, and CaBurstFullModel) concern time and memory tracking.
+
+## How to perform a Strong Scaling analysis
+
+There are 3 main case studies, namely SimpleModel, CaBurstBackground, and CaBurstFullModel, for which we are interested in performing a strong scaling analysis. The steps to do so are presented per case study below:
+
+1. SimpleModel (see corresponding folder `./SimpleModel`): `job_script_X` script submits a job (in our case in the supercomputer of the Blue Brain Project, i.e. BB5 cluster) with the right environment, where `X` refers to a varying number of cores. To perform a strong scaling analysis, the problem size remains fixed while the number of cores is steadily increased. Keep in mind that these scripts (job submission script & the scripts in `Sample_STEPS{3/4}`) need to be moved in the corresponding folder, i.e., `STEPS4ModelRelease/SimpleModel`. Once the jobs are finished, run the `strong_scaling.py` python script to extract the needed data, and use them in the jupyter notebook. The corresponding cell in the `STEPS4_PerfGraphs.ipynb` jupyter notebook generates the strong scaling graphs.
+
+2. CaBurstBackground (see corresponding folder `./CaBurstBackground`): `job_script_X` script submits a job (in our case in the supercomputer of the Blue Brain Project) with the right environment, where `X` refers to a varying number of cores. Keep in mind that these scripts (job submission script & `caburstbg_single_script.py`) need to be moved in the corresponding folder, i.e., `STEPS4ModelRelease/CaBurstBackground`. Once the jobs are finished, run the `strong_scaling.py` python script to extract the needed data, and use them in the jupyter notebook. The corresponding cell in the `STEPS4_PerfGraphs.ipynb` jupyter notebook generates the strong scaling graphs.
+
+3. CaBurstFullModel (see corresponding folder `./CaBurstFullModel`): `job_script_X` script submits a job (in our case in the supercomputer of the Blue Brain Project) with the right environment, where `X` refers to a varying number of cores. Keep in mind that these scripts (job submission script & `caburstfull_single_script.py`) need to be moved in the corresponding folder, i.e., `STEPS4ModelRelease/CaBurstFullModel`. Once the jobs are finished, run the `strong_scaling.py` python script to extract the needed data, and use them in the jupyter notebook. The corresponding cell in the `STEPS4_PerfGraphs.ipynb` jupyter notebook generates the strong scaling graphs.
+
+### Strong Scaling analysis : Caliper Instrumentation
+
+For every case study, there is a job submission script that uses Caliper for further instrumentation of the code, `./CaseStudy/caliper_job_script_X` (just for STEPS4). One could repeat the strong scaling analysis as described above, but using this script instead. Once all jobs per case study are finished, then just use the `gather_caliper.py` python script to extract the data. These data per case study should be used in the `STEPS4_PerfGraphs.ipynb` jupyter notebook, which generates the Caliper-based graphs. Keep in mind that STEPS should be compiled with Caliper support `ON` (see CMake variable `USE_CALIPER_PROFILING`).
+
+## How to perform a Roofline analysis
+
+We have chosen to perform the Roofline analysis for the CaBurstFullModel case study given that it combines all the computational kernels, i.e., SSA operator, Diffusion operator, and Efield operator. In the `./Roofline_Analysis` folder, one can find the job submission script for varying number of cores (always single node analysis). This script should be moved in the `STEPS4ModelRelease/CaBurstFullModel` folder like in the strong scaling case. Once the jobs are finished, one can extract the data from the `gather_likwid.py` python script. The data should be used in the corresponding cell (last one) of the `STEPS4_PerfGraphs.ipynb` jupyter notebook to generate the Roofline graph.
+
+## Jupyter Notebook
+
+The `STEPS4_PerfGraphs.ipynb` jupyter notebook generates all the graphs found in the STEPS4 Release paper. All the data needed are already baked in the notebook. However, the interested reader/scientist could follow the steps above to perform the strong scaling & Roofline analysis to re-generate the data.

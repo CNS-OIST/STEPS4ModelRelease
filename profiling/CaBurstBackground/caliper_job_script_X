@@ -1,0 +1,34 @@
+#!/bin/bash
+
+NTASKS=#32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384
+
+#SBATCH --job-name="caliper_ca_bg_${NTASKS}"
+#SBATCH --nodes=$((NTASKS / 32))
+#SBATCH --ntasks-per-node=${NTASKS}
+
+#SBATCH --account=proj16
+#SBATCH --partition=prod
+#SBATCH --constraint=clx
+#SBATCH --time=1-00:00:00
+#SBATCH --cpus-per-task=2
+#SBATCH --exclusive
+#SBATCH --mem=0
+#SBATCH --output="%x.out"
+
+module purge
+module load archive/2021-12
+module load python-dev
+
+# spack dev-build steps@develop+distmesh+petsc
+export PYTHONPATH=Path/To/STEPS:$PYTHONPATH
+
+spack load caliper
+export CALI_CONFIG="runtime-report(calc.inclusive,output=stdout)"
+
+export OMP_NUM_THREADS=1
+for i in {1..30}
+do
+    echo " *** This is run $i *** "
+    srun dplace python3 caburstbg_single_script.py 1 ../CaBurstUnifiedMesh/split_${SLURM_NTASKS}/steps4/CNG_segmented_2_split_${SLURM_NTASKS} 1
+    echo " *** This was run $i *** "
+done

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+NTASKS=#2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048
+
+#SBATCH --job-name="simple_model_${NTASKS}"
+#SBATCH --nodes=$((NTASKS / 32))
+#SBATCH --nodes=1 # if NTASKS={2, 4, 8, 16}
+#SBATCH --ntasks-per-node=${NTASKS}
+
+#SBATCH --account=proj16
+#SBATCH --partition=prod
+#SBATCH --constraint=clx
+#SBATCH --time=1-00:00:00
+#SBATCH --cpus-per-task=2
+#SBATCH --exclusive
+#SBATCH --mem=0
+#SBATCH --output="%x.out"
+
+module purge
+module load archive/2021-12
+module load python-dev
+
+# spack dev-build steps@develop+distmesh+petsc
+export PYTHONPATH=Path/To/STEPS:$PYTHONPATH
+
+export OMP_NUM_THREADS=1
+for i in {1..30}
+do
+    echo " *** This is run $i *** "
+    pushd Sample_STEPS3
+    srun dplace python3 parallel_simulation.py 1 "../mesh/10x10x100_13009tets.msh"
+    popd
+    pushd Sample_STEPS4
+    srun dplace python3 parallel_simulation.py 1 "../mesh/10x10x100_13009tets.msh"
+    popd
+    echo " *** This was run $i *** "
+done
