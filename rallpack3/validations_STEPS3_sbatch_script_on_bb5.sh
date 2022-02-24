@@ -15,7 +15,7 @@ module load archive/2021-12 python-dev
 . ../../../oldspack/share/spack/setup-env.sh
 spack load /saf25ux
 
-ntasks=$(($nodes * 32))
+ntasks=$((${SLURM_JOB_NUM_NODES} * 32))
 seed=$(($SLURM_ARRAY_TASK_ID * 1))
 time srun --nodes=$nodes --ntasks=${ntasks} dplace python rallpack3.py ${seed} mesh/axon_cube_L1000um_D866nm_1135tets.msh 0
 
