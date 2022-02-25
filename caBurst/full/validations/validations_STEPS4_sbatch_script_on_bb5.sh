@@ -1,7 +1,7 @@
 #! /bin/bash
 # The line above is a "she-bang" to tell that /bin/bash is the command interpreting this file
 
-#SBATCH --array=[1-100]
+#SBATCH --array=[1]
 #SBATCH --partition=prod
 #SBATCH --account=proj95
 #SBATCH --nodes=32
@@ -12,15 +12,14 @@
 set -x
 
 module load archive/2021-12 python-dev
-. /gpfs/bbp.cscs.ch/project/proj16/cattabia/oldspack/share/spack/setup-env.sh
+. ../../../oldspack/share/spack/setup-env.sh
 spack load /saf25ux
 
 
 for nodes in ${SLURM_JOB_NUM_NODES}; do
     ntasks=$(($nodes * 32))
     seed=$(($SLURM_ARRAY_TASK_ID * 1))
-    MESH_FLS=/gpfs/bbp.cscs.ch/project/proj16/cattabia/projects/STEPS4Models/CaBurstUnifiedMesh/split_1024/steps4/CNG_segmented_2_split_1024
-    time srun --nodes=$nodes --ntasks=$ntasks dplace \
- python ../caburstfull_single_script.py ${seed} $MESH_FLS 1
+    mesh_fls=../../mesh/split_1024/steps4/CNG_segmented_2_split_1024
+    time srun --nodes=$nodes --ntasks=$ntasks dplace python caBurstFullModel.py $seed $mesh_fls 1
 done
 

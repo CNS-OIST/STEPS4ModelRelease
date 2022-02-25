@@ -357,4 +357,4 @@ if MPI.rank == 0:
     labels = ["smooth_max_V", "smooth_min_V", "spiny_max_V", "spiny_min_V"]
     dct = {name: Pots.data[0,:,i] for i, name in enumerate(labels)}
     dct["t"] = Pots.time[0]
-    pd.DataFrame(dct).to_csv(f'results/res{SEED}_STEPS{4 if USE_STEPS_4 else 3}.txt', sep=" ", index=False)
+    pd.DataFrame(dct).to_csv(f'results/STEPS{4 if USE_STEPS_4 else 3}/res{SEED}_STEPS{4 if USE_STEPS_4 else 3}.txt', sep=" ", index=False)
