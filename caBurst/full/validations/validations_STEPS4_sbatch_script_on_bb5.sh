@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT
+# You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT mentioned in HBP_STEPS/doc/dev/README.md
 
 #SBATCH --array=[1-100]
 #SBATCH --partition=$SBATCH_PARTITION
