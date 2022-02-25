@@ -1,6 +1,7 @@
 #! /bin/bash
 
 # You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT mentioned in HBP_STEPS/doc/dev/README.md
+# Sbatch does not accept $variables. $SBATCH_PARTITION and $SBATCH_ACCOUNT are here only for merely illustrative purposes.
 
 #SBATCH --array=[1-1000]
 #SBATCH --partition=$SBATCH_PARTITION
