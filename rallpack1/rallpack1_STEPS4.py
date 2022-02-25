@@ -42,7 +42,7 @@ Ra = 1.0
 # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # # 
 
 # Sim end time (seconds)
-SIM_END = 0.000025
+SIM_END = 0.25
 
 # The current injection in amps
 Iinj = 0.1e-9

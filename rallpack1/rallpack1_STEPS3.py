@@ -46,7 +46,7 @@ class Rallpack1Params:
     # EFIELD DT
     SIM_EFIELD_DT = 1e-6
     # Sim end time (seconds)
-    SIM_END = 0.000025
+    SIM_END = 0.25
     # The number of sim 'time points'; * SIM_DT = sim end time
     SIM_NTPNTS = int(SIM_END/SIM_DT)+1
 
