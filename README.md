@@ -5,7 +5,7 @@ In this repository we present the models described in the STEPS 4 paper. In orde
 
 ##### Installation of STEPS
 
-Without loss of generality, let us assume that you installed STEPS in `~/STEPS` and the build folder in  `~/STEPS/build`. In order to make steps discoverable by python we need to add `~/STEPS/build/lib` to the pythonpath using the following bash command:
+Without loss of generality, let us assume that you installed STEPS in `/path/to/STEPS`, see [STEPS installation documentation](https://github.com/CNS-OIST/STEPS/#installation-from-source-code) for more details. In order to make the simulator discoverable by Python, it is required to provide its location using the following Bash command:
 
 ```bash
 export PYTHONPATH=~/STEPS/build/lib:$PYTHONPATH
