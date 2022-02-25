@@ -8,7 +8,7 @@ In this repository we present the models described in the STEPS 4 paper. In orde
 Without loss of generality, let us assume that you installed STEPS in `/path/to/STEPS`, see [STEPS installation documentation](https://github.com/CNS-OIST/STEPS/#installation-from-source-code) for more details. In order to make the simulator discoverable by Python, it is required to provide its location using the following Bash command:
 
 ```bash
-export PYTHONPATH=~/STEPS/build/lib:$PYTHONPATH
+export PYTHONPATH="/path/to/STEPS:$PYTHONPATH"
 ```
 
 After, you are ready to run the models. 
