@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#SBATCH --account=
-#SBATCH --partition=
-#SBATCH --constraint=clx # Cascade Lake nodes on BB5 (intel codename clx)
+# Cascade Lake nodes on BB5 (intel codename clx)
+#SBATCH --constraint=clx
 #SBATCH --time=1-00:00:00
 #SBATCH --cpus-per-task=2
 #SBATCH --exclusive
@@ -14,7 +13,7 @@ module load archive/2021-12
 module load python-dev
 
 # spack dev-build steps@develop+distmesh+petsc
-export PYTHONPATH=~/STEPS/build/lib:$PYTHONPATH
+export PYTHONPATH="$STEPS_INSTALL_DIR:$PYTHONPATH"
 
 export OMP_NUM_THREADS=1
 for i in {1..30}

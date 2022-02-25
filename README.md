@@ -11,7 +11,13 @@ Without loss of generality, let us assume that you installed STEPS in `/path/to/
 export PYTHONPATH="/path/to/STEPS:$PYTHONPATH"
 ```
 
-After, you are ready to run the models. 
+After, you are ready to run the models. Additionally, you can:
+
+```bash
+export STEPS_INSTALL_DIR=/path/to/STEPS
+```
+
+and, use it to locate the installed STEPS.
 
 ##### Running the models
 

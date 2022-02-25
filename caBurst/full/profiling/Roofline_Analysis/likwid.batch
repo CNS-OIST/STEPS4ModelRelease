@@ -1,9 +1,8 @@
 #!/bin/bash
 
 #SBATCH --nodes=1
-#SBATCH --account=
-#SBATCH --partition=
-#SBATCH --constraint=clx # Cascade Lake nodes on BB5 (intel codename clx)
+# Cascade Lake nodes on BB5 (intel codename clx)
+#SBATCH --constraint=clx
 #SBATCH --time=1-00:00:00
 #SBATCH --exclusive
 #SBATCH --mem=0
@@ -11,7 +10,7 @@
 
 # STEPS must be compiled (manually with CMake and not with spack) with the same environment as in this script.
 # CMake option -DUSE_LIKWID_PROFILING=ON : activate LIKWID backend
-export PYTHONPATH=~/STEPS/build/lib:$PYTHONPATH
+export PYTHONPATH="$STEPS_INSTALL_DIR:$PYTHONPATH"
 
 module purge
 module load archive/2021-12 git cmake python/3.8.3 gcc boost
