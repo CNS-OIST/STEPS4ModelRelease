@@ -15,11 +15,9 @@ module load archive/2021-12 python-dev
 . ../../../oldspack/share/spack/setup-env.sh
 spack load /saf25ux
 
-
-for nodes in ${SLURM_JOB_NUM_NODES}; do
-    ntasks=$(($nodes * 32))
-    seed=$(($SLURM_ARRAY_TASK_ID * 1))
-    mesh_fls=../../mesh/split_1024/steps4/CNG_segmented_2_split_1024
-    time srun --nodes=$nodes --ntasks=$ntasks dplace python caBurstFullModel.py $seed $mesh_fls 1
-done
+nodes=$SLURM_JOB_NUM_NODES
+ntasks=$(($nodes * 32))
+seed=$(($SLURM_ARRAY_TASK_ID * 1))
+mesh_fls=../../mesh/split_1024/steps4/CNG_segmented_2_split_1024
+time srun --nodes=$nodes --ntasks=$ntasks dplace python caBurstFullModel.py $seed $mesh_fls 1
 
