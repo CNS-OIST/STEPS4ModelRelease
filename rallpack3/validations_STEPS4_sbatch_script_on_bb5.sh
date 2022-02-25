@@ -1,7 +1,7 @@
 #! /bin/bash
 # The line above is a "she-bang" to tell that /bin/bash is the command interpreting this file
 
-#SBATCH --array=[1]
+#SBATCH --array=[1-1000]
 #SBATCH --partition=prod
 #SBATCH --account=proj95
 #SBATCH --nodes=1
