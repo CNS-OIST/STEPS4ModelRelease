@@ -1,9 +1,11 @@
 #! /bin/bash
-# The line above is a "she-bang" to tell that /bin/bash is the command interpreting this file
+
+
+# You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT
 
 #SBATCH --array=[1-1000]
-#SBATCH --partition=prod
-#SBATCH --account=proj95
+#SBATCH --partition=$SBATCH_PARTITION
+#SBATCH --account=$SBATCH_ACCOUNT
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=32
 #SBATCH --time=2:00:00
@@ -11,9 +13,7 @@
 
 set -x
 
-module load archive/2021-12 python-dev
-. ../../../oldspack/share/spack/setup-env.sh
-spack load /saf25ux
+spack load steps
 
 nodes=$SLURM_JOB_NUM_NODES
 ntasks=$(($nodes * 32))

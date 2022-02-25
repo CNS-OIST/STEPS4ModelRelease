@@ -1,5 +1,5 @@
 #! /bin/bash
-# The line above is a "she-bang" to tell that /bin/bash is the command interpreting this file
+
 
 set -x
 
