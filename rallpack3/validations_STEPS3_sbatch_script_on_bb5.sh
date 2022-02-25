@@ -1,7 +1,5 @@
 #! /bin/bash
 
-
-
 # You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT
 
 #SBATCH --array=[1-1000]
@@ -17,4 +15,5 @@ set -x
 nodes=$SLURM_JOB_NUM_NODES
 ntasks=$(($nodes * 32))
 seed=$(($SLURM_ARRAY_TASK_ID * 1))
+
 time srun --nodes=$nodes --ntasks=$ntasks dplace python rallpack3.py $seed mesh/axon_cube_L1000um_D866nm_1135tets.msh 0
