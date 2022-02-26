@@ -1,7 +1,7 @@
-# STEPS4 simulation models for submission to Frontiers in Neuroinformatics ("STEPS 4.0: Fast and memory-efficient molecular simulations of neurons at the nanoscale")
+# STEPS4 simulation models for submission to Frontiers in Neuroinformatics
 ### Introduction
 
-In this repository we present the models described in the manuscript submitted to Frontiers in Neuroinformatics titled "STEPS 4.0: Fast and memory-efficient molecular simulations of neurons at the nanoscale". 
+In this repository we present the models described in the manuscript submitted to Frontiers in Neuroinformatics, titled **STEPS 4.0: Fast and memory-efficient molecular simulations of neurons at the nanoscale**. 
 
 Please note that the solution described in the manuscript focusing on large scale cpu-based high performance computing clusters, thus some of the models may not be suitable for regular desktop machines. We also provide the data we gathered in our study for readers who are interested in statistical analysis of the existing results.   
 
