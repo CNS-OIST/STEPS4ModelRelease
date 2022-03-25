@@ -1,0 +1,577 @@
+Autoloading python/3.8.3
+Autoloading py-virtualenv/16.7.6
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading py-h5py/3.1.0
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading hdf5/1.10.7
+ *** This is run 1 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.562304
+steps3 nhost 512 avg rss (MB): 18.384186
+steps3 nhost 512 avg mem ini (MB): 97.510071
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:46:02,513][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.247653
+steps4 nhost 512 avg rss (MB): 4.447723
+steps4 nhost 512 avg mem ini (MB): 99.898956
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 1 *** 
+ *** This is run 2 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.579445
+steps3 nhost 512 avg rss (MB): 18.391819
+steps3 nhost 512 avg mem ini (MB): 97.511208
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:46:53,795][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.250134
+steps4 nhost 512 avg rss (MB): 4.448769
+steps4 nhost 512 avg mem ini (MB): 99.897026
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 2 *** 
+ *** This is run 3 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.572021
+steps3 nhost 512 avg rss (MB): 18.389016
+steps3 nhost 512 avg mem ini (MB): 97.510178
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:47:46,901][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249204
+steps4 nhost 512 avg rss (MB): 4.450638
+steps4 nhost 512 avg mem ini (MB): 99.899300
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 3 *** 
+ *** This is run 4 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.565435
+steps3 nhost 512 avg rss (MB): 18.385660
+steps3 nhost 512 avg mem ini (MB): 97.510872
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:48:38,006][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.255857
+steps4 nhost 512 avg rss (MB): 4.448807
+steps4 nhost 512 avg mem ini (MB): 99.900299
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 4 *** 
+ *** This is run 5 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.559986
+steps3 nhost 512 avg rss (MB): 18.377647
+steps3 nhost 512 avg mem ini (MB): 97.520866
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:49:28,962][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249507
+steps4 nhost 512 avg rss (MB): 4.447624
+steps4 nhost 512 avg mem ini (MB): 99.900345
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 5 *** 
+ *** This is run 6 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.559064
+steps3 nhost 512 avg rss (MB): 18.382640
+steps3 nhost 512 avg mem ini (MB): 97.509750
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:50:20,068][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.248250
+steps4 nhost 512 avg rss (MB): 4.443977
+steps4 nhost 512 avg mem ini (MB): 99.902725
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 6 *** 
+ *** This is run 7 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.571193
+steps3 nhost 512 avg rss (MB): 18.380042
+steps3 nhost 512 avg mem ini (MB): 97.510124
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:51:11,132][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.247587
+steps4 nhost 512 avg rss (MB): 4.444061
+steps4 nhost 512 avg mem ini (MB): 99.902878
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 7 *** 
+ *** This is run 8 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.564063
+steps3 nhost 512 avg rss (MB): 18.385578
+steps3 nhost 512 avg mem ini (MB): 97.510574
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:52:01,991][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249198
+steps4 nhost 512 avg rss (MB): 4.455269
+steps4 nhost 512 avg mem ini (MB): 99.906532
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 8 *** 
+ *** This is run 9 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.573188
+steps3 nhost 512 avg rss (MB): 18.388562
+steps3 nhost 512 avg mem ini (MB): 97.517380
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:52:54,546][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.246646
+steps4 nhost 512 avg rss (MB): 4.441460
+steps4 nhost 512 avg mem ini (MB): 99.905128
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 9 *** 
+ *** This is run 10 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.583637
+steps3 nhost 512 avg rss (MB): 18.393397
+steps3 nhost 512 avg mem ini (MB): 97.510933
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:53:45,508][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.255336
+steps4 nhost 512 avg rss (MB): 4.442802
+steps4 nhost 512 avg mem ini (MB): 99.900040
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 10 *** 
+ *** This is run 11 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.568458
+steps3 nhost 512 avg rss (MB): 18.392294
+steps3 nhost 512 avg mem ini (MB): 97.509178
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:54:36,725][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249562
+steps4 nhost 512 avg rss (MB): 4.449341
+steps4 nhost 512 avg mem ini (MB): 99.904091
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 11 *** 
+ *** This is run 12 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.570370
+steps3 nhost 512 avg rss (MB): 18.385014
+steps3 nhost 512 avg mem ini (MB): 97.510918
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:55:28,302][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249163
+steps4 nhost 512 avg rss (MB): 4.448288
+steps4 nhost 512 avg mem ini (MB): 99.903160
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 12 *** 
+ *** This is run 13 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.563385
+steps3 nhost 512 avg rss (MB): 18.388392
+steps3 nhost 512 avg mem ini (MB): 97.512527
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:56:20,382][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.250985
+steps4 nhost 512 avg rss (MB): 4.450691
+steps4 nhost 512 avg mem ini (MB): 99.904327
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 13 *** 
+ *** This is run 14 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.588259
+steps3 nhost 512 avg rss (MB): 18.394101
+steps3 nhost 512 avg mem ini (MB): 97.513794
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:57:11,405][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.248027
+steps4 nhost 512 avg rss (MB): 4.449379
+steps4 nhost 512 avg mem ini (MB): 99.902298
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 14 *** 
+ *** This is run 15 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.559105
+steps3 nhost 512 avg rss (MB): 18.390501
+steps3 nhost 512 avg mem ini (MB): 97.511650
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:58:03,009][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.246783
+steps4 nhost 512 avg rss (MB): 4.445602
+steps4 nhost 512 avg mem ini (MB): 99.901947
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 15 *** 
+ *** This is run 16 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.560850
+steps3 nhost 512 avg rss (MB): 18.386343
+steps3 nhost 512 avg mem ini (MB): 97.509285
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:58:55,767][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.247772
+steps4 nhost 512 avg rss (MB): 4.448189
+steps4 nhost 512 avg mem ini (MB): 99.900414
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 16 *** 
+ *** This is run 17 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.566875
+steps3 nhost 512 avg rss (MB): 18.385287
+steps3 nhost 512 avg mem ini (MB): 97.510201
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:59:46,456][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.247998
+steps4 nhost 512 avg rss (MB): 4.447067
+steps4 nhost 512 avg mem ini (MB): 99.902306
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 17 *** 
+ *** This is run 18 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.571812
+steps3 nhost 512 avg rss (MB): 18.387815
+steps3 nhost 512 avg mem ini (MB): 97.510727
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:00:37,715][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.250097
+steps4 nhost 512 avg rss (MB): 4.445786
+steps4 nhost 512 avg mem ini (MB): 99.902534
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 18 *** 
+ *** This is run 19 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.563513
+steps3 nhost 512 avg rss (MB): 18.394584
+steps3 nhost 512 avg mem ini (MB): 97.509552
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:01:28,454][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.246882
+steps4 nhost 512 avg rss (MB): 4.449593
+steps4 nhost 512 avg mem ini (MB): 99.899338
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 19 *** 
+ *** This is run 20 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.558738
+steps3 nhost 512 avg rss (MB): 18.385649
+steps3 nhost 512 avg mem ini (MB): 97.510361
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:02:19,987][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249770
+steps4 nhost 512 avg rss (MB): 4.445602
+steps4 nhost 512 avg mem ini (MB): 99.903244
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 20 *** 
+ *** This is run 21 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.571405
+steps3 nhost 512 avg rss (MB): 18.386119
+steps3 nhost 512 avg mem ini (MB): 97.514847
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:03:10,949][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.247848
+steps4 nhost 512 avg rss (MB): 4.446854
+steps4 nhost 512 avg mem ini (MB): 99.900383
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 21 *** 
+ *** This is run 22 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.581291
+steps3 nhost 512 avg rss (MB): 18.380537
+steps3 nhost 512 avg mem ini (MB): 97.510925
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:04:02,071][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249283
+steps4 nhost 512 avg rss (MB): 4.450348
+steps4 nhost 512 avg mem ini (MB): 99.900795
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 22 *** 
+ *** This is run 23 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.563149
+steps3 nhost 512 avg rss (MB): 18.383140
+steps3 nhost 512 avg mem ini (MB): 97.510788
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:04:53,026][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249463
+steps4 nhost 512 avg rss (MB): 4.446571
+steps4 nhost 512 avg mem ini (MB): 99.900452
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 23 *** 
+ *** This is run 24 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.563843
+steps3 nhost 512 avg rss (MB): 18.386168
+steps3 nhost 512 avg mem ini (MB): 97.510628
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:05:44,170][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.251513
+steps4 nhost 512 avg rss (MB): 4.449593
+steps4 nhost 512 avg mem ini (MB): 99.902504
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 24 *** 
+ *** This is run 25 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.584154
+steps3 nhost 512 avg rss (MB): 18.384409
+steps3 nhost 512 avg mem ini (MB): 97.511375
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:06:35,222][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.248839
+steps4 nhost 512 avg rss (MB): 4.450127
+steps4 nhost 512 avg mem ini (MB): 99.900627
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 25 *** 
+ *** This is run 26 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.571570
+steps3 nhost 512 avg rss (MB): 18.380425
+steps3 nhost 512 avg mem ini (MB): 97.509605
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:07:26,467][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249326
+steps4 nhost 512 avg rss (MB): 4.451958
+steps4 nhost 512 avg mem ini (MB): 99.900322
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 26 *** 
+ *** This is run 27 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.560684
+steps3 nhost 512 avg rss (MB): 18.382775
+steps3 nhost 512 avg mem ini (MB): 97.510223
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:08:17,412][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.249863
+steps4 nhost 512 avg rss (MB): 4.447945
+steps4 nhost 512 avg mem ini (MB): 99.899292
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 27 *** 
+ *** This is run 28 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.584577
+steps3 nhost 512 avg rss (MB): 18.386030
+steps3 nhost 512 avg mem ini (MB): 97.511055
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:09:08,580][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.256952
+steps4 nhost 512 avg rss (MB): 4.451599
+steps4 nhost 512 avg mem ini (MB): 99.900177
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 28 *** 
+ *** This is run 29 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.579749
+steps3 nhost 512 avg rss (MB): 18.384758
+steps3 nhost 512 avg mem ini (MB): 97.510231
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:10:01,099][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.250407
+steps4 nhost 512 avg rss (MB): 4.446327
+steps4 nhost 512 avg mem ini (MB): 99.899872
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 29 *** 
+ *** This is run 30 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS3 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+-----------------------------------------------------------------
+STEPS is running in parallel mode with  512  processes
+-----------------------------------------------------------------
+steps3 nhost 512 time cost: 0.563217
+steps3 nhost 512 avg rss (MB): 18.383601
+steps3 nhost 512 avg mem ini (MB): 97.509605
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 16:10:52,001][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 512 time cost: 0.253089
+steps4 nhost 512 avg rss (MB): 4.445084
+steps4 nhost 512 avg mem ini (MB): 99.899788
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 30 *** 

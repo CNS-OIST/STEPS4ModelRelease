@@ -1,0 +1,553 @@
+Autoloading python/3.8.3
+Autoloading py-virtualenv/16.7.6
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading py-h5py/3.1.0
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading hdf5/1.10.7
+ *** This is run 1 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:45:44,399][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347804
+steps4 nhost 128 avg rss (MB): 7.417603
+steps4 nhost 128 avg mem ini (MB): 98.356232
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189568      0.248589      0.221028 70.198200 
+  DiffusionOperator::operator()                       0.152947      0.213879      0.185848 59.024959 
+    DiffusionOperator::sp~~s_entering_elements()      0.008343      0.009263      0.008772  2.785859 
+    sync_delta_pools()                                0.081646      0.145851      0.118344 37.585881 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035476      0.052242      0.042541 13.510798 
+  SSAOperator::run()                                  0.026294      0.032055      0.029484  9.364195 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 1 *** 
+ *** This is run 2 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:46:09,679][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347350
+steps4 nhost 128 avg rss (MB): 7.415802
+steps4 nhost 128 avg mem ini (MB): 98.354919
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190672      0.247941      0.220100 69.905762 
+  DiffusionOperator::operator()                       0.153886      0.212652      0.184944 58.740011 
+    DiffusionOperator::sp~~s_entering_elements()      0.008330      0.009274      0.008791  2.792091 
+    sync_delta_pools()                                0.080115      0.144666      0.117431 37.297113 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035907      0.052492      0.042526 13.506781 
+  SSAOperator::run()                                  0.026215      0.031843      0.029438  9.349905 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 2 *** 
+ *** This is run 3 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+srun: Job 282798 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282798
+[2022-02-15 15:46:36,253][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.349511
+steps4 nhost 128 avg rss (MB): 7.418945
+steps4 nhost 128 avg mem ini (MB): 98.354370
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189788      0.249078      0.220417 69.506176 
+  DiffusionOperator::operator()                       0.153227      0.213930      0.185226 58.409198 
+    DiffusionOperator::sp~~s_entering_elements()      0.008341      0.009274      0.008776  2.767277 
+    sync_delta_pools()                                0.080853      0.145874      0.117747 37.130222 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035605      0.052483      0.042520 13.408216 
+  SSAOperator::run()                                  0.026430      0.031959      0.029490  9.299284 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 3 *** 
+ *** This is run 4 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:47:01,440][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.345410
+steps4 nhost 128 avg rss (MB): 7.413696
+steps4 nhost 128 avg mem ini (MB): 98.353485
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189549      0.245608      0.220200 70.329966 
+  DiffusionOperator::operator()                       0.152598      0.211026      0.184997 59.086677 
+    DiffusionOperator::sp~~s_entering_elements()      0.008387      0.009228      0.008785  2.805929 
+    sync_delta_pools()                                0.081881      0.143880      0.117475 37.520569 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035186      0.050919      0.042552 13.590784 
+  SSAOperator::run()                                  0.026145      0.031461      0.029480  9.415712 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 4 *** 
+ *** This is run 5 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:47:26,769][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.349220
+steps4 nhost 128 avg rss (MB): 7.415894
+steps4 nhost 128 avg mem ini (MB): 98.355255
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190129      0.246819      0.221061 69.780916 
+  DiffusionOperator::operator()                       0.152369      0.212336      0.185884 58.677051 
+    DiffusionOperator::sp~~s_entering_elements()      0.008310      0.009437      0.008789  2.774408 
+    sync_delta_pools()                                0.080817      0.144204      0.118360 37.361891 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036405      0.051832      0.042547 13.430408 
+  SSAOperator::run()                                  0.026369      0.032029      0.029446  9.294974 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 5 *** 
+ *** This is run 6 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:47:52,096][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.362945
+steps4 nhost 128 avg rss (MB): 7.408600
+steps4 nhost 128 avg mem ini (MB): 98.356598
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.200897      0.250769      0.225318 68.280474 
+  DiffusionOperator::operator()                       0.161052      0.215545      0.190036 57.588731 
+    DiffusionOperator::sp~~s_entering_elements()      0.008385      0.009521      0.008800  2.666767 
+    sync_delta_pools()                                0.086389      0.147255      0.122419 37.097903 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035887      0.052130      0.042602 12.910075 
+  SSAOperator::run()                                  0.026512      0.033172      0.029550  8.954816 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 6 *** 
+ *** This is run 7 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:48:17,478][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.345722
+steps4 nhost 128 avg rss (MB): 7.407654
+steps4 nhost 128 avg mem ini (MB): 98.355621
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188123      0.246068      0.219299 69.956075 
+  DiffusionOperator::operator()                       0.151077      0.210804      0.184147 58.742715 
+    DiffusionOperator::sp~~s_entering_elements()      0.008338      0.009218      0.008781  2.801070 
+    sync_delta_pools()                                0.080538      0.142763      0.116768 37.248885 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035870      0.051866      0.042429 13.534904 
+  SSAOperator::run()                                  0.026717      0.031498      0.029443  9.392161 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 7 *** 
+ *** This is run 8 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:48:42,723][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347836
+steps4 nhost 128 avg rss (MB): 7.421539
+steps4 nhost 128 avg mem ini (MB): 98.353821
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188225      0.248089      0.220211 69.733876 
+  DiffusionOperator::operator()                       0.151469      0.212843      0.184975 58.575721 
+    DiffusionOperator::sp~~s_entering_elements()      0.008395      0.009326      0.008788  2.782848 
+    sync_delta_pools()                                0.079806      0.143974      0.117399 37.176541 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035148      0.052500      0.042593 13.487809 
+  SSAOperator::run()                                  0.025899      0.031759      0.029533  9.352095 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 8 *** 
+ *** This is run 9 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:49:08,051][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.348713
+steps4 nhost 128 avg rss (MB): 7.408478
+steps4 nhost 128 avg mem ini (MB): 98.354706
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189006      0.249040      0.219963 69.489017 
+  DiffusionOperator::operator()                       0.152004      0.213638      0.184756 58.366941 
+    DiffusionOperator::sp~~s_entering_elements()      0.008362      0.009270      0.008786  2.775596 
+    sync_delta_pools()                                0.080189      0.144435      0.117251 37.041019 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035780      0.052154      0.042528 13.435240 
+  SSAOperator::run()                                  0.026769      0.032285      0.029509  9.322244 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 9 *** 
+ *** This is run 10 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:49:33,275][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.346148
+steps4 nhost 128 avg rss (MB): 7.403351
+steps4 nhost 128 avg mem ini (MB): 98.354279
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190041      0.245486      0.219707 70.080366 
+  DiffusionOperator::operator()                       0.153023      0.210854      0.184516 58.855456 
+    DiffusionOperator::sp~~s_entering_elements()      0.008357      0.009302      0.008778  2.800012 
+    sync_delta_pools()                                0.081979      0.142862      0.117026 37.327996 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035398      0.051674      0.042522 13.563337 
+  SSAOperator::run()                                  0.026551      0.032953      0.029480  9.403413 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 10 *** 
+ *** This is run 11 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:49:58,566][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.346351
+steps4 nhost 128 avg rss (MB): 7.412781
+steps4 nhost 128 avg mem ini (MB): 98.352173
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188863      0.247253      0.219734 69.921069 
+  DiffusionOperator::operator()                       0.152247      0.212440      0.184540 58.721792 
+    DiffusionOperator::sp~~s_entering_elements()      0.008395      0.009322      0.008787  2.795972 
+    sync_delta_pools()                                0.080584      0.144672      0.116981 37.224309 
+    DiffusionOperator::sp~~es_leaving_elements()      0.034241      0.052319      0.042578 13.548590 
+  SSAOperator::run()                                  0.025326      0.031802      0.029458  9.373676 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 11 *** 
+ *** This is run 12 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:50:24,056][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347725
+steps4 nhost 128 avg rss (MB): 7.416199
+steps4 nhost 128 avg mem ini (MB): 98.354919
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.192494      0.248046      0.220862 70.158478 
+  DiffusionOperator::operator()                       0.155367      0.212672      0.185617 58.962756 
+    DiffusionOperator::sp~~s_entering_elements()      0.008372      0.009337      0.008784  2.790327 
+    sync_delta_pools()                                0.081785      0.144267      0.118142 37.528788 
+    DiffusionOperator::sp~~es_leaving_elements()      0.034873      0.052131      0.042528 13.509269 
+  SSAOperator::run()                                  0.025810      0.031836      0.029507  9.373187 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 12 *** 
+ *** This is run 13 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:50:49,373][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.346150
+steps4 nhost 128 avg rss (MB): 7.419037
+steps4 nhost 128 avg mem ini (MB): 98.351990
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189353      0.247359      0.219675 69.944573 
+  DiffusionOperator::operator()                       0.152507      0.211967      0.184483 58.739668 
+    DiffusionOperator::sp~~s_entering_elements()      0.008392      0.009279      0.008775  2.794048 
+    sync_delta_pools()                                0.081106      0.143036      0.117004 37.254139 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035407      0.051766      0.042531 13.541893 
+  SSAOperator::run()                                  0.026343      0.031418      0.029477  9.385432 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 13 *** 
+ *** This is run 14 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:51:14,657][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347535
+steps4 nhost 128 avg rss (MB): 7.412781
+steps4 nhost 128 avg mem ini (MB): 98.356262
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.186991      0.248146      0.219881 69.784122 
+  DiffusionOperator::operator()                       0.150125      0.213323      0.184691 58.615819 
+    DiffusionOperator::sp~~s_entering_elements()      0.008286      0.009306      0.008784  2.787781 
+    sync_delta_pools()                                0.080706      0.144646      0.117252 37.212521 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035300      0.050552      0.042461 13.476078 
+  SSAOperator::run()                                  0.026109      0.031642      0.029475  9.354588 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 14 *** 
+ *** This is run 15 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+srun: Job 282798 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282798
+[2022-02-15 15:51:41,516][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.360945
+steps4 nhost 128 avg rss (MB): 7.439056
+steps4 nhost 128 avg mem ini (MB): 98.365631
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.187582      0.250279      0.222994 67.817381 
+  DiffusionOperator::operator()                       0.151230      0.215413      0.187776 57.107018 
+    DiffusionOperator::sp~~s_entering_elements()      0.008402      0.009350      0.008791  2.673660 
+    sync_delta_pools()                                0.080834      0.147706      0.120316 36.590751 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036040      0.052125      0.042460 12.912993 
+  SSAOperator::run()                                  0.026607      0.032175      0.029507  8.973775 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 15 *** 
+ *** This is run 16 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:52:06,750][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.348016
+steps4 nhost 128 avg rss (MB): 7.424316
+steps4 nhost 128 avg mem ini (MB): 98.367371
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190939      0.247233      0.221336 70.175389 
+  DiffusionOperator::operator()                       0.153970      0.212225      0.186182 59.029686 
+    DiffusionOperator::sp~~s_entering_elements()      0.008453      0.009268      0.008790  2.786818 
+    sync_delta_pools()                                0.082173      0.143834      0.118590 37.599380 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035996      0.051950      0.042634 13.517310 
+  SSAOperator::run()                                  0.026528      0.031726      0.029465  9.341942 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 16 *** 
+ *** This is run 17 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:52:32,071][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.348315
+steps4 nhost 128 avg rss (MB): 7.421600
+steps4 nhost 128 avg mem ini (MB): 98.356842
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.192453      0.246232      0.221171 70.193509 
+  DiffusionOperator::operator()                       0.154789      0.211590      0.185959 59.018485 
+    DiffusionOperator::sp~~s_entering_elements()      0.008412      0.009410      0.008781  2.786980 
+    sync_delta_pools()                                0.082305      0.143447      0.118541 37.621531 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035659      0.051560      0.042461 13.475862 
+  SSAOperator::run()                                  0.026396      0.032008      0.029487  9.358218 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 17 *** 
+ *** This is run 18 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:52:57,401][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.346554
+steps4 nhost 128 avg rss (MB): 7.418060
+steps4 nhost 128 avg mem ini (MB): 98.355530
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188680      0.245069      0.219668 70.052230 
+  DiffusionOperator::operator()                       0.151733      0.210118      0.184489 58.833637 
+    DiffusionOperator::sp~~s_entering_elements()      0.008421      0.009264      0.008786  2.801716 
+    sync_delta_pools()                                0.080564      0.141909      0.117042 37.324981 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035500      0.051888      0.042517 13.558729 
+  SSAOperator::run()                                  0.026243      0.031900      0.029457  9.393782 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 18 *** 
+ *** This is run 19 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:53:22,668][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.349533
+steps4 nhost 128 avg rss (MB): 7.413361
+steps4 nhost 128 avg mem ini (MB): 98.358765
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.192720      0.246359      0.219863 69.277234 
+  DiffusionOperator::operator()                       0.154535      0.210686      0.184653 58.182709 
+    DiffusionOperator::sp~~s_entering_elements()      0.008345      0.009307      0.008781  2.766926 
+    sync_delta_pools()                                0.081852      0.141729      0.117120 36.903556 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036151      0.051117      0.042554 13.408558 
+  SSAOperator::run()                                  0.026705      0.032291      0.029495  9.293627 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 19 *** 
+ *** This is run 20 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:53:47,915][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.345222
+steps4 nhost 128 avg rss (MB): 7.408539
+steps4 nhost 128 avg mem ini (MB): 98.356049
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189190      0.245508      0.218750 69.872793 
+  DiffusionOperator::operator()                       0.152489      0.211072      0.183601 58.645710 
+    DiffusionOperator::sp~~s_entering_elements()      0.008357      0.009308      0.008778  2.803769 
+    sync_delta_pools()                                0.079885      0.143055      0.116119 37.090501 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036326      0.052172      0.042551 13.591447 
+  SSAOperator::run()                                  0.026304      0.031646      0.029438  9.403077 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 20 *** 
+ *** This is run 21 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:54:13,210][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.345863
+steps4 nhost 128 avg rss (MB): 7.413940
+steps4 nhost 128 avg mem ini (MB): 98.356201
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188856      0.247257      0.219116 69.822170 
+  DiffusionOperator::operator()                       0.151378      0.211990      0.183927 58.609183 
+    DiffusionOperator::sp~~s_entering_elements()      0.008292      0.009299      0.008770  2.794700 
+    sync_delta_pools()                                0.079894      0.143489      0.116413 37.095559 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035809      0.051564      0.042573 13.566085 
+  SSAOperator::run()                                  0.026152      0.031964      0.029486  9.395809 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 21 *** 
+ *** This is run 22 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:54:38,550][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.346894
+steps4 nhost 128 avg rss (MB): 7.411621
+steps4 nhost 128 avg mem ini (MB): 98.357452
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190615      0.247977      0.219760 69.884740 
+  DiffusionOperator::operator()                       0.153466      0.213010      0.184544 58.685773 
+    DiffusionOperator::sp~~s_entering_elements()      0.008344      0.009353      0.008776  2.790680 
+    sync_delta_pools()                                0.080771      0.144897      0.117080 37.231862 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036694      0.051564      0.042503 13.516269 
+  SSAOperator::run()                                  0.027121      0.031672      0.029505  9.382646 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 22 *** 
+ *** This is run 23 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:55:03,864][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.348057
+steps4 nhost 128 avg rss (MB): 7.421082
+steps4 nhost 128 avg mem ini (MB): 98.353241
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188250      0.248628      0.220590 69.882067 
+  DiffusionOperator::operator()                       0.151020      0.213553      0.185375 58.726060 
+    DiffusionOperator::sp~~s_entering_elements()      0.008321      0.009286      0.008778  2.780710 
+    sync_delta_pools()                                0.080649      0.145823      0.117909 37.353035 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036109      0.050540      0.042493 13.461479 
+  SSAOperator::run()                                  0.026576      0.031550      0.029498  9.344839 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 23 *** 
+ *** This is run 24 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:55:29,206][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.349006
+steps4 nhost 128 avg rss (MB): 7.409790
+steps4 nhost 128 avg mem ini (MB): 98.360565
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190754      0.248530      0.221207 69.962773 
+  DiffusionOperator::operator()                       0.153863      0.213405      0.186010 58.830895 
+    DiffusionOperator::sp~~s_entering_elements()      0.008375      0.009287      0.008794  2.781404 
+    sync_delta_pools()                                0.082670      0.144734      0.118551 37.494914 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035477      0.051457      0.042490 13.438758 
+  SSAOperator::run()                                  0.026592      0.031721      0.029487  9.326084 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 24 *** 
+ *** This is run 25 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+srun: Job 282798 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282798
+[2022-02-15 15:55:55,288][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347982
+steps4 nhost 128 avg rss (MB): 7.423340
+steps4 nhost 128 avg mem ini (MB): 98.349823
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190083      0.248554      0.220548 69.958139 
+  DiffusionOperator::operator()                       0.152646      0.213467      0.185331 58.787436 
+    DiffusionOperator::sp~~s_entering_elements()      0.008343      0.009308      0.008794  2.789338 
+    sync_delta_pools()                                0.082352      0.145123      0.117677 37.327444 
+    DiffusionOperator::sp~~es_leaving_elements()      0.034864      0.051048      0.042669 13.534560 
+  SSAOperator::run()                                  0.025970      0.031917      0.029519  9.363348 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 25 *** 
+ *** This is run 26 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:56:20,548][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347219
+steps4 nhost 128 avg rss (MB): 7.414368
+steps4 nhost 128 avg mem ini (MB): 98.354767
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188879      0.245617      0.219685 69.949405 
+  DiffusionOperator::operator()                       0.151842      0.210597      0.184487 58.742097 
+    DiffusionOperator::sp~~s_entering_elements()      0.008380      0.009323      0.008776  2.794474 
+    sync_delta_pools()                                0.082099      0.141960      0.117143 37.299165 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035166      0.051536      0.042379 13.493776 
+  SSAOperator::run()                                  0.026083      0.031629      0.029436  9.372605 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 26 *** 
+ *** This is run 27 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:56:45,883][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347049
+steps4 nhost 128 avg rss (MB): 7.422394
+steps4 nhost 128 avg mem ini (MB): 98.353394
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.190459      0.245759      0.220156 69.903378 
+  DiffusionOperator::operator()                       0.153793      0.210398      0.184938 58.721040 
+    DiffusionOperator::sp~~s_entering_elements()      0.008403      0.009337      0.008786  2.789819 
+    sync_delta_pools()                                0.081610      0.141888      0.117459 37.295207 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035003      0.051552      0.042526 13.502825 
+  SSAOperator::run()                                  0.026140      0.031504      0.029500  9.366658 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 27 *** 
+ *** This is run 28 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:57:11,223][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.351923
+steps4 nhost 128 avg rss (MB): 7.418182
+steps4 nhost 128 avg mem ini (MB): 98.356079
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.188772      0.248905      0.220857 69.070305 
+  DiffusionOperator::operator()                       0.152263      0.213620      0.185691 58.072701 
+    DiffusionOperator::sp~~s_entering_elements()      0.008338      0.009575      0.008790  2.748887 
+    sync_delta_pools()                                0.080599      0.145187      0.118269 36.987188 
+    DiffusionOperator::sp~~es_leaving_elements()      0.036426      0.051319      0.042453 13.276728 
+  SSAOperator::run()                                  0.026385      0.031619      0.029452  9.210812 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 28 *** 
+ *** This is run 29 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:57:36,484][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.346829
+steps4 nhost 128 avg rss (MB): 7.420959
+steps4 nhost 128 avg mem ini (MB): 98.351959
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189940      0.247444      0.220123 69.951660 
+  DiffusionOperator::operator()                       0.153095      0.212453      0.184926 58.766397 
+    DiffusionOperator::sp~~s_entering_elements()      0.008420      0.009291      0.008780  2.790201 
+    sync_delta_pools()                                0.082656      0.144016      0.117461 37.327188 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035608      0.050276      0.042469 13.496071 
+  SSAOperator::run()                                  0.026138      0.031564      0.029503  9.375537 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 29 *** 
+ *** This is run 30 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+[2022-02-15 15:58:01,761][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 128 time cost: 0.347133
+steps4 nhost 128 avg rss (MB): 7.415955
+steps4 nhost 128 avg mem ini (MB): 98.357239
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.189270      0.246584      0.220066 69.948991 
+  DiffusionOperator::operator()                       0.151970      0.211911      0.184889 58.767874 
+    DiffusionOperator::sp~~s_entering_elements()      0.008345      0.009359      0.008770  2.787533 
+    sync_delta_pools()                                0.081411      0.143974      0.117350 37.300201 
+    DiffusionOperator::sp~~es_leaving_elements()      0.035806      0.052517      0.042589 13.536989 
+  SSAOperator::run()                                  0.026663      0.031908      0.029439  9.357217 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 30 *** 

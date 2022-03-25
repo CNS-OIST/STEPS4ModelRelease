@@ -1,18 +1,10 @@
 #!/bin/bash
 
-# Cascade Lake nodes on BB5 (intel codename clx)
-#SBATCH --constraint=clx
-#SBATCH --time=1-00:00:00
-#SBATCH --cpus-per-task=2
-#SBATCH --exclusive
-#SBATCH --mem=0
-#SBATCH --output="%x.out"
-
 module purge
-module load archive/2021-12
-module load python-dev
+module load unstable python-dev python
 
-# spack dev-build steps@develop+distmesh+petsc
+source ./python-venv/bin/activate
+
 export PYTHONPATH="$STEPS_INSTALL_DIR:$PYTHONPATH"
 
 export OMP_NUM_THREADS=1

@@ -1,0 +1,2468 @@
+Auks API request failed : krb5 cred : unable to read credential cache
+Autoloading python/3.8.3
+Autoloading py-virtualenv/16.7.6
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading py-h5py/3.1.0
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading hdf5/1.10.7
+ *** This is run 1 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:05:29,901][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.435930
+steps4 nhost 2048 avg rss (MB): 9.698246
+steps4 nhost 2048 avg mem ini (MB): 98.707983
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.120169      0.200092      0.166907 41.733664 
+  DiffusionOperator::operator()                       0.113214      0.192468      0.159553 39.894755 
+    DiffusionOperator::sp~~s_entering_elements()      0.001287      0.001975      0.001588  0.397083 
+    sync_delta_pools()                                0.103282      0.180871      0.147386 36.852471 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002196      0.005681      0.003709  0.927514 
+  SSAOperator::run()                                  0.002049      0.004173      0.003068  0.767131 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 1 *** 
+ *** This is run 2 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:05:58,801][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.428434
+steps4 nhost 2048 avg rss (MB): 9.706842
+steps4 nhost 2048 avg mem ini (MB): 98.705881
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.111362      0.190446      0.158053 40.256966 
+  DiffusionOperator::operator()                       0.104453      0.182897      0.150693 38.382227 
+    DiffusionOperator::sp~~s_entering_elements()      0.001270      0.002004      0.001589  0.404704 
+    sync_delta_pools()                                0.094684      0.170618      0.138528 35.283753 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002103      0.005769      0.003710  0.944908 
+  SSAOperator::run()                                  0.002034      0.004309      0.003071  0.782100 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 2 *** 
+ *** This is run 3 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:06:28,112][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.428674
+steps4 nhost 2048 avg rss (MB): 9.703299
+steps4 nhost 2048 avg mem ini (MB): 98.707088
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.114220      0.186522      0.157888 40.169116 
+  DiffusionOperator::operator()                       0.107246      0.178953      0.150528 38.296587 
+    DiffusionOperator::sp~~s_entering_elements()      0.001272      0.001997      0.001590  0.404531 
+    sync_delta_pools()                                0.097398      0.168037      0.138360 35.200850 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002168      0.005570      0.003707  0.942998 
+  SSAOperator::run()                                  0.002038      0.004248      0.003070  0.781103 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 3 *** 
+ *** This is run 4 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:06:57,251][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.432301
+steps4 nhost 2048 avg rss (MB): 9.704082
+steps4 nhost 2048 avg mem ini (MB): 98.708088
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.111960      0.187539      0.158417 39.928356 
+  DiffusionOperator::operator()                       0.105084      0.179976      0.151056 38.072930 
+    DiffusionOperator::sp~~s_entering_elements()      0.001283      0.002069      0.001589  0.400614 
+    sync_delta_pools()                                0.095223      0.167102      0.138886 35.005496 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002147      0.005557      0.003712  0.935629 
+  SSAOperator::run()                                  0.002036      0.004200      0.003069  0.773596 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 4 *** 
+ *** This is run 5 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:07:26,530][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.434388
+steps4 nhost 2048 avg rss (MB): 9.703667
+steps4 nhost 2048 avg mem ini (MB): 98.707294
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.112689      0.190107      0.158545 39.786213 
+  DiffusionOperator::operator()                       0.105731      0.182389      0.151183 37.938689 
+    DiffusionOperator::sp~~s_entering_elements()      0.001281      0.002007      0.001590  0.398893 
+    sync_delta_pools()                                0.096026      0.169660      0.139014 34.884921 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002091      0.005590      0.003709  0.930843 
+  SSAOperator::run()                                  0.001948      0.004305      0.003071  0.770623 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 5 *** 
+ *** This is run 6 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:07:55,045][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.421874
+steps4 nhost 2048 avg rss (MB): 9.701681
+steps4 nhost 2048 avg mem ini (MB): 98.707781
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.109625      0.189103      0.157840 40.870672 
+  DiffusionOperator::operator()                       0.102746      0.181506      0.150484 38.966073 
+    DiffusionOperator::sp~~s_entering_elements()      0.001256      0.001999      0.001589  0.411345 
+    sync_delta_pools()                                0.092991      0.169135      0.138321 35.816621 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002130      0.005489      0.003708  0.960048 
+  SSAOperator::run()                                  0.001955      0.004206      0.003068  0.794311 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 6 *** 
+ *** This is run 7 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:08:23,784][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.425007
+steps4 nhost 2048 avg rss (MB): 9.702560
+steps4 nhost 2048 avg mem ini (MB): 98.706491
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.110378      0.189116      0.157351 40.441965 
+  DiffusionOperator::operator()                       0.103426      0.181578      0.149994 38.551046 
+    DiffusionOperator::sp~~s_entering_elements()      0.001261      0.001981      0.001589  0.408368 
+    sync_delta_pools()                                0.093665      0.168925      0.137821 35.422473 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002046      0.005548      0.003714  0.954465 
+  SSAOperator::run()                                  0.001983      0.004320      0.003071  0.789176 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 7 *** 
+ *** This is run 8 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:08:53,131][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424222
+steps4 nhost 2048 avg rss (MB): 9.710115
+steps4 nhost 2048 avg mem ini (MB): 98.708727
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.116825      0.195321      0.161184 41.521344 
+  DiffusionOperator::operator()                       0.109970      0.187841      0.153821 39.624796 
+    DiffusionOperator::sp~~s_entering_elements()      0.001276      0.001978      0.001588  0.409189 
+    sync_delta_pools()                                0.100148      0.176388      0.141648 36.488854 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002131      0.005684      0.003718  0.957813 
+  SSAOperator::run()                                  0.002007      0.004301      0.003075  0.792188 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 8 *** 
+ *** This is run 9 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:09:22,159][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424453
+steps4 nhost 2048 avg rss (MB): 9.711157
+steps4 nhost 2048 avg mem ini (MB): 98.713861
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.111864      0.188445      0.156946 40.373519 
+  DiffusionOperator::operator()                       0.104979      0.180855      0.149585 38.479839 
+    DiffusionOperator::sp~~s_entering_elements()      0.001260      0.002000      0.001589  0.408855 
+    sync_delta_pools()                                0.095192      0.169544      0.137416 35.349467 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002192      0.005631      0.003708  0.953929 
+  SSAOperator::run()                                  0.002000      0.004201      0.003072  0.790139 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 9 *** 
+ *** This is run 10 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:09:51,166][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424192
+steps4 nhost 2048 avg rss (MB): 9.710146
+steps4 nhost 2048 avg mem ini (MB): 98.715075
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.113969      0.185342      0.158211 40.743984 
+  DiffusionOperator::operator()                       0.106992      0.177452      0.150854 38.849223 
+    DiffusionOperator::sp~~s_entering_elements()      0.001269      0.001968      0.001589  0.409163 
+    sync_delta_pools()                                0.097015      0.164700      0.138687 35.715962 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002161      0.005727      0.003707  0.954741 
+  SSAOperator::run()                                  0.002001      0.004279      0.003069  0.790260 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 10 *** 
+ *** This is run 11 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:10:21,185][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.434903
+steps4 nhost 2048 avg rss (MB): 9.710316
+steps4 nhost 2048 avg mem ini (MB): 98.714718
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.112107      0.191190      0.158836 39.778852 
+  DiffusionOperator::operator()                       0.105083      0.183646      0.151485 37.937996 
+    DiffusionOperator::sp~~s_entering_elements()      0.001272      0.001986      0.001589  0.397860 
+    sync_delta_pools()                                0.095109      0.170760      0.139320 34.891312 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002169      0.005644      0.003702  0.927051 
+  SSAOperator::run()                                  0.001949      0.004206      0.003064  0.767403 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 11 *** 
+ *** This is run 12 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:10:50,638][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.418214
+steps4 nhost 2048 avg rss (MB): 9.706678
+steps4 nhost 2048 avg mem ini (MB): 98.713842
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.109936      0.187979      0.157591 41.203831 
+  DiffusionOperator::operator()                       0.103052      0.181375      0.150249 39.284370 
+    DiffusionOperator::sp~~s_entering_elements()      0.001290      0.002041      0.001588  0.415225 
+    sync_delta_pools()                                0.093210      0.170546      0.138093 36.105980 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002154      0.005474      0.003699  0.967051 
+  SSAOperator::run()                                  0.001948      0.004343      0.003061  0.800444 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 12 *** 
+ *** This is run 13 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:11:19,449][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.425408
+steps4 nhost 2048 avg rss (MB): 9.707836
+steps4 nhost 2048 avg mem ini (MB): 98.714474
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.112066      0.185184      0.155992 40.011644 
+  DiffusionOperator::operator()                       0.105100      0.177317      0.148638 38.125298 
+    DiffusionOperator::sp~~s_entering_elements()      0.001265      0.001998      0.001588  0.407397 
+    sync_delta_pools()                                0.095260      0.164781      0.136455 35.000303 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002134      0.005694      0.003721  0.954429 
+  SSAOperator::run()                                  0.001958      0.004223      0.003071  0.787586 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 13 *** 
+ *** This is run 14 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:11:48,361][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.421645
+steps4 nhost 2048 avg rss (MB): 9.709721
+steps4 nhost 2048 avg mem ini (MB): 98.715075
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.110672      0.190662      0.156682 40.586638 
+  DiffusionOperator::operator()                       0.103726      0.183021      0.149326 38.680987 
+    DiffusionOperator::sp~~s_entering_elements()      0.001265      0.002060      0.001588  0.411462 
+    sync_delta_pools()                                0.093838      0.170838      0.137148 35.526575 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002196      0.005623      0.003719  0.963290 
+  SSAOperator::run()                                  0.002027      0.004210      0.003072  0.795754 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 14 *** 
+ *** This is run 15 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:12:18,379][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424078
+steps4 nhost 2048 avg rss (MB): 9.702164
+steps4 nhost 2048 avg mem ini (MB): 98.714018
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.109547      0.188009      0.157236 40.480380 
+  DiffusionOperator::operator()                       0.102589      0.180435      0.149887 38.588475 
+    DiffusionOperator::sp~~s_entering_elements()      0.001288      0.002007      0.001588  0.408870 
+    sync_delta_pools()                                0.092725      0.169122      0.137723 35.456811 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002178      0.005682      0.003702  0.952964 
+  SSAOperator::run()                                  0.001974      0.004262      0.003062  0.788416 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 15 *** 
+ *** This is run 16 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:12:47,885][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.430693
+steps4 nhost 2048 avg rss (MB): 9.705416
+steps4 nhost 2048 avg mem ini (MB): 98.714218
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.113493      0.189758      0.157556 39.879742 
+  DiffusionOperator::operator()                       0.106556      0.182113      0.150206 38.019332 
+    DiffusionOperator::sp~~s_entering_elements()      0.001287      0.002040      0.001588  0.401967 
+    sync_delta_pools()                                0.096573      0.169595      0.138042 34.940443 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002153      0.005767      0.003702  0.936996 
+  SSAOperator::run()                                  0.001983      0.004238      0.003065  0.775875 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 16 *** 
+ *** This is run 17 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:13:16,928][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.461862
+steps4 nhost 2048 avg rss (MB): 9.700590
+steps4 nhost 2048 avg mem ini (MB): 98.714752
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.144693      0.221869      0.189675 44.523589 
+  DiffusionOperator::operator()                       0.137798      0.214225      0.182331 42.799817 
+    DiffusionOperator::sp~~s_entering_elements()      0.001270      0.002083      0.001588  0.372690 
+    sync_delta_pools()                                0.127125      0.202102      0.170172 39.945637 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002150      0.005710      0.003705  0.869798 
+  SSAOperator::run()                                  0.001972      0.004294      0.003061  0.718605 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 17 *** 
+ *** This is run 18 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:13:45,845][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424117
+steps4 nhost 2048 avg rss (MB): 9.701414
+steps4 nhost 2048 avg mem ini (MB): 98.706160
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.109844      0.191145      0.156561 40.291878 
+  DiffusionOperator::operator()                       0.102958      0.183569      0.149208 38.399646 
+    DiffusionOperator::sp~~s_entering_elements()      0.001260      0.002037      0.001589  0.408884 
+    sync_delta_pools()                                0.093181      0.171449      0.137032 35.266126 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002133      0.005533      0.003714  0.955746 
+  SSAOperator::run()                                  0.002034      0.004256      0.003068  0.789525 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 18 *** 
+ *** This is run 19 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:14:15,768][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.442120
+steps4 nhost 2048 avg rss (MB): 9.705572
+steps4 nhost 2048 avg mem ini (MB): 98.707390
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.111625      0.188541      0.158201 38.908513 
+  DiffusionOperator::operator()                       0.104736      0.181115      0.150840 37.098102 
+    DiffusionOperator::sp~~s_entering_elements()      0.001272      0.002423      0.001589  0.390806 
+    sync_delta_pools()                                0.094916      0.167859      0.138660 34.102596 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002125      0.005803      0.003714  0.913523 
+  SSAOperator::run()                                  0.001999      0.005040      0.003071  0.755209 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 19 *** 
+ *** This is run 20 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:14:45,253][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.429966
+steps4 nhost 2048 avg rss (MB): 9.701084
+steps4 nhost 2048 avg mem ini (MB): 98.707937
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.110262      0.188923      0.157245 39.895772 
+  DiffusionOperator::operator()                       0.103346      0.181589      0.149890 38.029589 
+    DiffusionOperator::sp~~s_entering_elements()      0.001280      0.001994      0.001589  0.403120 
+    sync_delta_pools()                                0.093487      0.170693      0.137717 34.941147 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002101      0.005745      0.003712  0.941906 
+  SSAOperator::run()                                  0.001918      0.004322      0.003069  0.778589 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 20 *** 
+ *** This is run 21 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:15:14,314][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.425671
+steps4 nhost 2048 avg rss (MB): 9.701315
+steps4 nhost 2048 avg mem ini (MB): 98.708029
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.108476      0.188859      0.155471 39.870739 
+  DiffusionOperator::operator()                       0.101541      0.181189      0.148125 37.986863 
+    DiffusionOperator::sp~~s_entering_elements()      0.001272      0.002017      0.001586  0.406857 
+    sync_delta_pools()                                0.091574      0.169880      0.135961 34.867344 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002207      0.005480      0.003711  0.951739 
+  SSAOperator::run()                                  0.002013      0.004332      0.003066  0.786189 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 21 *** 
+ *** This is run 22 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:15:43,366][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424216
+steps4 nhost 2048 avg rss (MB): 9.700769
+steps4 nhost 2048 avg mem ini (MB): 98.707560
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.110377      0.188526      0.157109 40.505626 
+  DiffusionOperator::operator()                       0.103420      0.181040      0.149759 38.610751 
+    DiffusionOperator::sp~~s_entering_elements()      0.001271      0.002008      0.001588  0.409314 
+    sync_delta_pools()                                0.093413      0.169691      0.137576 35.469701 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002110      0.005699      0.003725  0.960251 
+  SSAOperator::run()                                  0.001980      0.004258      0.003069  0.791141 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 22 *** 
+ *** This is run 23 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:16:13,287][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.426441
+steps4 nhost 2048 avg rss (MB): 9.701895
+steps4 nhost 2048 avg mem ini (MB): 98.708475
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.113070      0.194934      0.157433 40.284780 
+  DiffusionOperator::operator()                       0.106158      0.187338      0.150090 38.405832 
+    DiffusionOperator::sp~~s_entering_elements()      0.001289      0.001962      0.001588  0.406272 
+    sync_delta_pools()                                0.096323      0.174595      0.137934 35.295363 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002121      0.005801      0.003697  0.946108 
+  SSAOperator::run()                                  0.001984      0.004168      0.003060  0.782932 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 23 *** 
+ *** This is run 24 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:16:42,392][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.426390
+steps4 nhost 2048 avg rss (MB): 9.701849
+steps4 nhost 2048 avg mem ini (MB): 98.707201
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.114217      0.190010      0.158467 40.575813 
+  DiffusionOperator::operator()                       0.107302      0.182374      0.151120 38.694566 
+    DiffusionOperator::sp~~s_entering_elements()      0.001272      0.002014      0.001588  0.406584 
+    sync_delta_pools()                                0.097426      0.169834      0.138959 35.580605 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002164      0.005654      0.003704  0.948461 
+  SSAOperator::run()                                  0.001992      0.004247      0.003065  0.784830 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 24 *** 
+ *** This is run 25 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:17:11,353][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.415959
+steps4 nhost 2048 avg rss (MB): 9.702293
+steps4 nhost 2048 avg mem ini (MB): 98.706404
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.112971      0.188684      0.156447 41.149349 
+  DiffusionOperator::operator()                       0.106112      0.181190      0.149096 39.215799 
+    DiffusionOperator::sp~~s_entering_elements()      0.001262      0.001973      0.001588  0.417741 
+    sync_delta_pools()                                0.096403      0.170276      0.136921 36.013563 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002158      0.005777      0.003718  0.977827 
+  SSAOperator::run()                                  0.001996      0.004268      0.003067  0.806816 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 25 *** 
+ *** This is run 26 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:17:41,027][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.431455
+steps4 nhost 2048 avg rss (MB): 9.698723
+steps4 nhost 2048 avg mem ini (MB): 98.707336
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.111544      0.189975      0.156470 39.560455 
+  DiffusionOperator::operator()                       0.104592      0.183334      0.149112 37.700270 
+    DiffusionOperator::sp~~s_entering_elements()      0.001283      0.001966      0.001589  0.401714 
+    sync_delta_pools()                                0.094872      0.172350      0.136930 34.620120 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002135      0.005650      0.003722  0.941021 
+  SSAOperator::run()                                  0.001992      0.004191      0.003072  0.776734 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 26 *** 
+ *** This is run 27 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:18:10,566][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.426879
+steps4 nhost 2048 avg rss (MB): 9.700075
+steps4 nhost 2048 avg mem ini (MB): 98.707777
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.111044      0.191356      0.156935 40.157937 
+  DiffusionOperator::operator()                       0.104167      0.184032      0.149583 38.276625 
+    DiffusionOperator::sp~~s_entering_elements()      0.001287      0.001982      0.001589  0.406568 
+    sync_delta_pools()                                0.094384      0.170937      0.137414 35.162621 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002127      0.005715      0.003708  0.948717 
+  SSAOperator::run()                                  0.002022      0.004157      0.003065  0.784398 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 27 *** 
+ *** This is run 28 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:18:39,581][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.435880
+steps4 nhost 2048 avg rss (MB): 9.703529
+steps4 nhost 2048 avg mem ini (MB): 98.706804
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.119857      0.196184      0.165514 41.378492 
+  DiffusionOperator::operator()                       0.112954      0.188306      0.158161 39.540198 
+    DiffusionOperator::sp~~s_entering_elements()      0.001254      0.002034      0.001589  0.397149 
+    sync_delta_pools()                                0.103076      0.177075      0.145980 36.494891 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002191      0.005728      0.003719  0.929710 
+  SSAOperator::run()                                  0.002003      0.004272      0.003069  0.767166 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 28 *** 
+ *** This is run 29 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:19:08,540][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.424882
+steps4 nhost 2048 avg rss (MB): 9.701780
+steps4 nhost 2048 avg mem ini (MB): 98.708122
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.113234      0.186786      0.157504 40.475815 
+  DiffusionOperator::operator()                       0.106331      0.179186      0.150152 38.586605 
+    DiffusionOperator::sp~~s_entering_elements()      0.001257      0.002006      0.001588  0.408118 
+    sync_delta_pools()                                0.096534      0.168089      0.137979 35.458234 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002100      0.005662      0.003717  0.955279 
+  SSAOperator::run()                                  0.001984      0.004286      0.003070  0.789043 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 29 *** 
+ *** This is run 30 *** 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel/Sample_STEPS4 /gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+Auks API request failed : krb5 cred : unable to read credential cache
+[2022-02-16 01:19:38,639][INFO][../bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/HBP_STEPS/src/steps/geom/dist/distmesh.cpp:232][static Omega_h::Mesh steps::dist::DistMesh::load_mesh(Omega_h::Library&, const string&)]: Creating Omega_h mesh from GMSH mesh  ../mesh/../mesh/10x10x100_13009tets.msh 
+ 
+Model checking:
+No errors were found
+steps4 nhost 2048 time cost: 0.423274
+steps4 nhost 2048 avg rss (MB): 9.700560
+steps4 nhost 2048 avg mem ini (MB): 98.706667
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                               0.112046      0.185208      0.156956 40.493544 
+  DiffusionOperator::operator()                       0.105159      0.177591      0.149611 38.598425 
+    DiffusionOperator::sp~~s_entering_elements()      0.001287      0.002000      0.001587  0.409433 
+    sync_delta_pools()                                0.095391      0.166458      0.137446 35.459989 
+    DiffusionOperator::sp~~es_leaving_elements()      0.002118      0.005633      0.003712  0.957559 
+  SSAOperator::run()                                  0.001964      0.004287      0.003065  0.790793 
+/gpfs/bbp.cscs.ch/data/project/proj16/kotsalos/STEPS4Models/SimpleModel
+ *** This was run 30 *** 

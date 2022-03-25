@@ -10,20 +10,9 @@ def numericalSort(value):
     parts[1::2] = map(int, parts[1::2])
     return parts
 
-for filename in sorted(glob.glob('*.out'), key=numericalSort):
-    if "caliper" in filename:
-        continue
-    print(filename)
-
-print(80*"*")
-
-num_files = 0
-for filename in sorted(glob.glob('*.out'), key=numericalSort):
-    if "caliper" in filename:
-        continue
-    
+# * : number of cores
+for filename in sorted(glob.glob('strong_scaling_*.out'), key=numericalSort):    
     text = open(filename).read()
-
     text = text.split('\n')
 
     steps3_timings = []
@@ -49,11 +38,4 @@ for filename in sorted(glob.glob('*.out'), key=numericalSort):
 
     print(int(filename.split("_")[-1].split(".")[0]), \
           np.mean(steps3_timings), np.std(steps3_timings), np.mean(steps3_mem), np.std(steps3_mem), \
-          np.mean(steps4_timings), np.std(steps4_timings), np.mean(steps4_mem), np.std(steps4_mem), \
-          sep=',', end=', \n')
-    
-    num_files += 1
-
-print(80*"*")
-print(num_files)
-print(80*"*")
+          np.mean(steps4_timings), np.std(steps4_timings), np.mean(steps4_mem), np.std(steps4_mem))
