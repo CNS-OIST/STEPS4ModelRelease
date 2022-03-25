@@ -5,7 +5,7 @@ module load unstable python-dev python
 
 source ./python-venv/bin/activate
 
-export PYTHONPATH="$STEPS_INSTALL_DIR:$PYTHONPATH"
+export PYTHONPATH=/gpfs/bbp.cscs.ch/home/kotsalos/my_software/install_gcc-11.2.0-skylake/steps-develop-wcc3g6:$PYTHONPATH
 
 export CALI_CONFIG="runtime-report(calc.inclusive,output=stdout)"
 
