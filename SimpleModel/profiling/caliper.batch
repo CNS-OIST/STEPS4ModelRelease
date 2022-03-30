@@ -9,6 +9,8 @@ echo "SPACK_INSTALLED_HASH (steps) : " $SPACK_INSTALLED_HASH
 echo "*******************************************************************************"
 export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH 
 echo "*******************************************************************************"
+echo "PYTHONPATH : " $PYTHONPATH
+echo "*******************************************************************************"
 
 export CALI_CONFIG="runtime-report(calc.inclusive,output=stdout)"
 
