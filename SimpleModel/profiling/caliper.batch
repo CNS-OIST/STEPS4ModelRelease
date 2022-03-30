@@ -5,9 +5,9 @@ module load unstable python-dev python
 source ./python-venv/bin/activate
 
 echo "*******************************************************************************"
-echo "SPACK_INSTALLED_HASH (steps) : " ${SPACK_INSTALLED_HASH}
+echo "SPACK_INSTALLED_HASH (steps) : " $SPACK_INSTALLED_HASH
 echo "*******************************************************************************"
-spack load /${SPACK_INSTALLED_HASH}
+export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH 
 echo "*******************************************************************************"
 
 export CALI_CONFIG="runtime-report(calc.inclusive,output=stdout)"
