@@ -1,11 +1,14 @@
 #!/bin/bash
 
-module purge
 module load unstable python-dev python
 
 source ./python-venv/bin/activate
 
-export PYTHONPATH=/gpfs/bbp.cscs.ch/home/kotsalos/my_software/install_gcc-11.2.0-skylake/steps-develop-wcc3g6:$PYTHONPATH
+echo "*******************************************************************************"
+echo "SPACK_INSTALLED_HASH (steps) : " ${SPACK_INSTALLED_HASH}
+echo "*******************************************************************************"
+spack load /${SPACK_INSTALLED_HASH}
+echo "*******************************************************************************"
 
 export OMP_NUM_THREADS=1
 for i in {1..30}
