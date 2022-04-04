@@ -5,3 +5,4 @@ results.dat
 strong_scaling_*.out
 caliper_*.out
 *.pdf
+*.png
