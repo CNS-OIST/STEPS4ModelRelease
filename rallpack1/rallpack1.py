@@ -172,4 +172,4 @@ def run(seed, mesh_path, USE_STEPS_4):
 
 
 if __name__ == "__main__":
-    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], USE_STEPS_4=(int(sys.argv[3]))
+    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], USE_STEPS_4=int(sys.argv[3]))
