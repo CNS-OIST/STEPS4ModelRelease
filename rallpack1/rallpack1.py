@@ -156,7 +156,7 @@ def run(seed, mesh_path, USE_STEPS_4):
         )
 
     """Record"""
-    folder_path = os.path.join("results", f"STEPS{4 if USE_STEPS_4 else 3}")
+    folder_path = os.path.join("raw_traces", f"STEPS{4 if USE_STEPS_4 else 3}")
     os.makedirs(folder_path, exist_ok=True)
     df = pd.DataFrame(
         {"t": Vrs.time[0], "V zmin": Vrs.data[0, :, 0], "V zmax": Vrs.data[0, :, 1]}
