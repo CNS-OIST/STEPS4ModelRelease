@@ -14,7 +14,7 @@ echo "**************************************************************************
 
 # import extra
 pushd ../
-export PYTHONPATH=$PWD:PYTHONPATH
+export PYTHONPATH=$PWD:$PYTHONPATH
 popd
 
 export CALI_CONFIG="runtime-report(calc.inclusive,output=stdout)"
