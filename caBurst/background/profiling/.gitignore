@@ -1,7 +1,5 @@
 .ipynb_checkpoints
 python-venv
-results.csv
-results.dat
 *strong_scaling_*.out
 *caliper_*.out
 *.pdf

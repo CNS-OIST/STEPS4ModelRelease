@@ -1,25 +1,22 @@
 #!/bin/bash
 
-# Cascade Lake nodes on BB5 (intel codename clx)
-#SBATCH --constraint=clx
-#SBATCH --time=1-00:00:00
-#SBATCH --cpus-per-task=2
-#SBATCH --exclusive
-#SBATCH --mem=0
-#SBATCH --output="%x.out"
+module load unstable python-dev python
 
-module purge
-module load archive/2021-12
-module load python-dev
+source ./python-venv/bin/activate
 
-# spack dev-build steps@develop+distmesh+petsc
-export PYTHONPATH="$STEPS_INSTALL_DIR:$PYTHONPATH"
+echo "*******************************************************************************"
+echo "SPACK_INSTALLED_HASH (steps) : " $SPACK_INSTALLED_HASH
+echo "*******************************************************************************"
+export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH 
+echo "*******************************************************************************"
+echo "PYTHONPATH : " $PYTHONPATH
+echo "*******************************************************************************"
 
 export OMP_NUM_THREADS=1
 for i in {1..30}
 do
     echo " *** This is run $i *** "
-    srun dplace python3 caBurstBackgroundModel.py 1 ../../mesh/split_${SLURM_NTASKS}/steps3/CNG_segmented_2_split_${SLURM_NTASKS}.msh 0
-    srun dplace python3 caBurstBackgroundModel.py 1 ../../mesh/split_${SLURM_NTASKS}/steps4/CNG_segmented_2_split_${SLURM_NTASKS} 1
+    srun dplace python3 caBurstBackgroundModel.py 1 ${CaBurstUnifiedMesh}/split_${SLURM_NTASKS}/steps3/CNG_segmented_2_split_${SLURM_NTASKS}.msh 0
+    srun dplace python3 caBurstBackgroundModel.py 1 ${CaBurstUnifiedMesh}/split_${SLURM_NTASKS}/steps4/CNG_segmented_2_split_${SLURM_NTASKS} 1
     echo " *** This was run $i *** "
 done
