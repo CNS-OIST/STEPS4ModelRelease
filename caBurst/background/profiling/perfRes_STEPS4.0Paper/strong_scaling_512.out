@@ -1,0 +1,643 @@
+Autoloading python/3.8.3
+Autoloading py-virtualenv/16.7.6
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading py-h5py/3.1.0
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading hdf5/1.10.7
+ *** This is run 1 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.395014
+steps3 nhost 512 avg rss (MB): 2030.472725
+steps3 nhost 512 avg mem ini (MB): 125.692032
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.404263
+steps4 nhost 512 avg rss (MB): 89.854538
+steps4 nhost 512 avg mem ini (MB): 125.692039
+ *** This was run 1 *** 
+ *** This is run 2 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.511113
+steps3 nhost 512 avg rss (MB): 2030.476547
+steps3 nhost 512 avg mem ini (MB): 125.692024
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.482203
+steps4 nhost 512 avg rss (MB): 89.214767
+steps4 nhost 512 avg mem ini (MB): 125.691216
+ *** This was run 2 *** 
+ *** This is run 3 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.745637
+steps3 nhost 512 avg rss (MB): 2030.450813
+steps3 nhost 512 avg mem ini (MB): 125.692444
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.448757
+steps4 nhost 512 avg rss (MB): 89.713760
+steps4 nhost 512 avg mem ini (MB): 125.691780
+ *** This was run 3 *** 
+ *** This is run 4 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.706198
+steps3 nhost 512 avg rss (MB): 2030.365517
+steps3 nhost 512 avg mem ini (MB): 125.692207
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.402788
+steps4 nhost 512 avg rss (MB): 89.860214
+steps4 nhost 512 avg mem ini (MB): 125.692085
+ *** This was run 4 *** 
+ *** This is run 5 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.611896
+steps3 nhost 512 avg rss (MB): 2030.275269
+steps3 nhost 512 avg mem ini (MB): 125.692383
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.378073
+steps4 nhost 512 avg rss (MB): 90.077019
+steps4 nhost 512 avg mem ini (MB): 125.714638
+ *** This was run 5 *** 
+ *** This is run 6 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.549047
+steps3 nhost 512 avg rss (MB): 2030.435341
+steps3 nhost 512 avg mem ini (MB): 125.710037
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.391587
+steps4 nhost 512 avg rss (MB): 89.794617
+steps4 nhost 512 avg mem ini (MB): 125.700470
+ *** This was run 6 *** 
+ *** This is run 7 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.532265
+steps3 nhost 512 avg rss (MB): 2030.437172
+steps3 nhost 512 avg mem ini (MB): 125.691299
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.474006
+steps4 nhost 512 avg rss (MB): 89.160309
+steps4 nhost 512 avg mem ini (MB): 125.692055
+ *** This was run 7 *** 
+ *** This is run 8 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.568785
+steps3 nhost 512 avg rss (MB): 2030.450432
+steps3 nhost 512 avg mem ini (MB): 125.692383
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.397222
+steps4 nhost 512 avg rss (MB): 90.042526
+steps4 nhost 512 avg mem ini (MB): 125.692139
+ *** This was run 8 *** 
+ *** This is run 9 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.557730
+steps3 nhost 512 avg rss (MB): 2030.059502
+steps3 nhost 512 avg mem ini (MB): 125.692436
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.408410
+steps4 nhost 512 avg rss (MB): 89.938980
+steps4 nhost 512 avg mem ini (MB): 125.692329
+ *** This was run 9 *** 
+ *** This is run 10 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.603822
+steps3 nhost 512 avg rss (MB): 2030.298317
+steps3 nhost 512 avg mem ini (MB): 125.692451
+srun: Job 282663 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282663
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.425509
+steps4 nhost 512 avg rss (MB): 90.044891
+steps4 nhost 512 avg mem ini (MB): 125.691704
+ *** This was run 10 *** 
+ *** This is run 11 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.714924
+steps3 nhost 512 avg rss (MB): 2030.421051
+steps3 nhost 512 avg mem ini (MB): 125.692322
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.545470
+steps4 nhost 512 avg rss (MB): 90.042747
+steps4 nhost 512 avg mem ini (MB): 125.691673
+ *** This was run 11 *** 
+ *** This is run 12 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.658336
+steps3 nhost 512 avg rss (MB): 2030.403442
+steps3 nhost 512 avg mem ini (MB): 125.692268
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.370011
+steps4 nhost 512 avg rss (MB): 90.016365
+steps4 nhost 512 avg mem ini (MB): 125.691292
+ *** This was run 12 *** 
+ *** This is run 13 *** 
+srun: Job 282663 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282663
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.549999
+steps3 nhost 512 avg rss (MB): 2030.442253
+steps3 nhost 512 avg mem ini (MB): 125.701012
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.748939
+steps4 nhost 512 avg rss (MB): 90.057938
+steps4 nhost 512 avg mem ini (MB): 125.701149
+ *** This was run 13 *** 
+ *** This is run 14 *** 
+srun: Job 282663 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282663
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.543079
+steps3 nhost 512 avg rss (MB): 2030.355499
+steps3 nhost 512 avg mem ini (MB): 125.695984
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.383314
+steps4 nhost 512 avg rss (MB): 89.991058
+steps4 nhost 512 avg mem ini (MB): 125.709572
+ *** This was run 14 *** 
+ *** This is run 15 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.485746
+steps3 nhost 512 avg rss (MB): 2030.474731
+steps3 nhost 512 avg mem ini (MB): 125.710442
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.450940
+steps4 nhost 512 avg rss (MB): 89.264206
+steps4 nhost 512 avg mem ini (MB): 125.700562
+ *** This was run 15 *** 
+ *** This is run 16 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.556944
+steps3 nhost 512 avg rss (MB): 2030.072868
+steps3 nhost 512 avg mem ini (MB): 125.709373
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.467917
+steps4 nhost 512 avg rss (MB): 89.424629
+steps4 nhost 512 avg mem ini (MB): 125.704826
+ *** This was run 16 *** 
+ *** This is run 17 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.566886
+steps3 nhost 512 avg rss (MB): 2030.449081
+steps3 nhost 512 avg mem ini (MB): 125.701797
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.371740
+steps4 nhost 512 avg rss (MB): 90.056473
+steps4 nhost 512 avg mem ini (MB): 125.713486
+ *** This was run 17 *** 
+ *** This is run 18 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.619101
+steps3 nhost 512 avg rss (MB): 2030.462433
+steps3 nhost 512 avg mem ini (MB): 125.710808
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.451301
+steps4 nhost 512 avg rss (MB): 89.979691
+steps4 nhost 512 avg mem ini (MB): 125.709991
+ *** This was run 18 *** 
+ *** This is run 19 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.491542
+steps3 nhost 512 avg rss (MB): 2030.472260
+steps3 nhost 512 avg mem ini (MB): 125.702332
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.394949
+steps4 nhost 512 avg rss (MB): 90.047569
+steps4 nhost 512 avg mem ini (MB): 125.710159
+ *** This was run 19 *** 
+ *** This is run 20 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.521143
+steps3 nhost 512 avg rss (MB): 2030.469467
+steps3 nhost 512 avg mem ini (MB): 125.719681
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.421838
+steps4 nhost 512 avg rss (MB): 89.957870
+steps4 nhost 512 avg mem ini (MB): 125.718834
+ *** This was run 20 *** 
+ *** This is run 21 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.511541
+steps3 nhost 512 avg rss (MB): 2030.373978
+steps3 nhost 512 avg mem ini (MB): 125.701454
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.372688
+steps4 nhost 512 avg rss (MB): 88.897499
+steps4 nhost 512 avg mem ini (MB): 125.700500
+ *** This was run 21 *** 
+ *** This is run 22 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.573921
+steps3 nhost 512 avg rss (MB): 2030.009697
+steps3 nhost 512 avg mem ini (MB): 125.710960
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.391353
+steps4 nhost 512 avg rss (MB): 90.005707
+steps4 nhost 512 avg mem ini (MB): 125.709877
+ *** This was run 22 *** 
+ *** This is run 23 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.507197
+steps3 nhost 512 avg rss (MB): 2030.356323
+steps3 nhost 512 avg mem ini (MB): 125.692116
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.391613
+steps4 nhost 512 avg rss (MB): 89.936966
+steps4 nhost 512 avg mem ini (MB): 125.691917
+ *** This was run 23 *** 
+ *** This is run 24 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.635486
+steps3 nhost 512 avg rss (MB): 2030.357643
+steps3 nhost 512 avg mem ini (MB): 125.692642
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.484432
+steps4 nhost 512 avg rss (MB): 90.047546
+steps4 nhost 512 avg mem ini (MB): 125.691742
+ *** This was run 24 *** 
+ *** This is run 25 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.515675
+steps3 nhost 512 avg rss (MB): 2030.260712
+steps3 nhost 512 avg mem ini (MB): 125.692444
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.410713
+steps4 nhost 512 avg rss (MB): 90.041672
+steps4 nhost 512 avg mem ini (MB): 125.692276
+ *** This was run 25 *** 
+ *** This is run 26 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.535202
+steps3 nhost 512 avg rss (MB): 2030.435417
+steps3 nhost 512 avg mem ini (MB): 125.692726
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.419273
+steps4 nhost 512 avg rss (MB): 90.048210
+steps4 nhost 512 avg mem ini (MB): 125.692635
+ *** This was run 26 *** 
+ *** This is run 27 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.525981
+steps3 nhost 512 avg rss (MB): 2030.449532
+steps3 nhost 512 avg mem ini (MB): 125.693504
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.419310
+steps4 nhost 512 avg rss (MB): 90.044861
+steps4 nhost 512 avg mem ini (MB): 125.693558
+ *** This was run 27 *** 
+ *** This is run 28 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.746797
+steps3 nhost 512 avg rss (MB): 2030.518524
+steps3 nhost 512 avg mem ini (MB): 125.693939
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.407463
+steps4 nhost 512 avg rss (MB): 90.033257
+steps4 nhost 512 avg mem ini (MB): 125.693512
+ *** This was run 28 *** 
+ *** This is run 29 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 17.768774
+steps3 nhost 512 avg rss (MB): 2030.434593
+steps3 nhost 512 avg mem ini (MB): 125.693916
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.417552
+steps4 nhost 512 avg rss (MB): 89.964516
+steps4 nhost 512 avg mem ini (MB): 125.692818
+ *** This was run 29 *** 
+ *** This is run 30 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS3 SIMULATION
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps3 nhost 512 time cost: 14.518426
+steps3 nhost 512 avg rss (MB): 2030.507568
+steps3 nhost 512 avg mem ini (MB): 125.693794
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_512/steps4/CNG_segmented_2_split_512_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 512 time cost: 20.421936
+steps4 nhost 512 avg rss (MB): 90.032440
+steps4 nhost 512 avg mem ini (MB): 125.693329
+ *** This was run 30 *** 
