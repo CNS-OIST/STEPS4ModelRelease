@@ -27,7 +27,7 @@ USE_STEPS_4 = int(sys.argv[3]) > 0
 ######Glutamate transient#######
 # Reference (Rudolph et al. 2011)
 #Units (mM)
-with open("extra/Glut_Pulse_MVR.dat", "r") as f:
+with open("../extra/Glut_Pulse_MVR.dat", "r") as f:
     Glut = list(map(float, f.read().split()))
 
 ########################### BIOCHEMICAL MODEL ###############################
