@@ -10,8 +10,8 @@ def numericalSort(value):
     parts[1::2] = map(int, parts[1::2])
     return parts
 
-# *.out : number of cores
-for filename in sorted(glob.glob('*caliper_*.out'), key=numericalSort):    
+# * : number of cores
+for filename in sorted(glob.glob('caliper_*.out'), key=numericalSort):    
     text = open(filename).read()
     text = text.split('\n')
 
