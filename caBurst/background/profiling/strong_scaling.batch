@@ -12,6 +12,11 @@ echo "**************************************************************************
 echo "PYTHONPATH : " $PYTHONPATH
 echo "*******************************************************************************"
 
+# import extra
+pushd ../
+export PYTHONPATH=$PWD:$PYTHONPATH
+popd
+
 export OMP_NUM_THREADS=1
 for i in {1..30}
 do

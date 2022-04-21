@@ -2,7 +2,7 @@
 python-venv
 results.csv
 results.dat
-*strong_scaling_*.out
-*caliper_*.out
+strong_scaling_*.out
+caliper_*.out
 *.pdf
 *.png

@@ -12,6 +12,11 @@ echo "**************************************************************************
 echo "PYTHONPATH : " $PYTHONPATH
 echo "*******************************************************************************"
 
+# import extra
+pushd ../
+export PYTHONPATH=$PWD:$PYTHONPATH
+popd
+
 export CALI_CONFIG="runtime-report(calc.inclusive,output=stdout)"
 
 export OMP_NUM_THREADS=1
