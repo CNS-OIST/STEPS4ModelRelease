@@ -26,7 +26,7 @@ def run(seed, mesh_path, USE_STEPS_4):
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
     # Sim end time (seconds)
-    SIM_END = 0.25
+    SIM_END = 0.25*0.01
 
     # The current injection in amps
     Iinj = 0.1e-9
