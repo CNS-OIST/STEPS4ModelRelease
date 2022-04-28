@@ -1,6 +1,8 @@
 # Rallpack 1: validations
 
-In this model we can compare analytical, STEPS 3 and STEPS 4 solutions.
+In this model we can compare analytical, STEPS 3 and STEPS 4 solutions. `run.sbatch` is 
+an example of a slurm job.
+
 ## Analytical solution
 
 Since the model was extensively investigated in the past we hereby present the raw 
