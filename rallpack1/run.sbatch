@@ -18,4 +18,5 @@ nodes=$SLURM_JOB_NUM_NODES
 ntasks=$(($nodes * 32))
 seed=$(($SLURM_ARRAY_TASK_ID * 1))
 
-time srun --nodes=$nodes --ntasks=$ntasks dplace python rallpack1.py $seed mesh/axon_cube_L1000um_D866nm_1135tets.msh $USE_STEPS4
+time srun --nodes=$nodes --ntasks=$ntasks dplace \
+python rallpack1.py $seed mesh/axon_cube_L1000um_D866nm_1135tets.msh $steps_version

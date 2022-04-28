@@ -20,13 +20,19 @@ import os
 import pandas as pd
 import sys
 
-def run(seed, mesh_path, USE_STEPS_4):
+class PostprocError(Exception):
+    pass
+
+def run(seed, mesh_path, steps_version):
+    if steps_version not in [3, 4]:
+        raise PostprocError(f"Steps number: {steps_version} is not 3 or 4")
+    
     """Run rallpack 1 simulation"""
 
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
     # Sim end time (seconds)
-    SIM_END = 0.25
+    SIM_END = 0.25*0.1
 
     # The current injection in amps
     Iinj = 0.1e-9
@@ -55,10 +61,10 @@ def run(seed, mesh_path, USE_STEPS_4):
     POT_POS = [0.0, 1.0e-03]
 
     # Mesh geometry
-    mesh = DistMesh(mesh_path) if USE_STEPS_4 else TetMesh.LoadGmsh(mesh_path)
+    mesh = DistMesh(mesh_path) if steps_version == 4 else TetMesh.LoadGmsh(mesh_path)
 
     with mesh:
-        if USE_STEPS_4:
+        if steps_version == 4:
             __MESH__ = Compartment.Create()
 
             memb = Patch.Create(__MESH__, None, "ssys")
@@ -78,7 +84,7 @@ def run(seed, mesh_path, USE_STEPS_4):
         vol_mesh = __MESH__.Vol
         corr_fac_vol = vol_mesh / vol_cyl
 
-        if USE_STEPS_4:
+        if steps_version == 4:
             membrane = Membrane.Create([memb], capacitance=0.01 / corr_fac_area)
             __MESH__.Conductivity = 1 / (Ra * corr_fac_vol)
         else:
@@ -108,7 +114,7 @@ def run(seed, mesh_path, USE_STEPS_4):
     # Create the solver objects
     rng = RNG("r123", 512, seed)
 
-    if USE_STEPS_4:
+    if steps_version == 4:
         sim = Simulation(
             "DistTetOpSplit",
             mdl,
@@ -138,7 +144,7 @@ def run(seed, mesh_path, USE_STEPS_4):
     for v in minzverts:
         sim.solver.setVertIClamp(v.idx, Iinj / len(minzverts))
 
-    if not USE_STEPS_4:
+    if steps_version != 4:
         sim.membrane.Capac = 0.01 / corr_fac_area
         sim.membrane.VolRes = Ra * corr_fac_vol
 
@@ -156,14 +162,14 @@ def run(seed, mesh_path, USE_STEPS_4):
         )
 
     """Record"""
-    folder_path = os.path.join("raw_traces", f"STEPS{4 if USE_STEPS_4 else 3}")
+    folder_path = os.path.join("raw_traces", f"STEPS{steps_version}")
     os.makedirs(folder_path, exist_ok=True)
     df = pd.DataFrame(
         {"t": Vrs.time[0], "V zmin": Vrs.data[0, :, 0], "V zmax": Vrs.data[0, :, 1]}
     )
 
     df.to_csv(
-        folder_path + f"/res{seed}_STEPS{4 if USE_STEPS_4 else 3}.txt",
+        folder_path + f"/res{seed}_STEPS{steps_version}.txt",
         sep=" ",
         index=False,
     )
@@ -172,4 +178,4 @@ def run(seed, mesh_path, USE_STEPS_4):
 
 
 if __name__ == "__main__":
-    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], USE_STEPS_4=int(sys.argv[3]))
+    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], steps_version=int(sys.argv[3]))
