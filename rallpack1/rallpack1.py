@@ -20,19 +20,19 @@ import os
 import pandas as pd
 import sys
 
-class PostprocError(Exception):
+class SimulationError(Exception):
     pass
 
 def run(seed, mesh_path, steps_version):
     if steps_version not in [3, 4]:
-        raise PostprocError(f"Steps number: {steps_version} is not 3 or 4")
+        raise SimulationError(f"Steps number: {steps_version} is not 3 or 4")
     
     """Run rallpack 1 simulation"""
 
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
     # Sim end time (seconds)
-    SIM_END = 0.25*0.1
+    SIM_END = 0.25
 
     # The current injection in amps
     Iinj = 0.1e-9
