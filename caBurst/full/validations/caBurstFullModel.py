@@ -7,11 +7,12 @@ from steps.rng import *
 from steps.saving import *
 from steps.sim import *
 
-from extra.constants_withampa_yunliang import *
-
 import numpy as np
 import pandas as pd
 import sys, os
+
+sys.path.append('..')
+from extra.constants_withampa_yunliang import *
 
 class SimulationError(Exception):
     pass
