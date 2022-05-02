@@ -58,7 +58,7 @@ def run(seed, mesh_path, steps_version):
     # # # # # # # # # # # # # DATA COLLECTION # # # # # # # # # # # # # # # # # #
 
     # record potential at the two extremes along (z) axis
-    POT_POS = [0.0, 1.0e-03]
+    POT_POS = [0.0, 1.0e-06]
 
     # Mesh geometry
     mesh = DistMesh(mesh_path) if steps_version == 4 else TetMesh.LoadGmsh(mesh_path)
@@ -102,6 +102,7 @@ def run(seed, mesh_path, steps_version):
 
         # Leak
         leaksus = SubUnitState.Create()
+
         Leak = Channel.Create([leaksus])
 
         with ssys:
@@ -125,6 +126,13 @@ def run(seed, mesh_path, steps_version):
     else:
         part = LinearMeshPartition(mesh, 1, 1, MPI.nhosts)
         sim = Simulation("TetOpSplit", mdl, mesh, rng, MPI.EF_DV_PETSC, part)
+
+
+    if steps_version != 4:
+        sim.solver.setMembRes("membrane", 1/L_G, leak_rev)
+    else:
+        sim.solver.setMembResistance("membrane", 1/L_G)
+        sim.solver.setMembReversalPotential("membrane", leak_rev)
 
     # Data saving
     rs = ResultSelector(sim)
