@@ -8,7 +8,6 @@
 #SBATCH --time=00:30:00
 #SBATCH --exclusive
 #SBATCH --mem=0
-#SBATCH --partition=knl
 
 set -x
 
