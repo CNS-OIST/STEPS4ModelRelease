@@ -26,5 +26,5 @@ In order to run the STEPS 4 version of the model you just need to:
 `export mesh_file=mesh/axon_cube_L1000um_D866nm_1135tets.msh`
 - Finally, run the command:
 `python rallpack1_STEPS4.py ${rng_seed} ${mesh_file}`
-- Raw traces will appear in the result folder: `results/STEPS4`
+- Raw traces will appear in the result folder: `raw_traces/STEPS4`
 
