@@ -4,14 +4,13 @@
 
 #SBATCH --array=[1]
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=32
+#SBATCH --ntasks-per-node=1
 #SBATCH --time=2:00:00
 #SBATCH --mem=0
 
 set -x
 
 module load unstable python-dev python
-#spack load steps@develop
 # load steps by hash
 export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
 
@@ -19,5 +18,4 @@ nodes=$SLURM_JOB_NUM_NODES
 ntasks=$(($nodes * 32))
 seed=$(($SLURM_ARRAY_TASK_ID * 1))
 
-time srun --nodes=$nodes --ntasks=$ntasks dplace \
 python rallpack1.py $seed mesh/axon_cube_L1000um_D866nm_1135tets.msh $steps_version
