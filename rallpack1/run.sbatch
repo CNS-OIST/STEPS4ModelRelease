@@ -12,9 +12,9 @@
 set -x
 
 module load unstable python-dev python
-spack load steps@develop
+#spack load steps@develop
 # load steps by hash
-#export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
+export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
 
 nodes=$SLURM_JOB_NUM_NODES
 ntasks=$(($nodes * 32))
