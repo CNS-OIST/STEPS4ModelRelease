@@ -4,7 +4,7 @@
 
 #SBATCH --array=[1-1000]
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --ntasks-per-node=32
 #SBATCH --time=00:30:00
 #SBATCH --mem=0
 
@@ -18,6 +18,6 @@ export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep 
 nodes=$SLURM_JOB_NUM_NODES
 seed=$(($SLURM_ARRAY_TASK_ID * 1))
 
-time srun --nodes=$nodes --ntasks=1 dplace \
+time srun --nodes=$nodes --ntasks=32 dplace \
 python rallpack3.py $seed mesh/axon_cube_L1000um_D866nm_1135tets.msh $steps_version
 
