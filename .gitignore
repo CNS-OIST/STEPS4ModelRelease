@@ -2,3 +2,7 @@
 **/.logs
 **/__pycache__
 *.pyc
+**/results/STEPS*/res*.txt
+**.ipynb_checkpoints**
+**raw_traces_cache**
+*refined_traces_cache**
