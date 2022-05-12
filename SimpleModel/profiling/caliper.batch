@@ -1,6 +1,6 @@
 #!/bin/bash
 
-module load unstable python-dev python
+module load unstable python-dev
 
 source ./python-venv/bin/activate
 
