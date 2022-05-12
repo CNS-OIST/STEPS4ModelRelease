@@ -4,7 +4,6 @@
 
 #SBATCH --array=[1-100]
 #SBATCH --nodes=32
-#SBATCH --ntasks-per-node=32
 #SBATCH --time=2:00:00
 #SBATCH --exclusive
 #SBATCH --mem=0
