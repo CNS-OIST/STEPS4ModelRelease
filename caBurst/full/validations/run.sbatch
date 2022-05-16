@@ -4,7 +4,7 @@
 
 #SBATCH --array=[1-3]
 #SBATCH --nodes=32
-#SBATCH --time=2:00:00
+#SBATCH --time=20:00:00
 #SBATCH --exclusive
 #SBATCH --mem=0
 
