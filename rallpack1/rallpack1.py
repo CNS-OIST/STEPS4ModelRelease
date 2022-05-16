@@ -121,8 +121,8 @@ def run(seed, mesh_path, steps_version):
             mdl,
             mesh,
             rng,
-            searchMethod=NextEventSearchMethod.DIRECT,
-        )  # , searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
+            searchMethod=NextEventSearchMethod.GIBSON_BRUCK
+        )
     else:
         part = LinearMeshPartition(mesh, 1, 1, MPI.nhosts)
         sim = Simulation("TetOpSplit", mdl, mesh, rng, MPI.EF_DV_PETSC, part)
