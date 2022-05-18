@@ -122,6 +122,7 @@ def run(seed, mesh_path, steps_version):
             mesh,
             rng,
             searchMethod=NextEventSearchMethod.GIBSON_BRUCK
+            # searchMethod = NextEventSearchMethod.DIRECT
         )
     else:
         part = LinearMeshPartition(mesh, 1, 1, MPI.nhosts)
