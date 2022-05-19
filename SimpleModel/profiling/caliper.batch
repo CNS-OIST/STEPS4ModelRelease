@@ -1,8 +1,16 @@
 #!/bin/bash
 
-module load unstable python-dev python
+module load unstable python-dev
 
 source ./python-venv/bin/activate
+
+return_val=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`
+# Return true if a bash variable is unset or set to the empty string
+if [ -z "$return_val" ]; then
+  echo "Cannot find where STEPS is installed!"
+  echo "Aborting: Nothing to submit ..."
+  exit
+fi
 
 echo "*******************************************************************************"
 echo "SPACK_INSTALLED_HASH (steps) : " $SPACK_INSTALLED_HASH
