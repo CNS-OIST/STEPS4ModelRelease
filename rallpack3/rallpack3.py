@@ -63,7 +63,7 @@ def run(seed, mesh_path, steps_version):
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
     # Sim end time (seconds)
-    SIM_END = 0.25
+    SIM_END = 0.25*5.9 # this should give ~100 spikes
 
     # The current injection in amps
     Iinj = 0.1e-9
