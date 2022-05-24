@@ -2,7 +2,7 @@
 
 # You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT, and USE_STEPS4 mentioned in HBP_STEPS/doc/dev/README.md
 
-#SBATCH --array=[1-500]
+#SBATCH --array=[501-1000]
 #SBATCH --nodes=1
 #SBATCH --time=01:30:00
 #SBATCH --mem=0
