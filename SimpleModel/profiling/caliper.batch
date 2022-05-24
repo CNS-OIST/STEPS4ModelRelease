@@ -1,11 +1,15 @@
 #!/bin/bash
 
+# Return true if a bash variable is unset or set to the empty string
+if [ -z "$CI_PIPELINE_ID" ]; then
+  # Triggered manually and not by CI
+  module purge
+fi
 module load unstable python-dev
 
 source ./python-venv/bin/activate
 
 return_val=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`
-# Return true if a bash variable is unset or set to the empty string
 if [ -z "$return_val" ]; then
   echo "Cannot find where STEPS is installed!"
   echo "Aborting: Nothing to submit ..."
