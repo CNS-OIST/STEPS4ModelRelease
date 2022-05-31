@@ -1,0 +1,6 @@
+.ipynb_checkpoints
+python-venv
+strong_scaling_*.out
+caliper_*.out
+*.pdf
+*.png

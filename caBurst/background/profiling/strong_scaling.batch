@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Return true if a bash variable is unset or set to the empty string
+if [ -z "$CI_PIPELINE_ID" ]; then
+  # Triggered manually and not by CI
+  module purge
+fi
+module load unstable python-dev python
+
+source ./python-venv/bin/activate
+
+return_val=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`
+if [ -z "$return_val" ]; then
+  echo "Cannot find where STEPS is installed!"
+  echo "Aborting: Nothing to submit ..."
+  exit
+fi
+
+echo "*******************************************************************************"
+echo "SPACK_INSTALLED_HASH (steps) : " $SPACK_INSTALLED_HASH
+echo "*******************************************************************************"
+export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH 
+echo "*******************************************************************************"
+echo "PYTHONPATH : " $PYTHONPATH
+echo "*******************************************************************************"
+
+# import extra
+pushd ../
+export PYTHONPATH=$PWD:$PYTHONPATH
+popd
+
+export OMP_NUM_THREADS=1
+for i in {1..30}
+do
+    echo " *** This is run $i *** "
+    srun dplace python3 caBurstBackgroundModel.py 1 ${CaBurstUnifiedMesh}/split_${SLURM_NTASKS}/steps3/CNG_segmented_2_split_${SLURM_NTASKS}.msh 0
+    srun dplace python3 caBurstBackgroundModel.py 1 ${CaBurstUnifiedMesh}/split_${SLURM_NTASKS}/steps4/CNG_segmented_2_split_${SLURM_NTASKS} 1
+    echo " *** This was run $i *** "
+done

@@ -1,0 +1,3307 @@
+Autoloading python/3.8.3
+Autoloading py-virtualenv/16.7.6
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading py-h5py/3.1.0
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading hdf5/1.10.7
+ *** This is run 1 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2482595443725586
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.044745683670044
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.67079472541809
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.654831409454346
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.668176651000977
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.7371506690979
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.79635977745056
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.660460472106934
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.828551530838013
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.83456301689148
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.057209968566895
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.826632261276245
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.84929060935974
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.833101272583008
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.85010027885437
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.843251705169678
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.830294370651245
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.81752324104309
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.826131582260132
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.817128658294678
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.04447650909424
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 575.747669
+steps4 nhost 32 avg rss (MB): 1500.661267
+steps4 nhost 32 avg mem ini (MB): 107.153931
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             574.885245    574.928734    574.903095 99.943361 
+  EFieldOperator::evolve()                           50.673635     55.602941     51.854509  9.014587 
+  DiffusionOperator::operator()                     263.088805    379.031750    311.378709 54.131270 
+    DiffusionOperator::sp~~s_entering_elements()     29.672283     79.169834     52.020211  9.043393 
+    sync_delta_pools()                               62.896111    169.012322    120.632576 20.971230 
+    DiffusionOperator::sp~~es_leaving_elements()    117.509172    133.198920    124.911540 21.715102 
+  SSAOperator::run()                                141.777842    257.494630    208.418548 36.232281 
+ *** This was run 1 *** 
+ *** This is run 2 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24787211418151855
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.915287494659424
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.509387493133545
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.508360385894775
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.496398210525513
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.595959901809692
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.64061999320984
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.63727569580078
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.64700412750244
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.658548593521118
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.895281076431274
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.666501998901367
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.65105128288269
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.647116899490356
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.67201542854309
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.64339804649353
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.631368398666382
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.636589288711548
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.642268896102905
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.63562560081482
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.84495711326599
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 572.428863
+steps4 nhost 32 avg rss (MB): 1500.491775
+steps4 nhost 32 avg mem ini (MB): 107.149170
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             571.557588    571.619340    571.591907 99.943337 
+  EFieldOperator::evolve()                           50.726179     55.773670     52.058792  9.102525 
+  DiffusionOperator::operator()                     259.266719    369.419365    308.284942 53.903888 
+    DiffusionOperator::sp~~s_entering_elements()     31.655976     74.802834     52.733243  9.220453 
+    sync_delta_pools()                               55.985298    167.965197    116.802807 20.423072 
+    DiffusionOperator::sp~~es_leaving_elements()    117.448504    133.199694    125.045545 21.864321 
+  SSAOperator::run()                                147.976693    258.247657    208.027942 36.373865 
+ *** This was run 2 *** 
+ *** This is run 3 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24347233772277832
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.870476245880127
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.468576669692993
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.480541467666626
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.50247550010681
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.575558185577393
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.615814447402954
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.629430294036865
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.632620096206665
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.63629722595215
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.869653701782227
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.65300750732422
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.63965654373169
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.64349365234375
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.64424729347229
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.63219976425171
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.629762649536133
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.632744312286377
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.628488779067993
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.612914085388184
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.830885410308838
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 572.082915
+steps4 nhost 32 avg rss (MB): 1500.528518
+steps4 nhost 32 avg mem ini (MB): 107.151367
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             571.216519    571.279734    571.247819 99.943305 
+  EFieldOperator::evolve()                           50.673873     55.944343     51.963414  9.091318 
+  DiffusionOperator::operator()                     259.219097    369.948035    307.456920 53.791471 
+    DiffusionOperator::sp~~s_entering_elements()     31.796035     77.532388     52.975903  9.268459 
+    sync_delta_pools()                               56.609520    170.114175    115.550916 20.216341 
+    DiffusionOperator::sp~~es_leaving_elements()    117.476874    133.811459    125.160714 21.897634 
+  SSAOperator::run()                                147.328340    257.606494    208.692123 36.511965 
+ *** This was run 3 *** 
+ *** This is run 4 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24481439590454102
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.80659055709839
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.452638149261475
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.422301054000854
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.4344322681427
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.511499881744385
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.573137998580933
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.574188470840454
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.600674390792847
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.60882544517517
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.821382522583008
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.60090470314026
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.60220193862915
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.5924391746521
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.59140682220459
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.587950468063354
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.58501362800598
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.599769830703735
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.584150075912476
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.57765245437622
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.795071840286255
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 571.173019
+steps4 nhost 32 avg rss (MB): 1500.298503
+steps4 nhost 32 avg mem ini (MB): 107.150635
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             570.311029    570.364636    570.341948 99.943580 
+  EFieldOperator::evolve()                           50.552335     55.653884     51.857163  9.087163 
+  DiffusionOperator::operator()                     259.468491    372.552051    307.465078 53.878486 
+    DiffusionOperator::sp~~s_entering_elements()     31.306463     75.511113     53.001617  9.287711 
+    sync_delta_pools()                               58.942016    170.167465    115.571632 20.252136 
+    DiffusionOperator::sp~~es_leaving_elements()    117.875513    133.589114    125.054897 21.913931 
+  SSAOperator::run()                                143.677960    256.793366    207.873995 36.426693 
+ *** This was run 4 *** 
+ *** This is run 5 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24484944343566895
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.05791187286377
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.648573637008667
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.66166615486145
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.640865325927734
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.723239183425903
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.77690362930298
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.79215908050537
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.801249742507935
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.80659246444702
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.041736125946045
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.807300567626953
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.79963254928589
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.801938772201538
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.806010246276855
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.790698528289795
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.78776788711548
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.794925451278687
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.787473678588867
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.78033971786499
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.99979043006897
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 575.359278
+steps4 nhost 32 avg rss (MB): 1500.500384
+steps4 nhost 32 avg mem ini (MB): 107.158691
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             574.498389    574.555885    574.527839 99.944046 
+  EFieldOperator::evolve()                           50.309509     55.032525     51.473286  8.954220 
+  DiffusionOperator::operator()                     261.661259    379.148495    310.724755 54.053237 
+    DiffusionOperator::sp~~s_entering_elements()     30.097798     79.577087     52.436067  9.121704 
+    sync_delta_pools()                               61.635264    170.075315    119.411403 20.772638 
+    DiffusionOperator::sp~~es_leaving_elements()    117.548512    133.440871    125.125292 21.766618 
+  SSAOperator::run()                                141.603138    258.794935    209.117063 36.377707 
+ *** This was run 5 *** 
+ *** This is run 6 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24289441108703613
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.84010934829712
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.432039260864258
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.444679021835327
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.47312903404236
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.54119038581848
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.563544750213623
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.59932017326355
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.618879556655884
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.631826639175415
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.872637033462524
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.63182759284973
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.611295461654663
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.61163878440857
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.617436170578003
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.62488317489624
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.611892461776733
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.606728315353394
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.60853409767151
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.614036798477173
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.818793773651123
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 571.626873
+steps4 nhost 32 avg rss (MB): 1500.468866
+steps4 nhost 32 avg mem ini (MB): 107.158081
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             570.760406    570.820265    570.791452 99.943253 
+  EFieldOperator::evolve()                           50.436478     55.774184     51.751836  9.061535 
+  DiffusionOperator::operator()                     258.062657    370.982737    307.408053 53.825895 
+    DiffusionOperator::sp~~s_entering_elements()     31.842908     78.042766     53.176159  9.310928 
+    sync_delta_pools()                               57.318744    171.147971    115.006998 20.137256 
+    DiffusionOperator::sp~~es_leaving_elements()    117.484314    132.710296    125.224447 21.926289 
+  SSAOperator::run()                                146.017189    258.522185    208.503870 36.508176 
+ *** This was run 6 *** 
+ *** This is run 7 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2431929111480713
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.096654653549194
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.74489402770996
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.73035192489624
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.70553708076477
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.787906408309937
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.84038496017456
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.859159469604492
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.861397743225098
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.87479019165039
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.095100164413452
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.866089582443237
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.861124753952026
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.857367038726807
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.859984636306763
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.85749650001526
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.85100030899048
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.8445246219635
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.84239912033081
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.82457995414734
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.057466983795166
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 576.572306
+steps4 nhost 32 avg rss (MB): 1500.476196
+steps4 nhost 32 avg mem ini (MB): 107.149658
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             575.698262    575.751848    575.724304 99.943691 
+  EFieldOperator::evolve()                           50.891313     55.953692     52.079692  9.040849 
+  DiffusionOperator::operator()                     262.845278    380.854562    312.533821 54.254760 
+    DiffusionOperator::sp~~s_entering_elements()     30.292221     79.244712     52.084802  9.041736 
+    sync_delta_pools()                               63.631703    173.114436    121.644093 21.116982 
+    DiffusionOperator::sp~~es_leaving_elements()    117.330984    133.506813    124.992805 21.698306 
+  SSAOperator::run()                                140.534870    258.570919    207.830717 36.078673 
+ *** This was run 7 *** 
+ *** This is run 8 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24608731269836426
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.89117407798767
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.57897639274597
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.508167028427124
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.44906711578369
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.52968168258667
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.614234685897827
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.617849349975586
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.627394676208496
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.605287313461304
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.841224670410156
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.658754348754883
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.628679037094116
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.612847566604614
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.62250065803528
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.68790292739868
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.626464128494263
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.599130630493164
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.643994092941284
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.63865637779236
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.80975103378296
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 572.043795
+steps4 nhost 32 avg rss (MB): 1501.058105
+steps4 nhost 32 avg mem ini (MB): 107.250977
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             571.185922    571.240586    571.212756 99.943592 
+  EFieldOperator::evolve()                           50.591509     59.487168     52.968681  9.267791 
+  DiffusionOperator::operator()                     258.500096    372.567308    307.738914 53.844268 
+    DiffusionOperator::sp~~s_entering_elements()     31.686500     75.728427     52.545054  9.193670 
+    sync_delta_pools()                               59.343493    168.569386    116.053105 20.305506 
+    DiffusionOperator::sp~~es_leaving_elements()    117.543234    133.123148    125.238271 21.912611 
+  SSAOperator::run()                                144.531270    258.441055    207.327793 36.275598 
+ *** This was run 8 *** 
+ *** This is run 9 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2395024299621582
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.788248777389526
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.37199378013611
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.367619514465332
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.394856929779053
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.471888542175293
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.515477418899536
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.535438776016235
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.54392671585083
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.546086311340332
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.778276920318604
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.561079502105713
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.539017915725708
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.537743091583252
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.55554461479187
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.544281244277954
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.54759693145752
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.53806781768799
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.53930902481079
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.52937602996826
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.747506141662598
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 570.205215
+steps4 nhost 32 avg rss (MB): 1500.367978
+steps4 nhost 32 avg mem ini (MB): 107.158447
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             569.346663    569.404674    569.373566 99.943443 
+  EFieldOperator::evolve()                           50.608844     55.722747     51.875916  9.105898 
+  DiffusionOperator::operator()                     258.376385    370.263147    306.682682 53.832712 
+    DiffusionOperator::sp~~s_entering_elements()     31.821473     78.302242     53.275313  9.351537 
+    sync_delta_pools()                               56.611178    171.021383    114.318231 20.066540 
+    DiffusionOperator::sp~~es_leaving_elements()    117.390040    133.292579    125.150403 21.967936 
+  SSAOperator::run()                                145.079377    257.009624    207.660495 36.451121 
+ *** This was run 9 *** 
+ *** This is run 10 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24210882186889648
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.776167392730713
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.386239767074585
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.359902143478394
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.40264630317688
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.458070993423462
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.51966404914856
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.532981157302856
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.535547971725464
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.55127787590027
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.7911593914032
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.555948972702026
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.541507482528687
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.544210195541382
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.521883964538574
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.5332989692688
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.544283628463745
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.542027473449707
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.507112503051758
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.49877619743347
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.77254867553711
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 570.127096
+steps4 nhost 32 avg rss (MB): 1500.342442
+steps4 nhost 32 avg mem ini (MB): 107.158325
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             569.264596    569.320432    569.294336 99.943229 
+  EFieldOperator::evolve()                           50.680717     56.930147     52.334048  9.187574 
+  DiffusionOperator::operator()                     257.223661    369.205681    306.189915 53.753580 
+    DiffusionOperator::sp~~s_entering_elements()     31.702447     77.949871     53.204955  9.340467 
+    sync_delta_pools()                               54.970322    167.675872    113.788391 19.976273 
+    DiffusionOperator::sp~~es_leaving_elements()    117.448900    133.564702    125.333364 22.003066 
+  SSAOperator::run()                                146.099400    257.939440    207.626110 36.450079 
+ *** This was run 10 *** 
+ *** This is run 11 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24404525756835938
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.841052055358887
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.48385500907898
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.450881958007812
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.49305510520935
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.5033118724823
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.608802795410156
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.620176792144775
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.606189966201782
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.621263027191162
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.875634908676147
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.65394878387451
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.64113163948059
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.627416610717773
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.613100051879883
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.610645055770874
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.605964183807373
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.6146183013916
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.608299732208252
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.58793044090271
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.816343784332275
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 571.736348
+steps4 nhost 32 avg rss (MB): 1500.443284
+steps4 nhost 32 avg mem ini (MB): 107.155029
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             570.872646    570.930442    570.903389 99.943532 
+  EFieldOperator::evolve()                           50.504213     56.604493     52.031880  9.108809 
+  DiffusionOperator::operator()                     258.065959    371.530056    307.580435 53.845669 
+    DiffusionOperator::sp~~s_entering_elements()     32.061011     78.463801     53.046499  9.286430 
+    sync_delta_pools()                               56.573577    169.752172    115.372547 20.197358 
+    DiffusionOperator::sp~~es_leaving_elements()    117.694097    133.349232    125.280972 21.931947 
+  SSAOperator::run()                                145.462642    258.514645    208.144609 36.438227 
+ *** This was run 11 *** 
+ *** This is run 12 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2410426139831543
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.109238147735596
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.72489047050476
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.729539394378662
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.70760178565979
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.798152208328247
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.855789184570312
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.8487765789032
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.865663528442383
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.84044075012207
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.10724711418152
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.88313126564026
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.847459077835083
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.852880716323853
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.849207401275635
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.858836889266968
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.853353261947632
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.865333080291748
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.844842433929443
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.845788717269897
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.06805944442749
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 576.610174
+steps4 nhost 32 avg rss (MB): 1500.490531
+steps4 nhost 32 avg mem ini (MB): 107.155151
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             575.748589    575.801402    575.774933 99.943882 
+  EFieldOperator::evolve()                           50.930887     55.766077     52.123539  9.047683 
+  DiffusionOperator::operator()                     261.789765    379.558552    311.543643 54.078216 
+    DiffusionOperator::sp~~s_entering_elements()     30.244718     79.265619     52.422828  9.099634 
+    sync_delta_pools()                               62.608840    171.103377    120.237022 20.870924 
+    DiffusionOperator::sp~~es_leaving_elements()    117.640819    133.567390    125.145730 21.722985 
+  SSAOperator::run()                                141.853556    259.285283    208.908536 36.262659 
+ *** This was run 12 *** 
+ *** This is run 13 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24270343780517578
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.145704984664917
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.783802032470703
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.777140855789185
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.752138376235962
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.830432176589966
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.89553475379944
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.904213666915894
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.920621156692505
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.930787563323975
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.159677743911743
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.920060396194458
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.91241717338562
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.939711093902588
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.92720127105713
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.91892981529236
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.923677444458008
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.90860080718994
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.908743381500244
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.9010910987854
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.129038095474243
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 577.744074
+steps4 nhost 32 avg rss (MB): 1500.411133
+steps4 nhost 32 avg mem ini (MB): 107.156128
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             576.882430    576.934268    576.906453 99.943932 
+  EFieldOperator::evolve()                           50.352724     55.431179     51.544902  8.929698 
+  DiffusionOperator::operator()                     264.038273    374.835052    313.359824 54.286814 
+    DiffusionOperator::sp~~s_entering_elements()     31.030921     74.400858     51.786223  8.971504 
+    sync_delta_pools()                               69.662923    174.184510    122.766086 21.268137 
+    DiffusionOperator::sp~~es_leaving_elements()    117.527456    133.187821    124.917868 21.640914 
+  SSAOperator::run()                                148.197501    258.435712    208.682635 36.152418 
+ *** This was run 13 *** 
+ *** This is run 14 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.23954033851623535
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.014687061309814
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.612735509872437
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.637373208999634
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.642679929733276
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.72737979888916
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.78735613822937
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.78644633293152
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.802863836288452
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.841708421707153
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.978207111358643
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.82415509223938
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.749188661575317
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.75665593147278
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.73479437828064
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.78264331817627
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.767377138137817
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.780765533447266
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.772204160690308
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.769962787628174
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.979058027267456
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 574.998725
+steps4 nhost 32 avg rss (MB): 1500.680897
+steps4 nhost 32 avg mem ini (MB): 107.155151
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             574.140726    574.198516    574.168228 99.943739 
+  EFieldOperator::evolve()                           50.470312     55.410761     51.771116  9.011643 
+  DiffusionOperator::operator()                     261.275009    375.332268    310.653553 54.074531 
+    DiffusionOperator::sp~~s_entering_elements()     31.493996     77.129498     52.731684  9.178846 
+    sync_delta_pools()                               62.127424    170.315923    119.094925 20.730496 
+    DiffusionOperator::sp~~es_leaving_elements()    117.395544    134.083578    125.157117 21.785723 
+  SSAOperator::run()                                144.941613    258.976310    208.551028 36.301851 
+ *** This was run 14 *** 
+ *** This is run 15 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24348235130310059
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.875704765319824
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.493643045425415
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.49142050743103
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.525429487228394
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.607462644577026
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.648080348968506
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.65699315071106
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.656715393066406
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.661398887634277
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.919087409973145
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.681752681732178
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.671329021453857
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.67130732536316
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.672828435897827
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.658945560455322
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.666610956192017
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.66664218902588
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.664801359176636
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.65548849105835
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.872286796569824
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 572.668674
+steps4 nhost 32 avg rss (MB): 1501.058826
+steps4 nhost 32 avg mem ini (MB): 107.256104
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             571.811046    571.869686    571.837963 99.943813 
+  EFieldOperator::evolve()                           50.766840     55.977037     52.066972  9.100081 
+  DiffusionOperator::operator()                     259.382090    373.002931    308.483715 53.915690 
+    DiffusionOperator::sp~~s_entering_elements()     31.473893     76.136164     52.898484  9.245410 
+    sync_delta_pools()                               56.393126    169.663293    116.655308 20.388601 
+    DiffusionOperator::sp~~es_leaving_elements()    117.470144    133.206944    125.123396 21.868624 
+  SSAOperator::run()                                144.622689    257.950803    208.128576 36.375975 
+ *** This was run 15 *** 
+ *** This is run 16 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24518752098083496
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.846731424331665
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.43698763847351
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.43675708770752
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.418299913406372
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.499852895736694
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.55272078514099
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.559404850006104
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.571555614471436
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.603033781051636
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.808509588241577
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.584251403808594
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.576459407806396
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.581374883651733
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.569983959197998
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.58586859703064
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.573230504989624
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.57576894760132
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.564466953277588
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.56245470046997
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.73591136932373
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 570.900695
+steps4 nhost 32 avg rss (MB): 1499.234648
+steps4 nhost 32 avg mem ini (MB): 107.256348
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             570.027416    570.075076    570.050618 99.943491 
+  EFieldOperator::evolve()                           50.415593     55.617739     51.714322  9.066756 
+  DiffusionOperator::operator()                     259.986117    368.332209    307.340224 53.884083 
+    DiffusionOperator::sp~~s_entering_elements()     31.348855     79.282430     53.250336  9.336056 
+    sync_delta_pools()                               54.808023    169.362442    115.241555 20.204598 
+    DiffusionOperator::sp~~es_leaving_elements()    117.374220    133.409932    125.042629 21.922960 
+  SSAOperator::run()                                148.154625    256.065730    207.837519 36.438882 
+ *** This was run 16 *** 
+ *** This is run 17 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2417736053466797
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.136268138885498
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.76090407371521
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.7492778301239
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.74675178527832
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.826371669769287
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.881265878677368
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.90415859222412
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.912424564361572
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.91247296333313
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.145530462265015
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.912026405334473
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.91046977043152
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.914473056793213
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.914610862731934
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.918999433517456
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.907137632369995
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.893351554870605
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.8994460105896
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.891368627548218
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.10335922241211
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 577.491948
+steps4 nhost 32 avg rss (MB): 1500.473860
+steps4 nhost 32 avg mem ini (MB): 107.156616
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             576.631171    576.695558    576.661234 99.944111 
+  EFieldOperator::evolve()                           50.704350     55.686581     51.881681  8.991880 
+  DiffusionOperator::operator()                     263.350645    380.981226    312.756325 54.205400 
+    DiffusionOperator::sp~~s_entering_elements()     30.293000     79.624972     52.038794  9.019110 
+    sync_delta_pools()                               64.027959    171.369448    121.922520 21.131016 
+    DiffusionOperator::sp~~es_leaving_elements()    117.530755    134.776201    124.986283 21.662013 
+  SSAOperator::run()                                141.531894    258.746422    208.761855 36.181586 
+ *** This was run 17 *** 
+ *** This is run 18 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24133992195129395
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.04258370399475
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.656988382339478
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.684015035629272
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.66775608062744
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.76061224937439
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.796424865722656
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.80120062828064
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.820473194122314
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.854037761688232
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.086230278015137
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.86475706100464
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.84189772605896
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.817460298538208
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.807921409606934
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.814292430877686
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.79619789123535
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.811983108520508
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.807542324066162
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.79274320602417
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.013599157333374
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 575.791627
+steps4 nhost 32 avg rss (MB): 1500.469674
+steps4 nhost 32 avg mem ini (MB): 107.155273
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             574.937627    574.988799    574.961887 99.944032 
+  EFieldOperator::evolve()                           50.657986     55.820995     51.930449  9.026926 
+  DiffusionOperator::operator()                     262.230198    375.075534    311.673300 54.177307 
+    DiffusionOperator::sp~~s_entering_elements()     30.859136     75.996606     52.390250  9.106852 
+    sync_delta_pools()                               63.270414    175.879269    120.626538 20.968177 
+    DiffusionOperator::sp~~es_leaving_elements()    117.721055    133.512698    124.995985 21.727706 
+  SSAOperator::run()                                145.893721    258.526835    208.136695 36.179825 
+ *** This was run 18 *** 
+ *** This is run 19 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24185705184936523
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.952256202697754
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.55805516242981
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.554450035095215
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.593485355377197
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.66652536392212
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.72651958465576
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.850096464157104
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.725343704223633
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.735799312591553
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.95832657814026
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.733460187911987
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.714588165283203
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.721261024475098
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.720480918884277
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.72999119758606
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.720487356185913
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.71603274345398
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.70002794265747
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.686084508895874
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.916831016540527
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 573.931432
+steps4 nhost 32 avg rss (MB): 1500.354614
+steps4 nhost 32 avg mem ini (MB): 107.156372
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             573.070784    573.124859    573.099098 99.943835 
+  EFieldOperator::evolve()                           50.628555     55.511077     51.868757  9.045491 
+  DiffusionOperator::operator()                     260.517378    374.612253    309.595524 53.990949 
+    DiffusionOperator::sp~~s_entering_elements()     31.052112     77.443049     52.818237  9.211072 
+    sync_delta_pools()                               58.691506    171.458271    117.913259 20.563116 
+    DiffusionOperator::sp~~es_leaving_elements()    117.498209    134.082791    125.145913 21.824432 
+  SSAOperator::run()                                144.335902    258.197042    208.450077 36.352003 
+ *** This was run 19 *** 
+ *** This is run 20 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24374794960021973
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.971417665481567
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.556896686553955
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.555362701416016
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.56266713142395
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.668135404586792
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.695014238357544
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.694627285003662
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.70864176750183
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.744468212127686
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.93409562110901
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.759611129760742
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.70673894882202
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.716835021972656
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.70082688331604
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.702014923095703
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.690520524978638
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.68993353843689
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.688563346862793
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.683343648910522
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.93117070198059
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 573.613809
+steps4 nhost 32 avg rss (MB): 1499.107602
+steps4 nhost 32 avg mem ini (MB): 107.156372
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             572.714133    572.761722    572.738931 99.943897 
+  EFieldOperator::evolve()                           50.705815     55.864090     52.005714  9.075084 
+  DiffusionOperator::operator()                     259.790539    372.533199    309.145981 53.946488 
+    DiffusionOperator::sp~~s_entering_elements()     31.214106     73.852353     52.750693  9.205084 
+    sync_delta_pools()                               57.522009    170.852196    117.645640 20.529360 
+    DiffusionOperator::sp~~es_leaving_elements()    117.500790    133.302182    125.052535 21.821875 
+  SSAOperator::run()                                145.972044    258.626798    208.430148 36.371408 
+ *** This was run 20 *** 
+ *** This is run 21 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2452528476715088
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.846675157546997
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.452033281326294
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.45018219947815
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.478099822998047
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.55419611930847
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.60201668739319
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.61214256286621
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.616565465927124
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.61831307411194
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.85031819343567
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.620370626449585
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.624719381332397
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.632895946502686
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.626445055007935
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.634953022003174
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.612386226654053
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.60697317123413
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.607548713684082
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.608070373535156
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.830536365509033
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 571.737763
+steps4 nhost 32 avg rss (MB): 1500.411168
+steps4 nhost 32 avg mem ini (MB): 107.155640
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             570.877882    570.931842    570.904767 99.943668 
+  EFieldOperator::evolve()                           50.597008     55.933445     51.920126  9.089235 
+  DiffusionOperator::operator()                     257.675146    370.454634    307.532495 53.837220 
+    DiffusionOperator::sp~~s_entering_elements()     31.685381     79.142714     53.133196  9.301598 
+    sync_delta_pools()                               54.711901    167.448354    115.435536 20.208363 
+    DiffusionOperator::sp~~es_leaving_elements()    117.466454    133.394413    125.139811 21.907212 
+  SSAOperator::run()                                146.567945    259.036555    208.307265 36.466664 
+ *** This was run 21 *** 
+ *** This is run 22 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24289608001708984
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.857714891433716
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.42456889152527
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.421791076660156
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.457849264144897
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.531322717666626
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.582103729248047
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.588934659957886
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.610552549362183
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.60951542854309
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.86055040359497
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.61544704437256
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.609694242477417
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.60584831237793
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.609916925430298
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.608259677886963
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.603302001953125
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.606991052627563
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.603435277938843
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.59420347213745
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.801065683364868
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 571.457889
+steps4 nhost 32 avg rss (MB): 1499.986898
+steps4 nhost 32 avg mem ini (MB): 107.155273
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             570.584492    570.635066    570.610286 99.943532 
+  EFieldOperator::evolve()                           50.611477     55.943964     51.911072  9.092328 
+  DiffusionOperator::operator()                     258.736088    368.496797    306.905111 53.755044 
+    DiffusionOperator::sp~~s_entering_elements()     31.383326     77.655849     53.050521  9.291905 
+    sync_delta_pools()                               57.149393    170.172396    114.962167 20.135853 
+    DiffusionOperator::sp~~es_leaving_elements()    117.617577    133.199417    125.060143 21.904534 
+  SSAOperator::run()                                148.236631    257.564288    208.671496 36.549230 
+ *** This was run 22 *** 
+ *** This is run 23 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24057412147521973
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.089906930923462
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.727201223373413
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.731369018554688
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.6730637550354
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.768026113510132
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.83871030807495
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.836624145507812
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.842820405960083
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.854942321777344
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.09516954421997
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.868709802627563
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.862194299697876
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.86499810218811
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.871203422546387
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.88439917564392
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.869951725006104
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.845276594161987
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.84388041496277
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.838229656219482
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.055421829223633
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 576.513374
+steps4 nhost 32 avg rss (MB): 1500.839803
+steps4 nhost 32 avg mem ini (MB): 107.256348
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             575.646617    575.692442    575.669876 99.944013 
+  EFieldOperator::evolve()                           50.311211     55.535562     51.609133  8.960038 
+  DiffusionOperator::operator()                     262.472403    380.227357    312.279140 54.215848 
+    DiffusionOperator::sp~~s_entering_elements()     30.374946     78.945637     52.365764  9.091399 
+    sync_delta_pools()                               62.232569    172.182283    121.065874 21.018660 
+    DiffusionOperator::sp~~es_leaving_elements()    117.690251    133.588383    125.101290 21.719262 
+  SSAOperator::run()                                141.524302    259.673670    208.518766 36.201655 
+ *** This was run 23 *** 
+ *** This is run 24 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2409806251525879
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.07805299758911
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.708624362945557
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.723780870437622
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.723087787628174
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.68062400817871
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.850353479385376
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.842477321624756
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.861305236816406
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.886707305908203
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.117128133773804
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.896329164505005
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.892908334732056
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.872925519943237
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.870239734649658
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.85265302658081
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.85920763015747
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.856322288513184
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.852924346923828
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.85755681991577
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.075530290603638
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 576.611667
+steps4 nhost 32 avg rss (MB): 1500.475167
+steps4 nhost 32 avg mem ini (MB): 107.156982
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             575.749413    575.805543    575.776069 99.943847 
+  EFieldOperator::evolve()                           50.923324     55.978537     52.218633  9.064168 
+  DiffusionOperator::operator()                     262.676526    375.507316    311.765966 54.116681 
+    DiffusionOperator::sp~~s_entering_elements()     30.045739     77.150606     52.650657  9.139159 
+    sync_delta_pools()                               65.412234    175.220374    120.308601 20.883300 
+    DiffusionOperator::sp~~es_leaving_elements()    117.487587    133.486941    125.074654 21.710597 
+  SSAOperator::run()                                146.037126    258.789807    208.582665 36.206010 
+ *** This was run 24 *** 
+ *** This is run 25 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24358773231506348
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.11517882347107
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.739911556243896
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.735023498535156
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.72293734550476
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.807156801223755
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.856168746948242
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.870742321014404
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.87614631652832
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.89305591583252
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.140510320663452
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.907848119735718
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.89157509803772
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.870866298675537
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.88509249687195
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.888505220413208
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.880427360534668
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.876688718795776
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.869528770446777
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.868239879608154
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.059285163879395
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 577.005752
+steps4 nhost 32 avg rss (MB): 1500.480818
+steps4 nhost 32 avg mem ini (MB): 107.154419
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             576.144442    576.201250    576.172766 99.943794 
+  EFieldOperator::evolve()                           50.506117     55.440553     51.690375  8.966290 
+  DiffusionOperator::operator()                     262.286118    379.828817    312.084887 54.134714 
+    DiffusionOperator::sp~~s_entering_elements()     30.461608     78.403694     52.116221  9.040158 
+    sync_delta_pools()                               63.256538    173.803929    121.313264 21.043181 
+    DiffusionOperator::sp~~es_leaving_elements()    117.522393    133.132901    124.935743 21.671542 
+  SSAOperator::run()                                142.485674    259.585266    209.167747 36.282552 
+ *** This was run 25 *** 
+ *** This is run 26 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24492979049682617
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.084657430648804
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.646233558654785
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.68686032295227
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.693242073059082
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.780940532684326
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.806710958480835
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.803651571273804
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.82540535926819
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.848422288894653
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.062166452407837
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.838459014892578
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.827500343322754
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.811582803726196
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.81468653678894
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.809170246124268
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.816956758499146
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.809595346450806
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.82476806640625
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.79793906211853
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.034628868103027
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 575.876193
+steps4 nhost 32 avg rss (MB): 1499.564814
+steps4 nhost 32 avg mem ini (MB): 107.155151
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             574.976054    575.026439    574.997679 99.944100 
+  EFieldOperator::evolve()                           50.456296     55.332628     51.696481  8.985703 
+  DiffusionOperator::operator()                     261.838311    371.150549    310.517190 53.973020 
+    DiffusionOperator::sp~~s_entering_elements()     30.908099     71.402789     52.683031  9.157182 
+    sync_delta_pools()                               62.021015    171.929408    119.193062 20.717724 
+    DiffusionOperator::sp~~es_leaving_elements()    117.414787    132.927454    124.900662 21.709799 
+  SSAOperator::run()                                149.874701    258.831233    209.556502 36.424384 
+ *** This was run 26 *** 
+ *** This is run 27 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.2445225715637207
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.004128217697144
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.58475637435913
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.562439680099487
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.598933935165405
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.708614110946655
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.749500513076782
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.727198362350464
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.79502844810486
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.764997005462646
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.978190898895264
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.801284074783325
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.713146448135376
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.719560384750366
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.748040676116943
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.72690486907959
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.74265146255493
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.767417907714844
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.765634298324585
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.704246282577515
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.938485145568848
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 574.352212
+steps4 nhost 32 avg rss (MB): 1500.267014
+steps4 nhost 32 avg mem ini (MB): 107.155273
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             573.488015    573.547034    573.519693 99.943810 
+  EFieldOperator::evolve()                           50.471095     55.445042     51.762536  9.020344 
+  DiffusionOperator::operator()                     260.817199    374.942974    310.305562 54.075074 
+    DiffusionOperator::sp~~s_entering_elements()     31.013679     76.444095     52.944188  9.226264 
+    sync_delta_pools()                               61.832968    171.681592    118.678402 20.681368 
+    DiffusionOperator::sp~~es_leaving_elements()    117.581329    133.638275    124.996470 21.782379 
+  SSAOperator::run()                                144.650210    258.678881    208.284918 36.296553 
+ *** This was run 27 *** 
+ *** This is run 28 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24144744873046875
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  27.981350660324097
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.595569849014282
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.594191074371338
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.594295263290405
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.672508716583252
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.714273691177368
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.73928165435791
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.73056125640869
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.741891145706177
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  28.961216926574707
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.73482394218445
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.737720489501953
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.722678422927856
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.720096349716187
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.727266550064087
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.723410844802856
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.721132516860962
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.716804265975952
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.717141151428223
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  28.975958824157715
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 574.075316
+steps4 nhost 32 avg rss (MB): 1500.241757
+steps4 nhost 32 avg mem ini (MB): 107.156250
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             573.210669    573.264952    573.235396 99.943826 
+  EFieldOperator::evolve()                           50.571162     55.686805     51.835578  9.037554 
+  DiffusionOperator::operator()                     260.912883    370.001556    309.084489 53.889007 
+    DiffusionOperator::sp~~s_entering_elements()     31.961639     74.736440     52.728889  9.193303 
+    sync_delta_pools()                               56.600982    170.111111    117.477279 20.482212 
+    DiffusionOperator::sp~~es_leaving_elements()    118.041930    133.225747    125.325328 21.850522 
+  SSAOperator::run()                                149.306129    258.045526    209.122472 36.460589 
+ *** This was run 28 *** 
+ *** This is run 29 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24367070198059082
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.087549448013306
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.702734231948853
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.70437240600586
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.699352502822876
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.776483297348022
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.837334394454956
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.855850219726562
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.86196541786194
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.867132902145386
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.088854551315308
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.863718271255493
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.881513595581055
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.874947547912598
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.7895085811615
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.843550443649292
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.856363773345947
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.853527784347534
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.855699062347412
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.84135341644287
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.055370569229126
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 576.448230
+steps4 nhost 32 avg rss (MB): 1500.532075
+steps4 nhost 32 avg mem ini (MB): 107.155762
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             575.590991    575.637490    575.615453 99.944150 
+  EFieldOperator::evolve()                           50.667702     55.656427     51.938969  9.018167 
+  DiffusionOperator::operator()                     263.554440    378.438088    311.773868 54.133317 
+    DiffusionOperator::sp~~s_entering_elements()     30.504737     78.279396     52.506658  9.116735 
+    sync_delta_pools()                               60.659084    173.508505    120.404561 20.905852 
+    DiffusionOperator::sp~~es_leaving_elements()    117.788386    133.553283    125.054317 21.713189 
+  SSAOperator::run()                                143.069059    257.739614    208.690216 36.234896 
+ *** This was run 29 *** 
+ *** This is run 30 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction AMPAC1C2fwd declared in reaction AMPA_C1.s <-> AMPA_C2.s is set to 0.
+The rate of steps reaction AMPACC1fwd declared in reaction AMPA_C.s <-> AMPA_C1.s is set to 0.
+solver created.
+smooth area:  3.5678769840347224e-09
+spiny area:  2.6540746253226307e-08
+simulation start
+Tpnt:  0 / 21
+Sim Time:  0.0
+*-*-*-> sim time per iT (sec) :  0.24392938613891602
+*-*-*-> iT : Done
+Tpnt:  1 / 21
+Sim Time:  0.02
+*-*-*-> sim time per iT (sec) :  28.063530445098877
+*-*-*-> iT : Done
+Tpnt:  2 / 21
+Sim Time:  0.04
+*-*-*-> sim time per iT (sec) :  28.712584018707275
+*-*-*-> iT : Done
+Tpnt:  3 / 21
+Sim Time:  0.06
+*-*-*-> sim time per iT (sec) :  28.71600079536438
+*-*-*-> iT : Done
+Tpnt:  4 / 21
+Sim Time:  0.08
+*-*-*-> sim time per iT (sec) :  28.667259454727173
+*-*-*-> iT : Done
+Tpnt:  5 / 21
+Sim Time:  0.1
+*-*-*-> sim time per iT (sec) :  28.75375199317932
+*-*-*-> iT : Done
+Tpnt:  6 / 21
+Sim Time:  0.12
+*-*-*-> sim time per iT (sec) :  28.8421847820282
+*-*-*-> iT : Done
+Tpnt:  7 / 21
+Sim Time:  0.14
+*-*-*-> sim time per iT (sec) :  28.856140613555908
+*-*-*-> iT : Done
+Tpnt:  8 / 21
+Sim Time:  0.16
+*-*-*-> sim time per iT (sec) :  28.859721183776855
+*-*-*-> iT : Done
+Tpnt:  9 / 21
+Sim Time:  0.18
+*-*-*-> sim time per iT (sec) :  28.881277322769165
+*-*-*-> iT : Done
+Tpnt:  10 / 21
+Sim Time:  0.2
+*-*-*-> sim time per iT (sec) :  29.100953340530396
+*-*-*-> iT : Done
+Tpnt:  11 / 21
+Sim Time:  0.22
+*-*-*-> sim time per iT (sec) :  28.834384441375732
+*-*-*-> iT : Done
+Tpnt:  12 / 21
+Sim Time:  0.24
+*-*-*-> sim time per iT (sec) :  28.858319520950317
+*-*-*-> iT : Done
+Tpnt:  13 / 21
+Sim Time:  0.26
+*-*-*-> sim time per iT (sec) :  28.847286224365234
+*-*-*-> iT : Done
+Tpnt:  14 / 21
+Sim Time:  0.28
+*-*-*-> sim time per iT (sec) :  28.84912919998169
+*-*-*-> iT : Done
+Tpnt:  15 / 21
+Sim Time:  0.3
+*-*-*-> sim time per iT (sec) :  28.83756375312805
+*-*-*-> iT : Done
+Tpnt:  16 / 21
+Sim Time:  0.32
+*-*-*-> sim time per iT (sec) :  28.827853679656982
+*-*-*-> iT : Done
+Tpnt:  17 / 21
+Sim Time:  0.34
+*-*-*-> sim time per iT (sec) :  28.828494787216187
+*-*-*-> iT : Done
+Tpnt:  18 / 21
+Sim Time:  0.36
+*-*-*-> sim time per iT (sec) :  28.836561679840088
+*-*-*-> iT : Done
+Tpnt:  19 / 21
+Sim Time:  0.38
+*-*-*-> sim time per iT (sec) :  28.817514896392822
+*-*-*-> iT : Done
+Tpnt:  20 / 21
+Sim Time:  0.4
+*-*-*-> sim time per iT (sec) :  29.04293727874756
+*-*-*-> iT : Done
+end simulation
+start recording
+steps4 nhost 32 time cost: 576.285908
+steps4 nhost 32 avg rss (MB): 1499.359392
+steps4 nhost 32 avg mem ini (MB): 107.256470
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             575.404272    575.456375    575.431581 99.940868 
+  EFieldOperator::evolve()                           50.286549     55.587259     51.563383  8.955520 
+  DiffusionOperator::operator()                     262.998540    378.961973    312.422319 54.261460 
+    DiffusionOperator::sp~~s_entering_elements()     31.519858     80.632912     52.519420  9.121565 
+    sync_delta_pools()                               63.209416    175.156971    121.196414 21.049374 
+    DiffusionOperator::sp~~es_leaving_elements()    117.366960    133.780061    125.004401 21.710745 
+  SSAOperator::run()                                142.669265    258.273580    208.256349 36.169930 
+ *** This was run 30 *** 

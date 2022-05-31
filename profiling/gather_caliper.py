@@ -10,20 +10,9 @@ def numericalSort(value):
     parts[1::2] = map(int, parts[1::2])
     return parts
 
-for filename in sorted(glob.glob('*.out'), key=numericalSort):
-    if not "caliper" in filename:
-        continue
-    print(filename)
-
-print(80*"*")
-
-num_files = 0
-for filename in sorted(glob.glob('*.out'), key=numericalSort):
-    if not "caliper" in filename:
-        continue
-    
+# * : number of cores
+for filename in sorted(glob.glob('caliper_*.out'), key=numericalSort):    
     text = open(filename).read()
-
     text = text.split('\n')
 
     timings = [] # Wall Clock of STEPS4
@@ -67,10 +56,4 @@ for filename in sorted(glob.glob('*.out'), key=numericalSort):
 
     print(int(filename.split("_")[-1].split(".")[0]), \
           *PER_EField, *PER_Diffusion, *PER_SSA, *PER_OTHER, \
-          *EField, *Diffusion, *SSA,
-          sep=',', end=', \n')
-    num_files += 1
-
-print(80*"*")
-print(num_files)
-print(80*"*")
+          *EField, *Diffusion, *SSA)

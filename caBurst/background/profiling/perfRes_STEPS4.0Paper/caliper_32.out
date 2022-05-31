@@ -1,0 +1,579 @@
+Autoloading python/3.8.3
+Autoloading py-virtualenv/16.7.6
+Autoloading py-numpy/1.19.4
+Autoloading py-mpi4py/3.0.3
+Autoloading py-h5py/3.1.0
+Autoloading hpe-mpi/2.25.hmpt
+Autoloading hdf5/1.10.7
+ *** This is run 1 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 338.573561
+steps4 nhost 32 avg rss (MB): 631.520508
+steps4 nhost 32 avg mem ini (MB): 106.318115
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             338.445603    338.539985    338.513714 99.999911 
+  DiffusionOperator::operator()                     194.069590    228.518983    216.211671 63.870818 
+    DiffusionOperator::sp~~s_entering_elements()     24.414664     48.626380     35.955681 10.621623 
+    sync_delta_pools()                               48.387173    107.384794     77.840053 22.994632 
+    DiffusionOperator::sp~~es_leaving_elements()     87.289582     99.689574     92.107234 27.209282 
+  SSAOperator::run()                                108.318166    142.604424    120.453091 35.582896 
+ *** This was run 1 *** 
+ *** This is run 2 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 343.721594
+steps4 nhost 32 avg rss (MB): 630.807251
+steps4 nhost 32 avg mem ini (MB): 106.318970
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             343.646832    343.688327    343.677326 99.999906 
+  DiffusionOperator::operator()                     211.857425    234.075629    225.672420 65.663979 
+    DiffusionOperator::sp~~s_entering_elements()     24.060067     59.542887     39.138916 11.388263 
+    sync_delta_pools()                               55.158419    114.142121     83.718787 24.359683 
+    DiffusionOperator::sp~~es_leaving_elements()     87.083126    101.838098     91.902053 26.740771 
+  SSAOperator::run()                                107.891100    129.980186    116.191988 33.808421 
+ *** This was run 2 *** 
+ *** This is run 3 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 342.915776
+steps4 nhost 32 avg rss (MB): 631.598999
+steps4 nhost 32 avg mem ini (MB): 106.318359
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             342.786543    342.882530    342.855901 99.999910 
+  DiffusionOperator::operator()                     207.769793    231.700522    223.557465 65.204438 
+    DiffusionOperator::sp~~s_entering_elements()     24.717669     52.695901     38.071267 11.104150 
+    sync_delta_pools()                               50.687499    110.995138     82.610798 24.094882 
+    DiffusionOperator::sp~~es_leaving_elements()     87.188208    101.035169     91.951568 26.819280 
+  SSAOperator::run()                                109.387239    133.242155    117.488370 34.267535 
+ *** This was run 3 *** 
+ *** This is run 4 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 344.409371
+steps4 nhost 32 avg rss (MB): 631.516968
+steps4 nhost 32 avg mem ini (MB): 106.319092
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             344.335357    344.375312    344.364622 99.999916 
+  DiffusionOperator::operator()                     213.058690    236.144851    226.760558 65.848915 
+    DiffusionOperator::sp~~s_entering_elements()     26.350343     53.578296     39.383063 11.436433 
+    sync_delta_pools()                               54.836606    113.078785     84.515128 24.542317 
+    DiffusionOperator::sp~~es_leaving_elements()     86.816851    101.951234     91.771249 26.649419 
+  SSAOperator::run()                                106.528119    129.515698    115.807392 33.629266 
+ *** This was run 4 *** 
+ *** This is run 5 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 348.042930
+steps4 nhost 32 avg rss (MB): 631.557007
+steps4 nhost 32 avg mem ini (MB): 106.317505
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             347.961405    348.008847    347.996401 99.999914 
+  DiffusionOperator::operator()                     216.741983    240.656287    229.620209 65.983445 
+    DiffusionOperator::sp~~s_entering_elements()     26.419651     53.161688     38.987542 11.203423 
+    sync_delta_pools()                               55.888640    116.094112     87.011404 25.003514 
+    DiffusionOperator::sp~~es_leaving_elements()     87.068660    109.679731     92.123074 26.472399 
+  SSAOperator::run()                                105.658056    129.458273    116.528464 33.485509 
+ *** This was run 5 *** 
+ *** This is run 6 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 342.623704
+steps4 nhost 32 avg rss (MB): 631.328247
+steps4 nhost 32 avg mem ini (MB): 106.317871
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             342.494918    342.590485    342.563056 99.999924 
+  DiffusionOperator::operator()                     207.260448    233.886487    223.514341 65.247599 
+    DiffusionOperator::sp~~s_entering_elements()     24.540866     52.765772     38.236839 11.161977 
+    sync_delta_pools()                               52.601528    110.841414     82.454827 24.069952 
+    DiffusionOperator::sp~~es_leaving_elements()     87.603446     99.918886     91.960645 26.844861 
+  SSAOperator::run()                                107.013084    133.440233    117.243443 34.225335 
+ *** This was run 6 *** 
+ *** This is run 7 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.186036
+steps4 nhost 32 avg rss (MB): 631.460083
+steps4 nhost 32 avg mem ini (MB): 106.318604
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.111254    345.152838    345.141870 99.999920 
+  DiffusionOperator::operator()                     212.120732    235.794050    226.638338 65.665217 
+    DiffusionOperator::sp~~s_entering_elements()     24.057460     55.339894     38.694201 11.211091 
+    sync_delta_pools()                               55.382400    115.628093     84.951765 24.613559 
+    DiffusionOperator::sp~~es_leaving_elements()     87.065998     99.407352     91.823680 26.604598 
+  SSAOperator::run()                                107.625856    131.185738    116.694830 33.810658 
+ *** This was run 7 *** 
+ *** This is run 8 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.648790
+steps4 nhost 32 avg rss (MB): 631.595215
+steps4 nhost 32 avg mem ini (MB): 106.317505
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.573969    345.615355    345.604576 99.999915 
+  DiffusionOperator::operator()                     212.395273    236.146415    226.652779 65.581477 
+    DiffusionOperator::sp~~s_entering_elements()     25.556368     56.600103     39.304325 11.372619 
+    sync_delta_pools()                               54.698724    115.259689     84.557381 24.466490 
+    DiffusionOperator::sp~~es_leaving_elements()     86.870963    100.757718     91.688960 26.529996 
+  SSAOperator::run()                                107.728579    131.472155    117.125704 33.890062 
+ *** This was run 8 *** 
+ *** This is run 9 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 344.870364
+steps4 nhost 32 avg rss (MB): 631.882935
+steps4 nhost 32 avg mem ini (MB): 106.317139
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             344.796762    344.837386    344.826635 99.999913 
+  DiffusionOperator::operator()                     212.571387    235.685210    226.534372 65.695092 
+    DiffusionOperator::sp~~s_entering_elements()     24.826178     54.513666     39.276255 11.390135 
+    sync_delta_pools()                               54.183206    114.270861     84.346530 24.460540 
+    DiffusionOperator::sp~~es_leaving_elements()     87.254317    101.200384     91.838251 26.633143 
+  SSAOperator::run()                                107.407081    130.508510    116.499600 33.784948 
+ *** This was run 9 *** 
+ *** This is run 10 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.405167
+steps4 nhost 32 avg rss (MB): 631.523438
+steps4 nhost 32 avg mem ini (MB): 106.317749
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.331368    345.371503    345.361034 99.999911 
+  DiffusionOperator::operator()                     215.116643    237.567280    227.131842 65.766435 
+    DiffusionOperator::sp~~s_entering_elements()     25.091069     53.616362     39.297949 11.378792 
+    sync_delta_pools()                               58.072694    114.869777     84.903826 24.584056 
+    DiffusionOperator::sp~~es_leaving_elements()     87.121754    100.094380     91.814041 26.584921 
+  SSAOperator::run()                                106.105794    128.512953    116.414954 33.708160 
+ *** This was run 10 *** 
+ *** This is run 11 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.986953
+steps4 nhost 32 avg rss (MB): 631.594116
+steps4 nhost 32 avg mem ini (MB): 106.317993
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.909765    345.953398    345.942371 99.999915 
+  DiffusionOperator::operator()                     214.297611    238.424559    227.410425 65.736449 
+    DiffusionOperator::sp~~s_entering_elements()     24.320864     53.285647     39.350761 11.374937 
+    sync_delta_pools()                               56.679437    115.807942     85.113282 24.603291 
+    DiffusionOperator::sp~~es_leaving_elements()     86.986618    100.330503     91.804573 26.537511 
+  SSAOperator::run()                                105.830289    129.877218    116.723796 33.740792 
+ *** This was run 11 *** 
+ *** This is run 12 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.842243
+steps4 nhost 32 avg rss (MB): 631.604858
+steps4 nhost 32 avg mem ini (MB): 106.316772
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.765664    345.808657    345.796421 99.999912 
+  DiffusionOperator::operator()                     213.279317    237.689993    227.383481 65.756401 
+    DiffusionOperator::sp~~s_entering_elements()     26.057916     53.896766     39.311277 11.368319 
+    sync_delta_pools()                               57.132746    115.457597     85.204318 24.640001 
+    DiffusionOperator::sp~~es_leaving_elements()     87.245598     99.368943     91.743662 26.531096 
+  SSAOperator::run()                                106.417490    130.697477    116.578259 33.712945 
+ *** This was run 12 *** 
+ *** This is run 13 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 343.851922
+steps4 nhost 32 avg rss (MB): 631.104858
+steps4 nhost 32 avg mem ini (MB): 106.317017
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             343.775870    343.818347    343.807252 99.999908 
+  DiffusionOperator::operator()                     210.911652    234.263099    225.119482 65.478338 
+    DiffusionOperator::sp~~s_entering_elements()     23.922280     58.848529     38.940427 11.326228 
+    sync_delta_pools()                               54.375480    114.009264     83.383642 24.252998 
+    DiffusionOperator::sp~~es_leaving_elements()     87.061774    100.059417     91.752887 26.687280 
+  SSAOperator::run()                                107.826223    131.046618    116.861062 33.990253 
+ *** This was run 13 *** 
+ *** This is run 14 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.165675
+steps4 nhost 32 avg rss (MB): 629.597290
+steps4 nhost 32 avg mem ini (MB): 106.318115
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.037417    345.132144    345.105849 99.999913 
+  DiffusionOperator::operator()                     211.274653    237.127281    226.790341 65.716112 
+    DiffusionOperator::sp~~s_entering_elements()     25.589896     53.768043     39.333290 11.397447 
+    sync_delta_pools()                               54.034422    112.015587     84.635593 24.524510 
+    DiffusionOperator::sp~~es_leaving_elements()     87.048441    101.182868     91.861756 26.618406 
+  SSAOperator::run()                                106.313225    132.102729    116.512924 33.761475 
+ *** This was run 14 *** 
+ *** This is run 15 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.443662
+steps4 nhost 32 avg rss (MB): 631.429077
+steps4 nhost 32 avg mem ini (MB): 106.316528
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.369754    345.410125    345.399023 99.999920 
+  DiffusionOperator::operator()                     212.702726    235.547344    226.811516 65.666467 
+    DiffusionOperator::sp~~s_entering_elements()     25.018343     53.594064     39.220556 11.355135 
+    sync_delta_pools()                               55.348894    114.515925     84.786374 24.547350 
+    DiffusionOperator::sp~~es_leaving_elements()     87.167955    100.640537     91.782563 26.572886 
+  SSAOperator::run()                                108.089369    130.951942    116.779283 33.809936 
+ *** This was run 15 *** 
+ *** This is run 16 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 343.790269
+steps4 nhost 32 avg rss (MB): 631.595703
+steps4 nhost 32 avg mem ini (MB): 106.318237
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             343.715517    343.756359    343.745020 99.999924 
+  DiffusionOperator::operator()                     211.495955    234.673666    225.950933 65.732083 
+    DiffusionOperator::sp~~s_entering_elements()     26.436939     57.202748     39.839665 11.589880 
+    sync_delta_pools()                               54.483357    111.961060     83.246792 24.217581 
+    DiffusionOperator::sp~~es_leaving_elements()     87.219273    100.533607     91.921566 26.741186 
+  SSAOperator::run()                                107.336140    130.506394    115.991228 33.743366 
+ *** This was run 16 *** 
+ *** This is run 17 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.331051
+steps4 nhost 32 avg rss (MB): 629.019897
+steps4 nhost 32 avg mem ini (MB): 106.316284
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.256622    345.296547    345.285860 99.999913 
+  DiffusionOperator::operator()                     211.637513    236.684545    226.371192 65.560459 
+    DiffusionOperator::sp~~s_entering_elements()     25.011654     56.119514     39.210011 11.355801 
+    sync_delta_pools()                               54.052609    114.975671     84.164740 24.375359 
+    DiffusionOperator::sp~~es_leaving_elements()     86.912765    101.375005     91.811948 26.590104 
+  SSAOperator::run()                                106.916147    131.913700    117.109162 33.916553 
+ *** This was run 17 *** 
+ *** This is run 18 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 341.131967
+steps4 nhost 32 avg rss (MB): 631.547241
+steps4 nhost 32 avg mem ini (MB): 106.316895
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             341.001339    341.098360    341.071639 99.999911 
+  DiffusionOperator::operator()                     202.607656    231.104744    220.937241 64.777314 
+    DiffusionOperator::sp~~s_entering_elements()     24.446777     51.029143     37.016778 10.853071 
+    sync_delta_pools()                               49.897412    110.675019     81.269634 23.827710 
+    DiffusionOperator::sp~~es_leaving_elements()     87.240932    100.006868     92.093481 27.001189 
+  SSAOperator::run()                                108.180252    136.642753    118.303916 34.685913 
+ *** This was run 18 *** 
+ *** This is run 19 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 344.558080
+steps4 nhost 32 avg rss (MB): 631.591553
+steps4 nhost 32 avg mem ini (MB): 106.317139
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             344.483509    344.524821    344.513955 99.999912 
+  DiffusionOperator::operator()                     211.602011    235.204997    226.199151 65.657413 
+    DiffusionOperator::sp~~s_entering_elements()     25.133834     56.030452     39.193108 11.376338 
+    sync_delta_pools()                               54.297217    113.300634     84.252328 24.455397 
+    DiffusionOperator::sp~~es_leaving_elements()     86.882711    100.136311     91.804094 26.647401 
+  SSAOperator::run()                                107.579502    131.152572    116.514436 33.819917 
+ *** This was run 19 *** 
+ *** This is run 20 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 338.470261
+steps4 nhost 32 avg rss (MB): 631.879517
+steps4 nhost 32 avg mem ini (MB): 106.316406
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             338.341350    338.437140    338.410380 99.999921 
+  DiffusionOperator::operator()                     196.545458    228.028998    217.347203 64.225876 
+    DiffusionOperator::sp~~s_entering_elements()     24.217833     50.840847     36.515646 10.790336 
+    sync_delta_pools()                               49.366486    107.856401     78.484135 23.191982 
+    DiffusionOperator::sp~~es_leaving_elements()     87.204154     99.444478     92.034479 27.196095 
+  SSAOperator::run()                                108.675008    140.021622    119.242474 35.236029 
+ *** This was run 20 *** 
+ *** This is run 21 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 344.495637
+steps4 nhost 32 avg rss (MB): 631.850586
+steps4 nhost 32 avg mem ini (MB): 106.418701
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             344.421492    344.462429    344.451539 99.999914 
+  DiffusionOperator::operator()                     211.389506    234.625958    225.713338 65.528272 
+    DiffusionOperator::sp~~s_entering_elements()     24.528536     56.158369     39.136589 11.361992 
+    sync_delta_pools()                               54.413008    113.760736     83.943192 24.370081 
+    DiffusionOperator::sp~~es_leaving_elements()     86.860892     99.942480     91.694084 26.620292 
+  SSAOperator::run()                                108.101031    131.305092    116.939806 33.949538 
+ *** This was run 21 *** 
+ *** This is run 22 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 342.307446
+steps4 nhost 32 avg rss (MB): 629.859741
+steps4 nhost 32 avg mem ini (MB): 106.440430
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             342.177950    342.274088    342.247766 99.999913 
+  DiffusionOperator::operator()                     209.226651    232.559756    223.179222 65.209783 
+    DiffusionOperator::sp~~s_entering_elements()     25.031143     53.440360     38.157670 11.149127 
+    sync_delta_pools()                               52.556210    111.036548     82.158721 24.005606 
+    DiffusionOperator::sp~~es_leaving_elements()     87.033182    100.178687     92.045721 26.894446 
+  SSAOperator::run()                                107.980227    131.232036    117.258303 34.261202 
+ *** This was run 22 *** 
+ *** This is run 23 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 337.916280
+steps4 nhost 32 avg rss (MB): 629.605103
+steps4 nhost 32 avg mem ini (MB): 106.317383
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             337.780277    337.882195    337.854426 99.999920 
+  DiffusionOperator::operator()                     191.213587    227.898514    215.337688 63.736775 
+    DiffusionOperator::sp~~s_entering_elements()     23.640167     49.148250     35.544876 10.520758 
+    sync_delta_pools()                               47.762640    107.686664     77.647541 22.982525 
+    DiffusionOperator::sp~~es_leaving_elements()     87.243268     99.663084     91.985347 27.226304 
+  SSAOperator::run()                                108.185761    144.810299    120.686903 35.721541 
+ *** This was run 23 *** 
+ *** This is run 24 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 336.938576
+steps4 nhost 32 avg rss (MB): 630.363770
+steps4 nhost 32 avg mem ini (MB): 106.316772
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             336.798686    336.893266    336.867088 99.999913 
+  DiffusionOperator::operator()                     187.489719    226.309569    213.741034 63.449609 
+    DiffusionOperator::sp~~s_entering_elements()     24.545159     50.058976     35.799839 10.627280 
+    sync_delta_pools()                               48.615969    105.445578     75.647733 22.456236 
+    DiffusionOperator::sp~~es_leaving_elements()     87.465068     99.604160     91.918153 27.286154 
+  SSAOperator::run()                                108.795430    147.553500    121.316705 36.013195 
+ *** This was run 24 *** 
+ *** This is run 25 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 344.957082
+steps4 nhost 32 avg rss (MB): 631.567627
+steps4 nhost 32 avg mem ini (MB): 106.318359
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             344.881909    344.923612    344.912702 99.999913 
+  DiffusionOperator::operator()                     211.764410    237.655651    226.874520 65.777317 
+    DiffusionOperator::sp~~s_entering_elements()     27.368535     52.597594     39.674616 11.502789 
+    sync_delta_pools()                               54.736364    112.828809     84.327438 24.448901 
+    DiffusionOperator::sp~~es_leaving_elements()     86.877237    100.517913     91.848438 26.629451 
+  SSAOperator::run()                                105.569015    131.395314    116.237372 33.700490 
+ *** This was run 25 *** 
+ *** This is run 26 *** 
+srun: Job 282646 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 282646
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 344.351948
+steps4 nhost 32 avg rss (MB): 624.226807
+steps4 nhost 32 avg mem ini (MB): 106.316284
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             344.266603    344.307955    344.297294 99.999911 
+  DiffusionOperator::operator()                     212.439776    234.687191    225.727225 65.561660 
+    DiffusionOperator::sp~~s_entering_elements()     23.742595     60.355655     39.297844 11.413917 
+    sync_delta_pools()                               55.323356    113.593596     83.547366 24.266032 
+    DiffusionOperator::sp~~es_leaving_elements()     86.971994    100.196621     91.856504 26.679391 
+  SSAOperator::run()                                107.894758    129.979799    116.757924 33.911919 
+ *** This was run 26 *** 
+ *** This is run 27 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 345.652665
+steps4 nhost 32 avg rss (MB): 631.163940
+steps4 nhost 32 avg mem ini (MB): 106.315430
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             345.576773    345.619482    345.608276 99.999912 
+  DiffusionOperator::operator()                     212.263620    236.226744    227.027345 65.689152 
+    DiffusionOperator::sp~~s_entering_elements()     25.343768     53.661894     39.230701 11.351194 
+    sync_delta_pools()                               55.113561    114.349243     85.053568 24.609796 
+    DiffusionOperator::sp~~es_leaving_elements()     86.965866    100.307278     91.746908 26.546479 
+  SSAOperator::run()                                107.696536    131.602357    116.774837 33.788177 
+ *** This was run 27 *** 
+ *** This is run 28 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 334.801994
+steps4 nhost 32 avg rss (MB): 630.131470
+steps4 nhost 32 avg mem ini (MB): 106.317871
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             334.671094    334.767699    334.741426 99.999918 
+  DiffusionOperator::operator()                     186.374008    224.313499    211.194960 63.091918 
+    DiffusionOperator::sp~~s_entering_elements()     24.125347     48.356383     35.056199 10.472612 
+    sync_delta_pools()                               45.640865    103.428492     73.932666 22.086482 
+    DiffusionOperator::sp~~es_leaving_elements()     87.307628     99.862589     92.119074 27.519450 
+  SSAOperator::run()                                108.738248    146.528777    121.676314 36.349315 
+ *** This was run 28 *** 
+ *** This is run 29 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 338.793268
+steps4 nhost 32 avg rss (MB): 631.429810
+steps4 nhost 32 avg mem ini (MB): 106.315796
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             338.664576    338.758158    338.733181 99.999923 
+  DiffusionOperator::operator()                     196.837234    227.222097    217.158062 64.108835 
+    DiffusionOperator::sp~~s_entering_elements()     23.986002     51.181366     36.531730 10.784802 
+    sync_delta_pools()                               48.571842    106.486332     77.983211 23.021999 
+    DiffusionOperator::sp~~es_leaving_elements()     87.317754    100.605963     92.328038 27.256842 
+  SSAOperator::run()                                109.825058    140.060707    119.737167 35.348493 
+ *** This was run 29 *** 
+ *** This is run 30 *** 
+*-*-*-> Import : Done
+*-*-*-> STEPS4 SIMULATION
+Creating Omega_h mesh from GMSH mesh partition ../CaBurstUnifiedMesh/split_32/steps4/CNG_segmented_2_split_32_1.msh
+Model checking:
+Warnings:
+The rate of steps reaction CaInflux declared in reaction Void --> Ca is set to 0.
+Simulating model, it will take a while if running with small amount of processes...
+steps4 nhost 32 time cost: 337.232174
+steps4 nhost 32 avg rss (MB): 630.323853
+steps4 nhost 32 avg mem ini (MB): 106.315918
+Path                                             Min time/rank Max time/rank Avg time/rank Time %    
+OmegaHSimulation::run()                             337.102073    337.197115    337.171187 99.999920 
+  DiffusionOperator::operator()                     186.986193    227.866307    214.039709 63.480969 
+    DiffusionOperator::sp~~s_entering_elements()     24.366337     50.495610     35.935203 10.657843 
+    sync_delta_pools()                               48.555316    107.084526     75.825280 22.488641 
+    DiffusionOperator::sp~~es_leaving_elements()     87.268771     99.015550     91.890327 27.253294 
+  SSAOperator::run()                                107.537542    148.345263    121.314158 35.979961 
+ *** This was run 30 *** 

@@ -1,28 +1,18 @@
-Here, we describe how to perform the strong scaling & Roofline analysis found in STEPS 4 Release paper. To simply re-generate the graphs of the paper just run the `STEPS_PerfGraphs.ipynb` jupyter notebook (all data baked in).
+Here, we describe how to perform the strong scaling & Roofline analysis found in STEPS 4 Release paper. To simply re-generate the graphs of the paper just run the `STEPS_PerfGraphs.ipynb` jupyter notebook (all data is baked in).
 
 ## How to perform a Strong Scaling analysis
 
 There are 3 main case studies, namely SimpleModel, caBurstBackground, and caBurstFull, for which we are interested in performing a strong scaling analysis. To perform a strong scaling analysis, the problem size remains fixed while the number of cores is steadily increased. The steps to do so are presented per case study below:
 
-1. SimpleModel (see corresponding folder `../SimpleModel/profiling`):
-    a. Submit multiple jobs in the queue of a supercomputer (in our case is BB5 of the Blue Brain Project) with the help of `strong_scaling.batch` script:
-    ```
-    sbatch --job-name=strong_scaling_2 --nodes=1 --ntasks-per-node=2 strong_scaling.batch
-    ...
-    sbatch --job-name=strong_scaling_2048 --nodes=64 --ntasks-per-node=32 strong_scaling.batch
-    ...
-    ```
-    b. Once the jobs are finished, run the `strong_scaling.py` python script (found in this folder) to extract the needed data, and use it in the jupyter notebook. The corresponding cell in the `STEPS_PerfGraphs.ipynb` jupyter notebook generates the strong scaling graphs.
+1. SimpleModel (see corresponding folder `../SimpleModel/profiling`): Modify accordingly and run the `CI_Perf.ipynb` jupyter notebook, which does the setup of the environment, the job submission, and the graph generation (adds also a comparison with a reference STEPS version, in our case it can be the version of STEPS 4 Release paper -found in `perfRes_STEPS4.0Paper` folder-). This notebook is integrated in our Continuous Integration (CI) pipeline and is supposed to be executed by a GitLab runner, i.e., from an already allocated job. Therefore, some modifications must be done to adjust it to your environment.
 
-2. caBurstBackground (see corresponding folder `../caBurst/background/profiling`):
-    a. Exact same steps as in **SimpleModel**
+2. caBurstBackground (see corresponding folder `../caBurst/background/profiling`): Exact same steps as in **SimpleModel**.
 
-3. caBurstFull (see corresponding folder `../caBurst/full/profiling`):
-    a. Exact same steps as in **SimpleModel**
+3. caBurstFull (see corresponding folder `../caBurst/full/profiling`): Exact same steps as in **SimpleModel**
 
 ### Strong Scaling analysis : Caliper Instrumentation
 
-For every case study (namely SimpleModel, caBurstBackground, caBurstFull), there is a job submission script that uses Caliper for further instrumentation of the code, `CaseStudy/profiling/caliper.sbatch` (just for STEPS4). One could repeat the strong scaling analysis as described above, but using this script instead. Once all jobs per case study are finished, then just use the `gather_caliper.py` python script (found in this folder) to extract the data. This data per case study should be used in the `STEPS_PerfGraphs.ipynb` jupyter notebook, which generates the Caliper-based graphs. Keep in mind that STEPS must be compiled with Caliper support `ON` (see CMake variable `STEPS_USE_CALIPER_PROFILING`).
+The same notebook (`CI_Perf.ipynb`) performs the Caliper Instrumentation as well. Keep in mind that STEPS must be compiled with Caliper support `ON` (see CMake variable `STEPS_USE_CALIPER_PROFILING`).
 
 ## How to perform a Roofline analysis
 
