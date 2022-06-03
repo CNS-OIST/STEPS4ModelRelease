@@ -63,13 +63,13 @@ def run(seed, mesh_path, steps_version):
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
     # Sim end time (seconds)
-    SIM_END = 0.25*5.9 # this should give ~100 spikes
+    SIM_END = 0.25
 
     # The current injection in amps
     Iinj = 0.1e-9
 
     EF_DT = 1e-6
-    SAVE_DT = 5e-6
+    SAVE_DT = 5e-6/5 # smaller dt to check how the ks test deals with discretizations
 
     # # # # # # # # # # # # # DATA COLLECTION # # # # # # # # # # # # # # # # # #
 
