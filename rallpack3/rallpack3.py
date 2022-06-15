@@ -69,7 +69,7 @@ def run(seed, mesh_path, steps_version):
     Iinj = 0.1e-9
 
     EF_DT = 1e-6
-    SAVE_DT = 5e-6/5 # smaller dt to check how the ks test deals with discretizations
+    SAVE_DT = 5e-6 # smaller dt to check how the ks test deals with discretizations
 
     # # # # # # # # # # # # # DATA COLLECTION # # # # # # # # # # # # # # # # # #
 
