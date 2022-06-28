@@ -20,7 +20,6 @@ import os
 import pandas as pd
 import sys
 
-
 class SimulationError(Exception):
     pass
 

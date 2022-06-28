@@ -203,7 +203,7 @@ def run(seed, mesh_path, steps_version):
     rng = RNG('mt19937', 512, seed)
 
     if steps_version == 4:
-        sim = Simulation('DistTetOpSplit', mdl, mesh, rng, searchMethod=NextEventSearchMethod.DIRECT)
+        sim = Simulation('DistTetOpSplit', mdl, mesh, rng, searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
     else:
         part = GmshPartition(mesh)
         sim = Simulation('TetOpSplit', mdl, mesh, rng, MPI.EF_DV_PETSC, part)
