@@ -23,10 +23,11 @@ import sys
 class SimulationError(Exception):
     pass
 
+
 def run(seed, mesh_path, steps_version):
     if steps_version not in [3, 4]:
         raise SimulationError(f"Steps number: {steps_version} is not 3 or 4")
-    
+
     """Run rallpack 1 simulation"""
 
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
@@ -38,7 +39,7 @@ def run(seed, mesh_path, steps_version):
     Iinj = 0.1e-9
 
     EF_DT = 1e-6
-    SAVE_DT = 5e-6
+    SAVE_DT = 5e-5  # same time step as in the analytical solution
 
     # # # # # # # # # # # # # # # # PARAMETERS # # # # # # # # # # # # # #
 
@@ -121,8 +122,9 @@ def run(seed, mesh_path, steps_version):
             mdl,
             mesh,
             rng,
-            searchMethod=NextEventSearchMethod.GIBSON_BRUCK,
-        )  # , searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
+            searchMethod=NextEventSearchMethod.GIBSON_BRUCK
+            # searchMethod = NextEventSearchMethod.DIRECT
+        )
     else:
         part = LinearMeshPartition(mesh, 1, 1, MPI.nhosts)
         sim = Simulation("TetOpSplit", mdl, mesh, rng, MPI.EF_DV_PETSC, part)
