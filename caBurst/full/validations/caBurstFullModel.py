@@ -198,6 +198,16 @@ def run(seed, mesh_path, steps_version):
 
             memb = Membrane.Create([spiny, smooth])
 
+        record_points = [
+            [-10.92105e-6, 14.184075e-6, -7.1073075e-6], # Root point
+            [-105.8655e-6, 186.33875e-6, -35.8821e-6  ], # Left branch tip
+            [53.546375e-6, 183.7195e-6 , -70.0353e-6  ], # Right branch tip
+            [-79.82415e-6, 75.895875e-6, -7.292655e-6 ], # Left branch middle
+        ]
+        record_labels = ["root_V", "left_tip_V", "right_tip_V", "middle_V"]
+
+        record_tets = TetList(mesh.tets[point] for point in record_points)
+
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
     rng = RNG('mt19937', 512, seed)
@@ -216,10 +226,7 @@ def run(seed, mesh_path, steps_version):
 
     rs = ResultSelector(sim)
 
-    Pots = rs.MAX(rs.TRIS(smooth.tris).V) << \
-           rs.MIN(rs.TRIS(smooth.tris).V) << \
-           rs.MAX(rs.TRIS(spiny.tris).V) << \
-           rs.MIN(rs.TRIS(spiny.tris).V)
+    Pots = rs.TETS(record_tets).V
 
     sim.toSave(Pots, dt=par.TIMECONVERTER * 10)
 
@@ -357,10 +364,9 @@ def run(seed, mesh_path, steps_version):
     if MPI.rank == 0:
         print("end simulation")
         print("start recording")
-        labels = ["smooth_max_V", "smooth_min_V", "spiny_max_V", "spiny_min_V"]
         folder_path = os.path.join("raw_traces", f"STEPS{steps_version}")
         os.makedirs(folder_path, exist_ok=True)
-        dct = {name: Pots.data[0,:,i] for i, name in enumerate(labels)}
+        dct = {name: Pots.data[0,:,i] for i, name in enumerate(record_labels)}
         dct["t"] = Pots.time[0]
         pd.DataFrame(dct).to_csv(folder_path + f'/res{seed}_STEPS{steps_version}.txt', sep=" ", index=False)
 
