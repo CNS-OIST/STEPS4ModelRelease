@@ -31,6 +31,7 @@ def run(seed, mesh_path, steps_version):
         Glut = list(map(float, f.read().split()))
 
     ########################### BIOCHEMICAL MODEL ###############################
+    Vrange = (-150e-3, 100e-3, 0.01e-3)
 
     mdl = Model()
     r = ReactionManager()
@@ -102,9 +103,9 @@ def run(seed, mesh_path, steps_version):
             # CaP channel
             with CaPchan[...]:
                 CaP_m0.s <r[1]> CaP_m1.s <r[2]> CaP_m2.s <r[3]> CaP_m3.s
-                r[1].K = 3 * VDepRate(par.alpha_cap), 1 * VDepRate(par.beta_cap)
-                r[2].K = 2 * VDepRate(par.alpha_cap), 2 * VDepRate(par.beta_cap)
-                r[3].K = 1 * VDepRate(par.alpha_cap), 3 * VDepRate(par.beta_cap)
+                r[1].K = 3 * VDepRate(par.alpha_cap, vrange=Vrange), 1 * VDepRate(par.beta_cap, vrange = Vrange)
+                r[2].K = 2 * VDepRate(par.alpha_cap, vrange=Vrange), 2 * VDepRate(par.beta_cap, vrange = Vrange)
+                r[3].K = 1 * VDepRate(par.alpha_cap, vrange=Vrange), 3 * VDepRate(par.beta_cap, vrange = Vrange)
             OC_CaP = GHKCurr.Create(CaPchan[CaP_m3], Ca, par.CaP_P, computeflux=True, virtual_oconc=par.Ca_oconc)
 
             # BK channel
@@ -132,11 +133,11 @@ def run(seed, mesh_path, steps_version):
                 BK_C2.s <r[3]> BK_O2.s
                 BK_C3.s <r[4]> BK_O3.s
                 BK_C4.s <r[5]> BK_O4.s
-                r[1].K = VDepRate(par.f_0), VDepRate(par.b_0)
-                r[2].K = VDepRate(par.f_1), VDepRate(par.b_1)
-                r[3].K = VDepRate(par.f_2), VDepRate(par.b_2)
-                r[4].K = VDepRate(par.f_3), VDepRate(par.b_3)
-                r[5].K = VDepRate(par.f_4), VDepRate(par.b_4)
+                r[1].K = VDepRate(par.f_0, vrange=Vrange), VDepRate(par.b_0, vrange=VRange)
+                r[2].K = VDepRate(par.f_1, vrange=Vrange), VDepRate(par.b_1, vrange=VRange)
+                r[3].K = VDepRate(par.f_2, vrange=Vrange), VDepRate(par.b_2, vrange=VRange)
+                r[4].K = VDepRate(par.f_3, vrange=Vrange), VDepRate(par.b_3, vrange=VRange)
+                r[5].K = VDepRate(par.f_4, vrange=Vrange), VDepRate(par.b_4, vrange=VRange)
             OC_BK0 = OhmicCurr.Create(BKchan[BK_O0], par.BK_G, par.BK_rev)
             OC_BK1 = OhmicCurr.Create(BKchan[BK_O1], par.BK_G, par.BK_rev)
             OC_BK2 = OhmicCurr.Create(BKchan[BK_O2], par.BK_G, par.BK_rev)
