@@ -204,9 +204,9 @@ def run(seed, mesh_path, steps_version):
             [53.546375e-6, 183.7195e-6 , -70.0353e-6  ], # Right branch tip
             [-79.82415e-6, 75.895875e-6, -7.292655e-6 ], # Left branch middle
         ]
-        record_labels = ["root_V", "left_tip_V", "right_tip_V", "middle_V"]
 
         record_tets = TetList(mesh.tets[point] for point in record_points)
+        smooth_tris = TriList((tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:])
 
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
@@ -226,7 +226,12 @@ def run(seed, mesh_path, steps_version):
 
     rs = ResultSelector(sim)
 
-    Pots = rs.TETS(record_tets).V
+    Pots = rs.TETS(record_tets).V << rs.TRIS(smooth_tris).AMPA[AMPA_O].Count << rs.smooth.AMPA[AMPA_O].Count
+
+    record_labels = [
+        "root_V", "left_tip_V", "right_tip_V", "middle_V",
+        "root_AMPA_open", "middle_AMPA_Open", "smooth_AMPA_Open",
+    ]
 
     sim.toSave(Pots, dt=par.TIMECONVERTER * 10)
 
