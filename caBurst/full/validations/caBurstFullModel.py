@@ -24,6 +24,13 @@ def run(seed, mesh_path, steps_version):
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
     par.BK_ro=par.BK_ro*1.5
 
+    # TODO remove this
+    par.NTIMEPOINTS = 10
+    par.AMPA_receptors = par.AMPA_receptors * (3.8399e-10/3.5678e-9) # rescaling for different mesh area for debug
+
+    # TODO put this back to 2000
+    delay = 2500-3 #this is the offset for glut. The signal starts at 2500
+
     ######Glutamate transient#######
     # Reference (Rudolph et al. 2011)
     #Units (mM)
@@ -199,12 +206,21 @@ def run(seed, mesh_path, steps_version):
 
             memb = Membrane.Create([spiny, smooth])
 
+        #TODO these are points for debug
         record_points = [
-            [-10.92105e-6, 14.184075e-6, -7.1073075e-6], # Root point
-            [-105.8655e-6, 186.33875e-6, -35.8821e-6  ], # Left branch tip
-            [53.546375e-6, 183.7195e-6 , -70.0353e-6  ], # Right branch tip
-            [-79.82415e-6, 75.895875e-6, -7.292655e-6 ], # Left branch middle
+            [0, 3e-6, 1e-6],
+            [0, 3e-6, 9e-6],
+            [0, -3e-6, 1e-6],
+            [0, -3e-6, 9e-6],
         ]
+
+
+        # record_points = [
+        #     [-10.92105e-6, 14.184075e-6, -7.1073075e-6], # Root point
+        #     [-105.8655e-6, 186.33875e-6, -35.8821e-6  ], # Left branch tip
+        #     [53.546375e-6, 183.7195e-6 , -70.0353e-6  ], # Right branch tip
+        #     [-79.82415e-6, 75.895875e-6, -7.292655e-6 ], # Left branch middle
+        # ]
 
         record_tets = TetList(mesh.tets[point] for point in record_points)
         smooth_tris = TriList((tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:])
@@ -362,8 +378,8 @@ def run(seed, mesh_path, steps_version):
             print("Tpnt: ", l, "/", par.NTIMEPOINTS)
             print("Sim Time: ", 1.0e3 * par.TIMECONVERTER * l)
 
-        sim.LIST(smooth.name).AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
-        sim.LIST(smooth.name).AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
+        sim.LIST(smooth.name).AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + delay]
+        sim.LIST(smooth.name).AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + delay]
 
         sim.run(par.TIMECONVERTER * l)
 
