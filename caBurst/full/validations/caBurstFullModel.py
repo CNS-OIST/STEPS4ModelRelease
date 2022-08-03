@@ -31,6 +31,7 @@ def run(seed, mesh_path, steps_version):
         Glut = list(map(float, f.read().split()))
 
     ########################### BIOCHEMICAL MODEL ###############################
+    Vrange = (-150e-3, 100e-3, 0.01e-3)
 
     mdl = Model()
     r = ReactionManager()
@@ -102,9 +103,9 @@ def run(seed, mesh_path, steps_version):
             # CaP channel
             with CaPchan[...]:
                 CaP_m0.s <r[1]> CaP_m1.s <r[2]> CaP_m2.s <r[3]> CaP_m3.s
-                r[1].K = 3 * VDepRate(par.alpha_cap), 1 * VDepRate(par.beta_cap)
-                r[2].K = 2 * VDepRate(par.alpha_cap), 2 * VDepRate(par.beta_cap)
-                r[3].K = 1 * VDepRate(par.alpha_cap), 3 * VDepRate(par.beta_cap)
+                r[1].K = 3 * VDepRate(par.alpha_cap, vrange=Vrange), 1 * VDepRate(par.beta_cap, vrange = Vrange)
+                r[2].K = 2 * VDepRate(par.alpha_cap, vrange=Vrange), 2 * VDepRate(par.beta_cap, vrange = Vrange)
+                r[3].K = 1 * VDepRate(par.alpha_cap, vrange=Vrange), 3 * VDepRate(par.beta_cap, vrange = Vrange)
             OC_CaP = GHKCurr.Create(CaPchan[CaP_m3], Ca, par.CaP_P, computeflux=True, virtual_oconc=par.Ca_oconc)
 
             # BK channel
@@ -132,11 +133,11 @@ def run(seed, mesh_path, steps_version):
                 BK_C2.s <r[3]> BK_O2.s
                 BK_C3.s <r[4]> BK_O3.s
                 BK_C4.s <r[5]> BK_O4.s
-                r[1].K = VDepRate(par.f_0), VDepRate(par.b_0)
-                r[2].K = VDepRate(par.f_1), VDepRate(par.b_1)
-                r[3].K = VDepRate(par.f_2), VDepRate(par.b_2)
-                r[4].K = VDepRate(par.f_3), VDepRate(par.b_3)
-                r[5].K = VDepRate(par.f_4), VDepRate(par.b_4)
+                r[1].K = VDepRate(par.f_0, vrange=Vrange), VDepRate(par.b_0, vrange=Vrange)
+                r[2].K = VDepRate(par.f_1, vrange=Vrange), VDepRate(par.b_1, vrange=Vrange)
+                r[3].K = VDepRate(par.f_2, vrange=Vrange), VDepRate(par.b_2, vrange=Vrange)
+                r[4].K = VDepRate(par.f_3, vrange=Vrange), VDepRate(par.b_3, vrange=Vrange)
+                r[5].K = VDepRate(par.f_4, vrange=Vrange), VDepRate(par.b_4, vrange=Vrange)
             OC_BK0 = OhmicCurr.Create(BKchan[BK_O0], par.BK_G, par.BK_rev)
             OC_BK1 = OhmicCurr.Create(BKchan[BK_O1], par.BK_G, par.BK_rev)
             OC_BK2 = OhmicCurr.Create(BKchan[BK_O2], par.BK_G, par.BK_rev)
@@ -198,6 +199,16 @@ def run(seed, mesh_path, steps_version):
 
             memb = Membrane.Create([spiny, smooth])
 
+        record_points = [
+            [-10.92105e-6, 14.184075e-6, -7.1073075e-6], # Root point
+            [-105.8655e-6, 186.33875e-6, -35.8821e-6  ], # Left branch tip
+            [53.546375e-6, 183.7195e-6 , -70.0353e-6  ], # Right branch tip
+            [-79.82415e-6, 75.895875e-6, -7.292655e-6 ], # Left branch middle
+        ]
+
+        record_tets = TetList(mesh.tets[point] for point in record_points)
+        smooth_tris = TriList((tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:])
+
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
     rng = RNG('mt19937', 512, seed)
@@ -216,10 +227,12 @@ def run(seed, mesh_path, steps_version):
 
     rs = ResultSelector(sim)
 
-    Pots = rs.MAX(rs.TRIS(smooth.tris).V) << \
-           rs.MIN(rs.TRIS(smooth.tris).V) << \
-           rs.MAX(rs.TRIS(spiny.tris).V) << \
-           rs.MIN(rs.TRIS(spiny.tris).V)
+    Pots = rs.TETS(record_tets).V << rs.TRIS(smooth_tris).AMPA[AMPA_O].Count << rs.SUM(rs.TRIS(smooth.tris).AMPA[AMPA_O].Count)
+
+    record_labels = [
+        "root_V", "left_tip_V", "right_tip_V", "middle_V",
+        "root_AMPA_open", "middle_AMPA_Open", "smooth_AMPA_Open",
+    ]
 
     sim.toSave(Pots, dt=par.TIMECONVERTER * 10)
 
@@ -357,10 +370,9 @@ def run(seed, mesh_path, steps_version):
     if MPI.rank == 0:
         print("end simulation")
         print("start recording")
-        labels = ["smooth_max_V", "smooth_min_V", "spiny_max_V", "spiny_min_V"]
         folder_path = os.path.join("raw_traces", f"STEPS{steps_version}")
         os.makedirs(folder_path, exist_ok=True)
-        dct = {name: Pots.data[0,:,i] for i, name in enumerate(labels)}
+        dct = {name: Pots.data[0,:,i] for i, name in enumerate(record_labels)}
         dct["t"] = Pots.time[0]
         pd.DataFrame(dct).to_csv(folder_path + f'/res{seed}_STEPS{steps_version}.txt', sep=" ", index=False)
 
