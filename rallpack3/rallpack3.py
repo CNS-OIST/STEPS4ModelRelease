@@ -42,53 +42,40 @@ def run(seed, mesh_path, steps_version):
     leak_rev = -65.0e-3
 
     # Potassium channel density
-    K_ro = 18.0e12 * 5  # this should avoid the missing spike issue
+    K_ro = 18.0e12
     # Sodium channel density
-    Na_ro = 60.0e12 * 5  # this should avoid the missing spike issue
+    Na_ro = 60.0e12
 
     # Total leak conductance for ideal cylinder:
     surfarea_cyl = 1.0 * math.pi * 1000 * 1e-12
     L_G_tot = L_G * surfarea_cyl
 
     # A table of potassium density factors at -65mV, found in getpops. n0, n1, n2, n3, n4
-    K_FACS = [
-        0.216750577045,
-        0.40366011853,
-        0.281904943772,
-        0.0874997924409,
-        0.0101845682113,
-    ]
+    K_FACS = [0.216750577045, 0.40366011853, 0.281904943772, \
+              0.0874997924409, 0.0101845682113]
 
     # A table of sodium density factors. m0h1, m1h1, m2h1, m3h1, m0h0, m1h0, m2h0, m3h0
-    NA_FACS = [
-        0.343079175644,
-        0.0575250437508,
-        0.00321512825945,
-        5.98988373918e-05,
-        0.506380603793,
-        0.0849062503811,
-        0.00474548939393,
-        8.84099403236e-05,
-    ]
+    NA_FACS = [0.343079175644, 0.0575250437508, 0.00321512825945, 5.98988373918e-05, \
+               0.506380603793, 0.0849062503811, 0.00474548939393, 8.84099403236e-05]
 
     # Ohm.m
     Ra = 1.0
 
     # # # # # # # # # # # # # # # # SIMULATION CONTROLS # # # # # # # # # # # # # #
 
+    # Sim end time (seconds)
+    SIM_END = 0.25
+
     # The current injection in amps
     Iinj = 0.1e-9
 
     EF_DT = 1e-6
-    SAVE_DT = 5e-6  # smaller dt to check how the ks test deals with discretizations
-
-    # Sim end time (seconds)
-    SIM_END = EF_DT * 5  # 0.25
+    SAVE_DT = 5e-6
 
     # # # # # # # # # # # # # DATA COLLECTION # # # # # # # # # # # # # # # # # #
 
     # record potential at the two extremes along (z) axis
-    POT_POS = [0.0, 1.0e-06]
+    POT_POS = [0.0, 1.0e-03]
 
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
@@ -99,15 +86,15 @@ def run(seed, mesh_path, steps_version):
         if steps_version == 4:
             __MESH__ = Compartment.Create()
 
-            memb = Patch.Create(__MESH__, None, "ssys")
-            z_min = Patch.Create(__MESH__, None, "ssys")
-            z_max = Patch.Create(__MESH__, None, "ssys")
+            memb = Patch.Create(__MESH__, None, 'ssys')
+            z_min = Patch.Create(__MESH__, None, 'ssys')
+            z_max = Patch.Create(__MESH__, None, 'ssys')
         else:
             __MESH__ = Compartment.Create(mesh.tets)
 
-            memb = Patch.Create(mesh.triGroups[(0, "memb")], __MESH__, None, "ssys")
-            z_min = Patch.Create(mesh.triGroups[(0, "z_min")], __MESH__, None, "ssys")
-            z_max = Patch.Create(mesh.triGroups[(0, "z_max")], __MESH__, None, "ssys")
+            memb = Patch.Create(mesh.triGroups[(0, 'memb')], __MESH__, None, 'ssys')
+            z_min = Patch.Create(mesh.triGroups[(0, 'z_min')], __MESH__, None, 'ssys')
+            z_max = Patch.Create(mesh.triGroups[(0, 'z_max')], __MESH__, None, 'ssys')
 
         surfarea_mesh = memb.Area
         corr_fac_area = surfarea_mesh / surfarea_cyl
@@ -151,32 +138,12 @@ def run(seed, mesh_path, steps_version):
         Leak = Channel.Create([leaksus])
 
         # Gating kinetics
-        a_n = VDepRate(
-            lambda V: 1e3
-            * (
-                (
-                    0.01
-                    * (10 - (V * 1e3 + 65))
-                    / (math.exp((10 - (V * 1e3 + 65)) / 10) - 1)
-                )
-            )
-        )
+        a_n = VDepRate(lambda V: 1e3 * ((0.01 * (10 - (V * 1e3 + 65)) / (math.exp((10 - (V * 1e3 + 65)) / 10) - 1))))
         b_n = VDepRate(lambda V: 1e3 * ((0.125 * math.exp(-(V * 1e3 + 65) / 80))))
-        a_m = VDepRate(
-            lambda V: 1e3
-            * (
-                (
-                    0.1
-                    * (25 - (V * 1e3 + 65))
-                    / (math.exp((25 - (V * 1e3 + 65)) / 10) - 1)
-                )
-            )
-        )
+        a_m = VDepRate(lambda V: 1e3 * ((0.1 * (25 - (V * 1e3 + 65)) / (math.exp((25 - (V * 1e3 + 65)) / 10) - 1))))
         b_m = VDepRate(lambda V: 1e3 * ((4 * math.exp(-(V * 1e3 + 65) / 18))))
         a_h = VDepRate(lambda V: 1e3 * ((0.07 * math.exp(-(V * 1e3 + 65) / 20))))
-        b_h = VDepRate(
-            lambda V: 1e3 * ((1 / (math.exp((30 - (V * 1e3 + 65)) / 10) + 1)))
-        )
+        b_h = VDepRate(lambda V: 1e3 * ((1 / (math.exp((30 - (V * 1e3 + 65)) / 10) + 1))))
 
         with ssys:
             with VGKC[...]:
@@ -205,20 +172,14 @@ def run(seed, mesh_path, steps_version):
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
     # Create the solver objects
-    rng = RNG("r123", 512, seed)
+    rng = RNG('r123', 512, seed)
     # rng = RNG('mt19937', 512, seed)
 
     if steps_version == 4:
-        sim = Simulation(
-            "DistTetOpSplit",
-            mdl,
-            mesh,
-            rng,
-            searchMethod=NextEventSearchMethod.GIBSON_BRUCK,
-        )
+        sim = Simulation('DistTetOpSplit', mdl, mesh, rng)  # , searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
     else:
         part = LinearMeshPartition(mesh, 1, 1, MPI.nhosts)
-        sim = Simulation("TetOpSplit", mdl, mesh, rng, MPI.EF_DV_PETSC, part)
+        sim = Simulation('TetOpSplit', mdl, mesh, rng, MPI.EF_DV_PETSC, part)
 
     # Data saving
     rs = ResultSelector(sim)
@@ -233,19 +194,19 @@ def run(seed, mesh_path, steps_version):
 
     sim.TRIS(membrane.tris).Leak[leaksus].Count = 1
 
-    # sim.memb.VGNaC[m0, h1].Count = (Na_ro*surfarea_cyl*NA_FACS[0])
-    # sim.memb.VGNaC[m1, h1].Count = (Na_ro*surfarea_cyl*NA_FACS[1])
-    # sim.memb.VGNaC[m2, h1].Count = (Na_ro*surfarea_cyl*NA_FACS[2])
-    # sim.memb.VGNaC[m3, h1].Count = (Na_ro*surfarea_cyl*NA_FACS[3])
-    # sim.memb.VGNaC[m0, h0].Count = (Na_ro*surfarea_cyl*NA_FACS[4])
-    # sim.memb.VGNaC[m1, h0].Count = (Na_ro*surfarea_cyl*NA_FACS[5])
-    # sim.memb.VGNaC[m2, h0].Count = (Na_ro*surfarea_cyl*NA_FACS[6])
-    # sim.memb.VGNaC[m3, h0].Count = (Na_ro*surfarea_cyl*NA_FACS[7])
-    # sim.memb.VGKC[n0].Count = (K_ro*surfarea_cyl*K_FACS[0])
-    # sim.memb.VGKC[n1].Count = (K_ro*surfarea_cyl*K_FACS[1])
-    # sim.memb.VGKC[n2].Count = (K_ro*surfarea_cyl*K_FACS[2])
-    # sim.memb.VGKC[n3].Count = (K_ro*surfarea_cyl*K_FACS[3])
-    # sim.memb.VGKC[n4].Count = (K_ro*surfarea_cyl*K_FACS[4])
+    sim.memb.VGNaC[m0, h1].Count = (Na_ro * surfarea_cyl * NA_FACS[0])
+    sim.memb.VGNaC[m1, h1].Count = (Na_ro * surfarea_cyl * NA_FACS[1])
+    sim.memb.VGNaC[m2, h1].Count = (Na_ro * surfarea_cyl * NA_FACS[2])
+    sim.memb.VGNaC[m3, h1].Count = (Na_ro * surfarea_cyl * NA_FACS[3])
+    sim.memb.VGNaC[m0, h0].Count = (Na_ro * surfarea_cyl * NA_FACS[4])
+    sim.memb.VGNaC[m1, h0].Count = (Na_ro * surfarea_cyl * NA_FACS[5])
+    sim.memb.VGNaC[m2, h0].Count = (Na_ro * surfarea_cyl * NA_FACS[6])
+    sim.memb.VGNaC[m3, h0].Count = (Na_ro * surfarea_cyl * NA_FACS[7])
+    sim.memb.VGKC[n0].Count = (K_ro * surfarea_cyl * K_FACS[0])
+    sim.memb.VGKC[n1].Count = (K_ro * surfarea_cyl * K_FACS[1])
+    sim.memb.VGKC[n2].Count = (K_ro * surfarea_cyl * K_FACS[2])
+    sim.memb.VGKC[n3].Count = (K_ro * surfarea_cyl * K_FACS[3])
+    sim.memb.VGKC[n4].Count = (K_ro * surfarea_cyl * K_FACS[4])
 
     sim.membrane.Potential = -65e-3
 
@@ -261,27 +222,12 @@ def run(seed, mesh_path, steps_version):
 
     sim.run(SIM_END)
 
-    # if MPI.rank == 0:
-    #     pd.set_option('display.max_colwidth', None)
-    #     pd.set_option('display.max_seq_items', None)
-    #     pd.set_option('display.width', None)
-    #     df = pd.DataFrame({"t": Vrs.time[0], "V_z_min": Vrs.data[0, :, 0], "V_z_max": Vrs.data[0, :, 1]})
-    #     print(df)
-
     if MPI.rank == 0:
         folder_path = os.path.join("raw_traces", f"STEPS{steps_version}")
         os.makedirs(folder_path, exist_ok=True)
-        df = pd.DataFrame(
-            {
-                "t": Vrs.time[0],
-                "V_z_min": Vrs.data[0, :, 0],
-                "V_z_max": Vrs.data[0, :, 1],
-            }
-        )
-        df.to_csv(
-            folder_path + f"/res{seed}_STEPS{steps_version}.txt", sep=" ", index=False
-        )
-
+        df = pd.DataFrame({"t": Vrs.time[0], "V_z_min": Vrs.data[0, :, 0], "V_z_max": Vrs.data[0, :, 1]})
+        df.to_csv(folder_path + f"/res{seed}_STEPS{steps_version}.txt", sep=" ", index=False)
 
 if __name__ == "__main__":
     run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], steps_version=int(sys.argv[3]))
+
