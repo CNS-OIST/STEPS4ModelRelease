@@ -42,9 +42,9 @@ def run(seed, mesh_path, steps_version):
     leak_rev = -65.0e-3
 
     # Potassium channel density
-    K_ro = 18.0e12
+    K_ro = 18.0e12 * 5  # this should avoid the missing spike issue
     # Sodium channel density
-    Na_ro = 60.0e12
+    Na_ro = 60.0e12 * 5  # this should avoid the missing spike issue
 
     # Total leak conductance for ideal cylinder:
     surfarea_cyl = 1.0 * math.pi * 1000 * 1e-12
@@ -70,7 +70,7 @@ def run(seed, mesh_path, steps_version):
     Iinj = 0.1e-9
 
     EF_DT = 1e-6
-    SAVE_DT = 5e-6
+    SAVE_DT = 5e-6  # smaller dt to check how the ks test deals with discretizations
 
     # # # # # # # # # # # # # DATA COLLECTION # # # # # # # # # # # # # # # # # #
 
@@ -176,7 +176,7 @@ def run(seed, mesh_path, steps_version):
     # rng = RNG('mt19937', 512, seed)
 
     if steps_version == 4:
-        sim = Simulation('DistTetOpSplit', mdl, mesh, rng)  # , searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
+        sim = Simulation('DistTetOpSplit', mdl, mesh, rng, searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
     else:
         part = LinearMeshPartition(mesh, 1, 1, MPI.nhosts)
         sim = Simulation('TetOpSplit', mdl, mesh, rng, MPI.EF_DV_PETSC, part)
@@ -227,6 +227,7 @@ def run(seed, mesh_path, steps_version):
         os.makedirs(folder_path, exist_ok=True)
         df = pd.DataFrame({"t": Vrs.time[0], "V_z_min": Vrs.data[0, :, 0], "V_z_max": Vrs.data[0, :, 1]})
         df.to_csv(folder_path + f"/res{seed}_STEPS{steps_version}.txt", sep=" ", index=False)
+
 
 if __name__ == "__main__":
     run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], steps_version=int(sys.argv[3]))
