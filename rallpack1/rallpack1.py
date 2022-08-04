@@ -78,7 +78,7 @@ def run(seed, mesh_path, steps_version):
             z_min = Patch.Create(mesh.triGroups[(0, "z_min")], __MESH__, None, "ssys")
             z_max = Patch.Create(mesh.triGroups[(0, "z_max")], __MESH__, None, "ssys")
 
-        surfarea_mesh = memb.Area
+        surfarea_mesh = memb.Area + z_min.Area
         corr_fac_area = surfarea_mesh / surfarea_cyl
 
         vol_cyl = math.pi * 0.5 * 0.5 * 1000 * 1e-18
@@ -87,9 +87,10 @@ def run(seed, mesh_path, steps_version):
 
         if steps_version == 4:
             membrane = Membrane.Create([memb], capacitance=0.01 / corr_fac_area)
+            membrane2 = Membrane.Create([z_min], capacitance=0.01 / corr_fac_area)
             __MESH__.Conductivity = 1 / (Ra * corr_fac_vol)
         else:
-            membrane = Membrane.Create([memb])
+            membrane = Membrane.Create([memb, z_min])
 
         # The tetrahedrons from which to record potential
         POT_TET = TetList(mesh.tets[0, 0, z] for z in POT_POS)
@@ -139,9 +140,9 @@ def run(seed, mesh_path, steps_version):
     # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
     sim.newRun()
 
-    sim.TRIS(membrane.tris).Leak[leaksus].Count = 1
+    sim.TRIS(memb.tris).Leak[leaksus].Count = 1
 
-    sim.membrane.Potential = -65e-3
+    sim.ALL(Membrane).Potential = -65e-3
 
     minzverts = list(set([v for t in z_min.tris for v in t.verts]))
     for v in minzverts:
