@@ -24,9 +24,11 @@ class SimulationError(Exception):
     pass
 
 
-def run(seed, mesh_path, steps_version):
+def run(seed, mesh_path, steps_version, nb_membs):
     if steps_version not in [3, 4]:
         raise SimulationError(f"Steps number: {steps_version} is not 3 or 4")
+    if nb_membs not in [1, 2]:
+        raise SimulationError(f"membrane number: {nb_membs} is not 1 or 2")
 
     """Run rallpack 1 simulation"""
 
@@ -78,19 +80,16 @@ def run(seed, mesh_path, steps_version):
             z_min = Patch.Create(mesh.triGroups[(0, "z_min")], __MESH__, None, "ssys")
             z_max = Patch.Create(mesh.triGroups[(0, "z_max")], __MESH__, None, "ssys")
 
-        surfarea_mesh = memb.Area + z_min.Area
-        corr_fac_area = surfarea_mesh / surfarea_cyl
-
-        vol_cyl = math.pi * 0.5 * 0.5 * 1000 * 1e-18
-        vol_mesh = __MESH__.Vol
-        corr_fac_vol = vol_mesh / vol_cyl
-
         if steps_version == 4:
-            membrane = Membrane.Create([memb], capacitance=0.01 / corr_fac_area)
-            membrane2 = Membrane.Create([z_min], capacitance=0.01 / corr_fac_area)
-            __MESH__.Conductivity = 1 / (Ra * corr_fac_vol)
+            membrane = Membrane.Create([memb], capacitance=0.01)
+            if nb_membs == 2:
+                membrane2 = Membrane.Create([z_min], capacitance=0.01)
+            __MESH__.Conductivity = 1 / Ra
         else:
-            membrane = Membrane.Create([memb, z_min])
+            if nb_membs == 1:
+                membrane = Membrane.Create([memb])
+            else:
+                membrane = Membrane.Create([memb, z_min])
 
         # The tetrahedrons from which to record potential
         POT_TET = TetList(mesh.tets[0, 0, z] for z in POT_POS)
@@ -144,13 +143,11 @@ def run(seed, mesh_path, steps_version):
 
     sim.ALL(Membrane).Potential = -65e-3
 
-    minzverts = list(set([v for t in z_min.tris for v in t.verts]))
-    for v in minzverts:
-        sim.solver.setVertIClamp(v.idx, Iinj / len(minzverts))
+    sim.VERTS(z_min.tris.verts).IClamp = Iinj / len(z_min.tris.verts)
 
     if steps_version != 4:
-        sim.membrane.Capac = 0.01 / corr_fac_area
-        sim.membrane.VolRes = Ra * corr_fac_vol
+        sim.membrane.Capac = 0.01
+        sim.membrane.VolRes = Ra
 
     sim.EfieldDT = EF_DT
 
@@ -182,4 +179,4 @@ def run(seed, mesh_path, steps_version):
 
 
 if __name__ == "__main__":
-    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], steps_version=int(sys.argv[3]))
+    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], steps_version=int(sys.argv[3]), nb_membs=int(sys.argv[4]))
