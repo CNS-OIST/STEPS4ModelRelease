@@ -16,7 +16,7 @@ In order to run the STEPS 3 version of the model you just need to:
 - Select a mesh file from the mesh folder. For example: 
 `export mesh_file=mesh/axon_cube_L1000um_D866nm_1135tets.msh`
 - Finally, run the command:
-`python rallpack1_STEPS3.py ${rng_seed} ${mesh_file}`
+`python rallpack1.py ${rng_seed} ${mesh_file} 3`
 - Raw traces will appear in the result folder: `results/STEPS3`
 ## STEPS 4
 
@@ -27,5 +27,5 @@ In order to run the STEPS 4 version of the model you just need to:
 - Select a mesh file from the mesh folder. For example: 
 `export mesh_file=mesh/axon_cube_L1000um_D866nm_1135tets.msh`
 - Finally, run the command:
-`python rallpack1_STEPS4.py ${rng_seed} ${mesh_file}`
+`python rallpack1.py ${rng_seed} ${mesh_file} 4`
 - Raw traces will appear in the result folder: `results/STEPS4`
