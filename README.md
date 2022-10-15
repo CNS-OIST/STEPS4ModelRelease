@@ -41,6 +41,8 @@ To analyse the raw traces we suggest to download https://github.com/CNS-OIST/STE
 folder `postproc`. In there you can copy (in the appropriate subfolder) the traces and perform some statistical 
 analyses. Check the relative README and the example for more information.   
 
+The complete validation dataset for the Frontiers publication is available at https://doi.org/10.5281/zenodo.7194567.
+
 ##### Profiling/ Performance
 
 The measurement of STEPS performance is achieved through suitable instrumentation. To simply generate all the graphs 
