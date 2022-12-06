@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import sys, os
 
-sys.path.append("..")
+sys.path.append('..')
 import extra.constants_withampa_yunliang as par
 
 
@@ -42,42 +42,14 @@ def run(seed, mesh_path, steps_version):
     with mdl:
         # Species
         Ca = Species.Create(valence=2)
-        (
-            Pump,
-            CaPump,
-            iCBsf,
-            iCBsCa,
-            iCBCaf,
-            iCBCaCa,
-            CBsf,
-            CBsCa,
-            CBCaf,
-            CBCaCa,
-            PV,
-            PVMg,
-            PVCa,
-            Mg,
-        ) = Species.Create()
+        Pump, CaPump, iCBsf, iCBsCa, iCBCaf, iCBCaCa, CBsf, CBsCa, CBCaf, CBCaCa, PV, PVMg, PVCa, Mg = Species.Create()
 
         # Channels
         CaP_m0, CaP_m1, CaP_m2, CaP_m3 = SubUnitState.Create()
         CaPchan = Channel.Create([CaP_m0, CaP_m1, CaP_m2, CaP_m3])
 
-        (
-            BK_C0,
-            BK_C1,
-            BK_C2,
-            BK_C3,
-            BK_C4,
-            BK_O0,
-            BK_O1,
-            BK_O2,
-            BK_O3,
-            BK_O4,
-        ) = SubUnitState.Create()
-        BKchan = Channel.Create(
-            [BK_C0, BK_C1, BK_C2, BK_C3, BK_C4, BK_O0, BK_O1, BK_O2, BK_O3, BK_O4]
-        )
+        BK_C0, BK_C1, BK_C2, BK_C3, BK_C4, BK_O0, BK_O1, BK_O2, BK_O3, BK_O4 = SubUnitState.Create()
+        BKchan = Channel.Create([BK_C0, BK_C1, BK_C2, BK_C3, BK_C4, BK_O0, BK_O1, BK_O2, BK_O3, BK_O4])
 
         SK_C1, SK_C2, SK_C3, SK_C4, SK_O1, SK_O2 = SubUnitState.Create()
         SKchan = Channel.Create([SK_C1, SK_C2, SK_C3, SK_C4, SK_O1, SK_O2])
@@ -135,40 +107,26 @@ def run(seed, mesh_path, steps_version):
             # CaP channel
             with CaPchan[...]:
                 CaP_m0.s < r[1] > CaP_m1.s < r[2] > CaP_m2.s < r[3] > CaP_m3.s
-                r[1].K = 3 * VDepRate(par.alpha_cap, vrange=Vrange), 1 * VDepRate(
-                    par.beta_cap, vrange=Vrange
-                )
-                r[2].K = 2 * VDepRate(par.alpha_cap, vrange=Vrange), 2 * VDepRate(
-                    par.beta_cap, vrange=Vrange
-                )
-                r[3].K = 1 * VDepRate(par.alpha_cap, vrange=Vrange), 3 * VDepRate(
-                    par.beta_cap, vrange=Vrange
-                )
-            OC_CaP = GHKCurr.Create(
-                CaPchan[CaP_m3],
-                Ca,
-                par.CaP_P,
-                computeflux=True,
-                virtual_oconc=par.Ca_oconc,
-            )
+                r[1].K = 3 * VDepRate(par.alpha_cap, vrange=Vrange), 1 * VDepRate(par.beta_cap, vrange=Vrange)
+                r[2].K = 2 * VDepRate(par.alpha_cap, vrange=Vrange), 2 * VDepRate(par.beta_cap, vrange=Vrange)
+                r[3].K = 1 * VDepRate(par.alpha_cap, vrange=Vrange), 3 * VDepRate(par.beta_cap, vrange=Vrange)
+            OC_CaP = GHKCurr.Create(CaPchan[CaP_m3], Ca, par.CaP_P, computeflux=True, virtual_oconc=par.Ca_oconc)
 
             # BK channel
             with BKchan[...]:
-                (
-                    ((BK_C0.s + Ca.i < r[1] > BK_C1.s) + Ca.i < r[2] > BK_C2.s) + Ca.i
-                    < r[3]
-                    > BK_C3.s
-                ) + Ca.i < r[4] > BK_C4.s
+                (((BK_C0.s + Ca.i < r[1] > BK_C1.s) \
+                  + Ca.i < r[2] > BK_C2.s) \
+                 + Ca.i < r[3] > BK_C3.s) \
+                + Ca.i < r[4] > BK_C4.s
                 r[1].K = par.c_01, par.c_10
                 r[2].K = par.c_12, par.c_21
                 r[3].K = par.c_23, par.c_32
                 r[4].K = par.c_34, par.c_43
 
-                (
-                    ((BK_O0.s + Ca.i < r[1] > BK_O1.s) + Ca.i < r[2] > BK_O2.s) + Ca.i
-                    < r[3]
-                    > BK_O3.s
-                ) + Ca.i < r[4] > BK_O4.s
+                (((BK_O0.s + Ca.i < r[1] > BK_O1.s) \
+                  + Ca.i < r[2] > BK_O2.s) \
+                 + Ca.i < r[3] > BK_O3.s) \
+                + Ca.i < r[4] > BK_O4.s
                 r[1].K = par.o_01, par.o_10
                 r[2].K = par.o_12, par.o_21
                 r[3].K = par.o_23, par.o_32
@@ -179,21 +137,11 @@ def run(seed, mesh_path, steps_version):
                 BK_C2.s < r[3] > BK_O2.s
                 BK_C3.s < r[4] > BK_O3.s
                 BK_C4.s < r[5] > BK_O4.s
-                r[1].K = VDepRate(par.f_0, vrange=Vrange), VDepRate(
-                    par.b_0, vrange=Vrange
-                )
-                r[2].K = VDepRate(par.f_1, vrange=Vrange), VDepRate(
-                    par.b_1, vrange=Vrange
-                )
-                r[3].K = VDepRate(par.f_2, vrange=Vrange), VDepRate(
-                    par.b_2, vrange=Vrange
-                )
-                r[4].K = VDepRate(par.f_3, vrange=Vrange), VDepRate(
-                    par.b_3, vrange=Vrange
-                )
-                r[5].K = VDepRate(par.f_4, vrange=Vrange), VDepRate(
-                    par.b_4, vrange=Vrange
-                )
+                r[1].K = VDepRate(par.f_0, vrange=Vrange), VDepRate(par.b_0, vrange=Vrange)
+                r[2].K = VDepRate(par.f_1, vrange=Vrange), VDepRate(par.b_1, vrange=Vrange)
+                r[3].K = VDepRate(par.f_2, vrange=Vrange), VDepRate(par.b_2, vrange=Vrange)
+                r[4].K = VDepRate(par.f_3, vrange=Vrange), VDepRate(par.b_3, vrange=Vrange)
+                r[5].K = VDepRate(par.f_4, vrange=Vrange), VDepRate(par.b_4, vrange=Vrange)
             OC_BK0 = OhmicCurr.Create(BKchan[BK_O0], par.BK_G, par.BK_rev)
             OC_BK1 = OhmicCurr.Create(BKchan[BK_O1], par.BK_G, par.BK_rev)
             OC_BK2 = OhmicCurr.Create(BKchan[BK_O2], par.BK_G, par.BK_rev)
@@ -202,9 +150,9 @@ def run(seed, mesh_path, steps_version):
 
             # SK channel
             with SKchan[...]:
-                ((SK_C1.s + Ca.i < r[1] > SK_C2.s) + Ca.i < r[2] > SK_C3.s) + Ca.i < r[
-                    3
-                ] > SK_C4.s
+                ((SK_C1.s + Ca.i < r[1] > SK_C2.s) \
+                 + Ca.i < r[2] > SK_C3.s) \
+                + Ca.i < r[3] > SK_C4.s
                 r[1].K = par.dirc2_t, par.invc1_t
                 r[2].K = par.dirc3_t, par.invc2_t
                 r[3].K = par.dirc4_t, par.invc3_t
@@ -218,11 +166,9 @@ def run(seed, mesh_path, steps_version):
 
             # AMPA channel
             with AMPA[...]:
-                AMPA_C.s < r["AMPACC1"] > AMPA_C1.s < r["AMPAC1C2"] > AMPA_C2.s < r[
-                    3
-                ] > AMPA_O.s
-                r["AMPACC1"].K = 0, par.ru1
-                r["AMPAC1C2"].K = 0, par.ru2
+                AMPA_C.s < r['AMPACC1'] > AMPA_C1.s < r['AMPAC1C2'] > AMPA_C2.s < r[3] > AMPA_O.s
+                r['AMPACC1'].K = 0, par.ru1
+                r['AMPAC1C2'].K = 0, par.ru2
                 r[3].K = par.ro, par.rc
 
                 AMPA_C1.s < r[1] > AMPA_D1.s
@@ -236,28 +182,24 @@ def run(seed, mesh_path, steps_version):
 
     ########## MESH & COMPARTMENTALIZATION #################
 
-    mesh = (
-        DistMesh(mesh_path, 1e-6)
-        if steps_version == 4
-        else TetMesh.LoadGmsh(mesh_path, 1e-6)
-    )
+    mesh = DistMesh(mesh_path, 1e-6) if steps_version == 4 else TetMesh.LoadGmsh(mesh_path, 1e-6)
 
     with mesh:
         if steps_version == 4:
             __MESH__ = Compartment.Create(vsys, conductivity=1 / par.Ra)
 
-            smooth = Patch(__MESH__, None, ssys, name="smooth.__BOUNDARY__")
-            spiny = Patch(__MESH__, None, ssys, name="spiny.__BOUNDARY__")
+            smooth = Patch(__MESH__, None, ssys, name='smooth.__BOUNDARY__')
+            spiny = Patch(__MESH__, None, ssys, name='spiny.__BOUNDARY__')
 
             memb_spiny = Membrane.Create([spiny], capacitance=par.memb_capac_spiny)
             memb_smooth = Membrane.Create([smooth], capacitance=par.memb_capac_proximal)
         else:
             __MESH__ = Compartment.Create(mesh.tets, vsys)
 
-            smoothTris = mesh.tetGroups[(0, "smooth")].surface & mesh.surface
-            spinyTris = mesh.tetGroups[(0, "spiny")].surface & mesh.surface
-            smooth = Patch(smoothTris, __MESH__, None, ssys, name="smooth.__BOUNDARY__")
-            spiny = Patch(spinyTris, __MESH__, None, ssys, name="spiny.__BOUNDARY__")
+            smoothTris = mesh.tetGroups[(0, 'smooth')].surface & mesh.surface
+            spinyTris = mesh.tetGroups[(0, 'spiny')].surface & mesh.surface
+            smooth = Patch(smoothTris, __MESH__, None, ssys, name='smooth.__BOUNDARY__')
+            spiny = Patch(spinyTris, __MESH__, None, ssys, name='spiny.__BOUNDARY__')
 
             memb = Membrane.Create([spiny, smooth])
 
@@ -269,25 +211,17 @@ def run(seed, mesh_path, steps_version):
         ]
 
         record_tets = TetList(mesh.tets[point] for point in record_points)
-        smooth_tris = TriList(
-            (tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:]
-        )
+        smooth_tris = TriList((tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:])
 
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
-    rng = RNG("mt19937", 512, seed)
+    rng = RNG('mt19937', 512, seed)
 
     if steps_version == 4:
-        sim = Simulation(
-            "DistTetOpSplit",
-            mdl,
-            mesh,
-            rng,
-            searchMethod=NextEventSearchMethod.GIBSON_BRUCK,
-        )
+        sim = Simulation('DistTetOpSplit', mdl, mesh, rng, searchMethod=NextEventSearchMethod.GIBSON_BRUCK)
     else:
         part = GmshPartition(mesh)
-        sim = Simulation("TetOpSplit", mdl, mesh, rng, MPI.EF_DV_PETSC, part)
+        sim = Simulation('TetOpSplit', mdl, mesh, rng, MPI.EF_DV_PETSC, part)
 
     # set temperature for ghk reactions
     sim.Temp = 273.15 + par.TEMPERATURE
@@ -297,20 +231,12 @@ def run(seed, mesh_path, steps_version):
 
     rs = ResultSelector(sim)
 
-    Pots = (
-        rs.TETS(record_tets).V
-        << rs.TRIS(smooth_tris).AMPA[AMPA_O].Count
-        << rs.SUM(rs.TRIS(smooth.tris).AMPA[AMPA_O].Count)
-    )
+    Pots = rs.TETS(record_tets).V << rs.TRIS(smooth_tris).AMPA[AMPA_O].Count << rs.SUM(
+        rs.TRIS(smooth.tris).AMPA[AMPA_O].Count)
 
     record_labels = [
-        "root_V",
-        "left_tip_V",
-        "right_tip_V",
-        "middle_V",
-        "root_AMPA_open",
-        "middle_AMPA_Open",
-        "smooth_AMPA_Open",
+        "root_V", "left_tip_V", "right_tip_V", "middle_V",
+        "root_AMPA_open", "middle_AMPA_Open", "smooth_AMPA_Open",
     ]
 
     sim.toSave(Pots, dt=par.TIMECONVERTER * 10)
@@ -331,70 +257,30 @@ def run(seed, mesh_path, steps_version):
     sim.LIST(smooth.name).Pump.Count = round(pumpnbs)
     sim.LIST(smooth.name).CaPump.Count = 0
 
-    sim.LIST(smooth.name).CaPchan[CaP_m0].Count = round(
-        par.CaP_ro * smooth_area * par.CaP_m0_p
-    )
-    sim.LIST(smooth.name).CaPchan[CaP_m1].Count = round(
-        par.CaP_ro * smooth_area * par.CaP_m1_p
-    )
-    sim.LIST(smooth.name).CaPchan[CaP_m2].Count = round(
-        par.CaP_ro * smooth_area * par.CaP_m2_p
-    )
-    sim.LIST(smooth.name).CaPchan[CaP_m3].Count = round(
-        par.CaP_ro * smooth_area * par.CaP_m3_p
-    )
+    sim.LIST(smooth.name).CaPchan[CaP_m0].Count = round(par.CaP_ro * smooth_area * par.CaP_m0_p)
+    sim.LIST(smooth.name).CaPchan[CaP_m1].Count = round(par.CaP_ro * smooth_area * par.CaP_m1_p)
+    sim.LIST(smooth.name).CaPchan[CaP_m2].Count = round(par.CaP_ro * smooth_area * par.CaP_m2_p)
+    sim.LIST(smooth.name).CaPchan[CaP_m3].Count = round(par.CaP_ro * smooth_area * par.CaP_m3_p)
 
-    sim.LIST(smooth.name).BKchan[BK_C0].Count = round(
-        par.BK_ro * smooth_area * par.BK_C0_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_C1].Count = round(
-        par.BK_ro * smooth_area * par.BK_C1_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_C2].Count = round(
-        par.BK_ro * smooth_area * par.BK_C2_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_C3].Count = round(
-        par.BK_ro * smooth_area * par.BK_C3_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_C4].Count = round(
-        par.BK_ro * smooth_area * par.BK_C4_p
-    )
+    sim.LIST(smooth.name).BKchan[BK_C0].Count = round(par.BK_ro * smooth_area * par.BK_C0_p)
+    sim.LIST(smooth.name).BKchan[BK_C1].Count = round(par.BK_ro * smooth_area * par.BK_C1_p)
+    sim.LIST(smooth.name).BKchan[BK_C2].Count = round(par.BK_ro * smooth_area * par.BK_C2_p)
+    sim.LIST(smooth.name).BKchan[BK_C3].Count = round(par.BK_ro * smooth_area * par.BK_C3_p)
+    sim.LIST(smooth.name).BKchan[BK_C4].Count = round(par.BK_ro * smooth_area * par.BK_C4_p)
 
-    sim.LIST(smooth.name).BKchan[BK_O0].Count = round(
-        par.BK_ro * smooth_area * par.BK_O0_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_O1].Count = round(
-        par.BK_ro * smooth_area * par.BK_O1_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_O2].Count = round(
-        par.BK_ro * smooth_area * par.BK_O2_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_O3].Count = round(
-        par.BK_ro * smooth_area * par.BK_O3_p
-    )
-    sim.LIST(smooth.name).BKchan[BK_O4].Count = round(
-        par.BK_ro * smooth_area * par.BK_O4_p
-    )
+    sim.LIST(smooth.name).BKchan[BK_O0].Count = round(par.BK_ro * smooth_area * par.BK_O0_p)
+    sim.LIST(smooth.name).BKchan[BK_O1].Count = round(par.BK_ro * smooth_area * par.BK_O1_p)
+    sim.LIST(smooth.name).BKchan[BK_O2].Count = round(par.BK_ro * smooth_area * par.BK_O2_p)
+    sim.LIST(smooth.name).BKchan[BK_O3].Count = round(par.BK_ro * smooth_area * par.BK_O3_p)
+    sim.LIST(smooth.name).BKchan[BK_O4].Count = round(par.BK_ro * smooth_area * par.BK_O4_p)
 
-    sim.LIST(smooth.name).SKchan[SK_C1].Count = round(
-        par.SK_ro * smooth_area * par.SK_C1_p
-    )
-    sim.LIST(smooth.name).SKchan[SK_C2].Count = round(
-        par.SK_ro * smooth_area * par.SK_C2_p
-    )
-    sim.LIST(smooth.name).SKchan[SK_C3].Count = round(
-        par.SK_ro * smooth_area * par.SK_C3_p
-    )
-    sim.LIST(smooth.name).SKchan[SK_C4].Count = round(
-        par.SK_ro * smooth_area * par.SK_C4_p
-    )
+    sim.LIST(smooth.name).SKchan[SK_C1].Count = round(par.SK_ro * smooth_area * par.SK_C1_p)
+    sim.LIST(smooth.name).SKchan[SK_C2].Count = round(par.SK_ro * smooth_area * par.SK_C2_p)
+    sim.LIST(smooth.name).SKchan[SK_C3].Count = round(par.SK_ro * smooth_area * par.SK_C3_p)
+    sim.LIST(smooth.name).SKchan[SK_C4].Count = round(par.SK_ro * smooth_area * par.SK_C4_p)
 
-    sim.LIST(smooth.name).SKchan[SK_O1].Count = round(
-        par.SK_ro * smooth_area * par.SK_O1_p
-    )
-    sim.LIST(smooth.name).SKchan[SK_O2].Count = round(
-        par.SK_ro * smooth_area * par.SK_O2_p
-    )
+    sim.LIST(smooth.name).SKchan[SK_O1].Count = round(par.SK_ro * smooth_area * par.SK_O1_p)
+    sim.LIST(smooth.name).SKchan[SK_O2].Count = round(par.SK_ro * smooth_area * par.SK_O2_p)
 
     sim.LIST(smooth.name).AMPA[AMPA_C].Count = round(par.AMPA_receptors)
     sim.LIST(smooth.name).AMPA[AMPA_C1].Count = 0
@@ -412,70 +298,30 @@ def run(seed, mesh_path, steps_version):
     sim.LIST(spiny.name).Pump.Count = round(pumpnbs)
     sim.LIST(spiny.name).CaPump.Count = 0
 
-    sim.LIST(spiny.name).CaPchan[CaP_m0].Count = round(
-        par.CaP_ro * spiny_area * par.CaP_m0_p
-    )
-    sim.LIST(spiny.name).CaPchan[CaP_m1].Count = round(
-        par.CaP_ro * spiny_area * par.CaP_m1_p
-    )
-    sim.LIST(spiny.name).CaPchan[CaP_m2].Count = round(
-        par.CaP_ro * spiny_area * par.CaP_m2_p
-    )
-    sim.LIST(spiny.name).CaPchan[CaP_m3].Count = round(
-        par.CaP_ro * spiny_area * par.CaP_m3_p
-    )
+    sim.LIST(spiny.name).CaPchan[CaP_m0].Count = round(par.CaP_ro * spiny_area * par.CaP_m0_p)
+    sim.LIST(spiny.name).CaPchan[CaP_m1].Count = round(par.CaP_ro * spiny_area * par.CaP_m1_p)
+    sim.LIST(spiny.name).CaPchan[CaP_m2].Count = round(par.CaP_ro * spiny_area * par.CaP_m2_p)
+    sim.LIST(spiny.name).CaPchan[CaP_m3].Count = round(par.CaP_ro * spiny_area * par.CaP_m3_p)
 
-    sim.LIST(spiny.name).BKchan[BK_C0].Count = round(
-        par.BK_ro * spiny_area * par.BK_C0_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_C1].Count = round(
-        par.BK_ro * spiny_area * par.BK_C1_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_C2].Count = round(
-        par.BK_ro * spiny_area * par.BK_C2_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_C3].Count = round(
-        par.BK_ro * spiny_area * par.BK_C3_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_C4].Count = round(
-        par.BK_ro * spiny_area * par.BK_C4_p
-    )
+    sim.LIST(spiny.name).BKchan[BK_C0].Count = round(par.BK_ro * spiny_area * par.BK_C0_p)
+    sim.LIST(spiny.name).BKchan[BK_C1].Count = round(par.BK_ro * spiny_area * par.BK_C1_p)
+    sim.LIST(spiny.name).BKchan[BK_C2].Count = round(par.BK_ro * spiny_area * par.BK_C2_p)
+    sim.LIST(spiny.name).BKchan[BK_C3].Count = round(par.BK_ro * spiny_area * par.BK_C3_p)
+    sim.LIST(spiny.name).BKchan[BK_C4].Count = round(par.BK_ro * spiny_area * par.BK_C4_p)
 
-    sim.LIST(spiny.name).BKchan[BK_O0].Count = round(
-        par.BK_ro * spiny_area * par.BK_O0_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_O1].Count = round(
-        par.BK_ro * spiny_area * par.BK_O1_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_O2].Count = round(
-        par.BK_ro * spiny_area * par.BK_O2_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_O3].Count = round(
-        par.BK_ro * spiny_area * par.BK_O3_p
-    )
-    sim.LIST(spiny.name).BKchan[BK_O4].Count = round(
-        par.BK_ro * spiny_area * par.BK_O4_p
-    )
+    sim.LIST(spiny.name).BKchan[BK_O0].Count = round(par.BK_ro * spiny_area * par.BK_O0_p)
+    sim.LIST(spiny.name).BKchan[BK_O1].Count = round(par.BK_ro * spiny_area * par.BK_O1_p)
+    sim.LIST(spiny.name).BKchan[BK_O2].Count = round(par.BK_ro * spiny_area * par.BK_O2_p)
+    sim.LIST(spiny.name).BKchan[BK_O3].Count = round(par.BK_ro * spiny_area * par.BK_O3_p)
+    sim.LIST(spiny.name).BKchan[BK_O4].Count = round(par.BK_ro * spiny_area * par.BK_O4_p)
 
-    sim.LIST(spiny.name).SKchan[SK_C1].Count = round(
-        par.SK_ro * spiny_area * par.SK_C1_p
-    )
-    sim.LIST(spiny.name).SKchan[SK_C2].Count = round(
-        par.SK_ro * spiny_area * par.SK_C2_p
-    )
-    sim.LIST(spiny.name).SKchan[SK_C3].Count = round(
-        par.SK_ro * spiny_area * par.SK_C3_p
-    )
-    sim.LIST(spiny.name).SKchan[SK_C4].Count = round(
-        par.SK_ro * spiny_area * par.SK_C4_p
-    )
+    sim.LIST(spiny.name).SKchan[SK_C1].Count = round(par.SK_ro * spiny_area * par.SK_C1_p)
+    sim.LIST(spiny.name).SKchan[SK_C2].Count = round(par.SK_ro * spiny_area * par.SK_C2_p)
+    sim.LIST(spiny.name).SKchan[SK_C3].Count = round(par.SK_ro * spiny_area * par.SK_C3_p)
+    sim.LIST(spiny.name).SKchan[SK_C4].Count = round(par.SK_ro * spiny_area * par.SK_C4_p)
 
-    sim.LIST(spiny.name).SKchan[SK_O1].Count = round(
-        par.SK_ro * spiny_area * par.SK_O1_p
-    )
-    sim.LIST(spiny.name).SKchan[SK_O2].Count = round(
-        par.SK_ro * spiny_area * par.SK_O2_p
-    )
+    sim.LIST(spiny.name).SKchan[SK_O1].Count = round(par.SK_ro * spiny_area * par.SK_O1_p)
+    sim.LIST(spiny.name).SKchan[SK_O2].Count = round(par.SK_ro * spiny_area * par.SK_O2_p)
 
     sim.LIST(spiny.name).AMPA[AMPA_C].Count = 0
     sim.LIST(spiny.name).AMPA[AMPA_C1].Count = 0
@@ -520,8 +366,8 @@ def run(seed, mesh_path, steps_version):
             print("Tpnt: ", l, "/", par.NTIMEPOINTS)
             print("Sim Time: ", 1.0e3 * par.TIMECONVERTER * l)
 
-        sim.LIST(smooth.name).AMPACC1["fwd"].K = 1.0e-3 * par.rb * Glut[l + 2000]
-        sim.LIST(smooth.name).AMPAC1C2["fwd"].K = 1.0e-3 * par.rb * Glut[l + 2000]
+        sim.LIST(smooth.name).AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
+        sim.LIST(smooth.name).AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
 
         sim.run(par.TIMECONVERTER * l)
 
@@ -532,11 +378,9 @@ def run(seed, mesh_path, steps_version):
         os.makedirs(folder_path, exist_ok=True)
         dct = {name: Pots.data[0, :, i] for i, name in enumerate(record_labels)}
         dct["t"] = Pots.time[0]
-        pd.DataFrame(dct).to_csv(
-            folder_path + f"/res{seed}_STEPS{steps_version}.txt", sep=" ", index=False
-        )
+        pd.DataFrame(dct).to_csv(folder_path + f'/res{seed}_STEPS{steps_version}.txt', sep=" ", index=False)
 
 
 if __name__ == "__main__":
-    args = sys.argv[sys.argv.index(os.path.basename(__file__)) + 1 :]
+    args = sys.argv[sys.argv.index(os.path.basename(__file__)) + 1:]
     run(*args)
