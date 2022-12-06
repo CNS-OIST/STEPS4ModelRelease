@@ -19,6 +19,12 @@ ntasks=$(($nodes * 32))
 seed=$(($SLURM_ARRAY_TASK_ID * 1))
 mesh_fls=../../mesh/split_1024/steps3/CNG_segmented_2_split_1024.msh
 
+if [[ -z "${steps_version}" ]]
+then
+  steps_version=4
+fi
+
 time srun --nodes=$nodes --ntasks=$ntasks dplace \
 python caBurstFullModel.py $seed $mesh_fls $steps_version
+
 
