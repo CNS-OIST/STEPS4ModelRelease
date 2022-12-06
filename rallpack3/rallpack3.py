@@ -24,6 +24,7 @@ class SimulationError(Exception):
 
 
 def run(seed, mesh_path, steps_version):
+    seed, steps_version = int(seed), int(steps_version)
     if steps_version not in [3, 4]:
         raise SimulationError(f"Steps number: {steps_version} is not 3 or 4")
 
@@ -230,5 +231,6 @@ def run(seed, mesh_path, steps_version):
 
 
 if __name__ == "__main__":
-    run(seed=int(sys.argv[1]), mesh_path=sys.argv[2], steps_version=int(sys.argv[3]))
+    args = sys.argv[sys.argv.index(os.path.basename(__file__)) + 1:]
+    run(*args)
 

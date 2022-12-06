@@ -539,7 +539,4 @@ def run(seed, mesh_path, steps_version):
 
 if __name__ == "__main__":
     args = sys.argv[sys.argv.index(os.path.basename(__file__)) + 1 :]
-
-    print(args)
-    exit()
     run(*args)

@@ -17,7 +17,10 @@ export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep 
 nodes=$SLURM_JOB_NUM_NODES
 ntasks=$(($nodes * 32))
 
-
+if [[ -z "${steps_version}" ]]
+then
+  steps_version=4
+fi
 
 for b in {0..9}
 do
