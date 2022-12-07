@@ -14,15 +14,18 @@ module load unstable python-dev python
 ## load steps by hash
 export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
 
-nodes=$SLURM_JOB_NUM_NODES
-ntasks=$(($nodes * 32))
-seed=$(($SLURM_ARRAY_TASK_ID * 1))
-mesh_fls=../../mesh/split_1024/steps3/CNG_segmented_2_split_1024.msh
-
 if [[ -z "${steps_version}" ]]
 then
   steps_version=4
 fi
+
+nodes=$SLURM_JOB_NUM_NODES
+ntasks=$(($nodes * 32))
+seed=$(($SLURM_ARRAY_TASK_ID * 1))
+#switch these 2 lines once https://github.com/CNS-OIST/HBP_STEPS/issues/1008 is solved
+mesh_fls=../../mesh/split_1024/steps3/CNG_segmented_2_split_1024.msh
+#mesh_fls=../../mesh/split_1024/steps$steps_version/CNG_segmented_2_split_1024
+
 
 time srun --nodes=$nodes --ntasks=$ntasks dplace \
 python caBurstFullModel.py $seed $mesh_fls $steps_version
