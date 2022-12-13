@@ -19,7 +19,7 @@ class SimulationError(Exception):
     pass
 
 
-def run_sim0(seed, mesh_path, steps_version):
+def run(seed, mesh_path, steps_version):
     seed, steps_version = int(seed), int(steps_version)
 
     if steps_version not in [3, 4]:
@@ -383,4 +383,4 @@ def run_sim0(seed, mesh_path, steps_version):
 
 if __name__ == "__main__":
     args = sys.argv[sys.argv.index(os.path.basename(__file__)) + 1:]
-    run_sim0(*args)
+    run(*args)
