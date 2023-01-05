@@ -4,7 +4,7 @@
 
 #SBATCH --array=[1-100%10]
 #SBATCH --nodes=32
-#SBATCH --time=2:00:00
+#SBATCH --time=4:00:00
 #SBATCH --exclusive
 #SBATCH --mem=0
 
@@ -26,8 +26,8 @@ seed=$(($SLURM_ARRAY_TASK_ID * 1))
 mesh_fls=../../mesh/split_1024/steps3/CNG_segmented_2_split_1024.msh
 #mesh_fls=../../mesh/split_1024/steps$steps_version/CNG_segmented_2_split_1024
 
-
-time srun --nodes=$nodes --ntasks=$ntasks dplace \
+#dplace is making caburst fail. Readd it once https://github.com/CNS-OIST/HBP_STEPS/issues/1022 is fixed
+time srun --nodes=$nodes --ntasks=$ntasks \
 python caBurstFullModel.py $seed $mesh_fls $steps_version
 
 
