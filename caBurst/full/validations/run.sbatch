@@ -12,7 +12,8 @@ set -x
 
 module load unstable python-dev python
 ## load steps by hash
-export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
+spack env activate -d /gpfs/bbp.cscs.ch/home/cattabia/projects/HBP_STEPS/spackenv
+#export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
 
 if [[ -z "${steps_version}" ]]
 then
