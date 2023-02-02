@@ -10,7 +10,7 @@
 
 set -x
 
-module load unstable python-dev python
+module load archive/2022-08 python-dev python
 ## load steps by hash
 spack env activate -d /gpfs/bbp.cscs.ch/home/cattabia/projects/HBP_STEPS/spackenv
 #export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
