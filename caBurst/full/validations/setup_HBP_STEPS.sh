@@ -6,7 +6,11 @@ module purge
 
 rm -rf spackenv
 
+
+
 module load archive/2022-08
+
+git checkout d846aba1bd212e03317cc376347a74582b82bc84
 
 spack env create -d spackenv
 sed -i '6 i\  concretization: together' spackenv/spack.yaml
