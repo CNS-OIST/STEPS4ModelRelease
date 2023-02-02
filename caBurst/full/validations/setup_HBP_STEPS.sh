@@ -1,5 +1,11 @@
 #! /bin/bash
 
+spack env deactivate
+
+module purge
+
+rm -rf spackenv
+
 module load archive/2022-08
 
 spack env create -d spackenv
