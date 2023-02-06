@@ -10,6 +10,7 @@ rm -rf spackenv
 
 module load archive/2022-08
 
+git stash
 git checkout 0a7f75aa
 
 spack env create -d spackenv
