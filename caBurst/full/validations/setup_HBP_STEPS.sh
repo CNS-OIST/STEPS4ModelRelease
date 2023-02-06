@@ -10,7 +10,7 @@ rm -rf spackenv
 
 module load archive/2022-08
 
-git checkout d846aba1bd212e03317cc376347a74582b82bc84
+git checkout 0a7f75aa
 
 spack env create -d spackenv
 sed -i '6 i\  concretization: together' spackenv/spack.yaml
