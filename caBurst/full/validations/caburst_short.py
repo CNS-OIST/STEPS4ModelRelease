@@ -21,7 +21,7 @@ class SimulationError(Exception):
 
 def run(seed, mesh_path, steps_version):
 
-    par.NTIMEPOINTS = 1001
+    par.NTIMEPOINTS = 101
 
     seed, steps_version = int(seed), int(steps_version)
 
