@@ -21,7 +21,7 @@ class SimulationError(Exception):
 
 def run(seed, mesh_path, steps_version):
 
-    par.NTIMEPOINTS = 50
+    par.NTIMEPOINTS = 100
 
     seed, steps_version = int(seed), int(steps_version)
 
@@ -369,8 +369,9 @@ def run(seed, mesh_path, steps_version):
             print("Tpnt: ", l, "/", par.NTIMEPOINTS)
             print("Sim Time: ", 1.0e3 * par.TIMECONVERTER * l)
 
-        sim.LIST(smooth.name).AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + 5]
-        sim.LIST(smooth.name).AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + 5]
+        # real start at 2500 (in file)
+        sim.LIST(smooth.name).AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2495]
+        sim.LIST(smooth.name).AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2495]
 
         sim.run(par.TIMECONVERTER * l)
 
