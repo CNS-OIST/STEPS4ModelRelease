@@ -229,6 +229,8 @@ def run(seed, mesh_path, steps_version):
         df = pd.DataFrame({"t": Vrs.time[0], "V_z_min": Vrs.data[0, :, 0], "V_z_max": Vrs.data[0, :, 1]})
         df.to_csv(folder_path + f"/res{seed}_STEPS{steps_version}.txt", sep=" ", index=False)
 
+    return df
+
 
 if __name__ == "__main__":
     args = sys.argv[sys.argv.index(os.path.basename(__file__)) + 1:]
