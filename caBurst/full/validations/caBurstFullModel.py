@@ -380,7 +380,7 @@ def run(seed, mesh_path, steps_version):
         dct["t"] = Pots.time[0]
         df = pd.DataFrame(dct)
         df.to_csv(folder_path + f'/res{seed}_STEPS{steps_version}.txt', sep=" ", index=False)
-    return df
+    return 0
 
 
 if __name__ == "__main__":

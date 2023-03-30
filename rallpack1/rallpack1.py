@@ -178,7 +178,7 @@ def run(seed, mesh_path, steps_version):
         index=False,
     )
 
-    return df
+    return 0
 
 
 if __name__ == "__main__":
