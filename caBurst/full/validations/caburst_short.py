@@ -18,7 +18,7 @@ import extra.constants_withampa_yunliang as par
 class SimulationError(Exception):
     pass
 
-
+# TODO the seed is actually fixed to 1! the seed here is only for saving in different files
 def run(seed, mesh_path, steps_version):
 
     par.NTIMEPOINTS = 101
@@ -218,7 +218,8 @@ def run(seed, mesh_path, steps_version):
 
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
-    rng = RNG('mt19937', 512, seed)
+    #TODO seed is blocked here! change 1 to seed
+    rng = RNG('mt19937', 512, int(seed/10))
 
     if steps_version == 4:
         sim = Simulation('DistTetOpSplit', mdl, mesh, rng, searchMethod=NextEventSearchMethod.GIBSON_BRUCK)

@@ -2,7 +2,7 @@
 
 # You need to set the appropriate SBATCH_PARTITION, SBATCH_ACCOUNT, and USE_STEPS4 mentioned in HBP_STEPS/doc/dev/README.md
 
-#SBATCH --array=[1-100%10]
+#SBATCH --array=[31-100%10]
 #SBATCH --nodes=32
 #SBATCH --time=4:00:00
 #SBATCH --exclusive
@@ -12,12 +12,12 @@ set -x
 
 module load unstable python-dev python
 ## load steps by hash
-spack env activate -d /gpfs/bbp.cscs.ch/home/cattabia/projects/HBP_STEPS/spackenv
+spack env activate -d /gpfs/bbp.cscs.ch/home/cattabia/projects/HBP_STEPS_release_develop/spackenv
 #export PYTHONPATH=`spack find --paths /$SPACK_INSTALLED_HASH | tail -n 1 | grep -o "/.*"`:$PYTHONPATH
 
 if [[ -z "${steps_version}" ]]
 then
-  steps_version=4
+  steps_version=3
 fi
 
 nodes=$SLURM_JOB_NUM_NODES
