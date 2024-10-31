@@ -183,7 +183,7 @@ def run(seed, mesh_path, steps_version):
             OC_L = OhmicCurr.Create(L[Leak], par.L_G, par.L_rev)
 
     ########## MESH & COMPARTMENTALIZATION #################
-    scale=0.5
+    scale=1.0
     mesh = DistMesh(mesh_path, 1e-6) if steps_version == 4 else TetMesh.LoadGmsh(mesh_path, 1e-6*scale)
 
     if ('CNG_segmented' in mesh_path):
@@ -213,16 +213,8 @@ def run(seed, mesh_path, steps_version):
                 [-79.82415e-6, 75.895875e-6, -7.292655e-6],  # Left branch middle
             ]
 
-
     else:
         with mesh:
-            """
-            # If rallpack2: Level length, on +ve z-axis, for Rallpack2 mesh = 32*pow(2, -n) where n in the Level number starting at 0
-            smooth_levels = 2
-            z_cut = 0
-            for ln in range (0,smooth_levels): z_cut+=32e-6*pow(2, -ln)
-            """
-
             z_cut = -4.0e-6*scale # pyramid mesh is just length 10 on z-axis -5 to 5, size tapers from 1 to 0.2
 
             smooth_tris = TriList(tri for tri in mesh.surface if tri.center.z <= z_cut)
