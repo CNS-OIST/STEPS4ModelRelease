@@ -2,9 +2,13 @@ from matplotlib import pyplot as plt
 
 seeds = range(2001, 2101) # Scale 1 (length 10µm), smooth is first 4µm
 #seeds = range(3001, 3101) # Scale 0.5 (length 5µm), smooth is first 0.5µm
-seeds = range(4001, 4101) # Scale 0.5 (length 5µm), smooth is first 0.5µm
+seeds = range(4001, 4101) # STEPS 3, Scale 0.5 (length 5µm), smooth is first 0.5µm
+#seeds = range(1001, 1101) # STEPS 4, Scale 0.5 (length 5µm), smooth is first 0.5µm
+
+STEPS_version = 3
+
 for seed in seeds:
-    ipath = f"raw_traces/STEPS3/respyramid_{seed}_STEPS3.txt"
+    ipath = f"raw_traces/STEPS{STEPS_version}/respyramid_{seed}_STEPS{STEPS_version}.txt"
     ifile = open(ipath)
 
     lines = ifile.readlines()
