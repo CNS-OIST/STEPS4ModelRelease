@@ -236,12 +236,11 @@ def run(seed, mesh_path, steps_version):
             record_points = [
                 [0,0,-4.5e-6*scale],
                 [0,0,-1.5e-6*scale],
-                [0,0,1.5e-6*scale],
+                [0.1e-6,0,1.5e-6*scale],
                 [0,0,4.5e-6*scale],
             ]
             
             record_tets = TetList(mesh.tets[point] for point in record_points)
-            #smooth_tris = TriList((tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:])
 
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
