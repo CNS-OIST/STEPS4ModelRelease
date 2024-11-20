@@ -8,7 +8,6 @@ v1s = np.zeros((len(seeds), vlen))
 v2s = np.zeros((len(seeds), vlen))
 v3s = np.zeros((len(seeds), vlen))
 v4s = np.zeros((len(seeds), vlen))
-ts = None
 
 for STEPS_version in [3, 4]:
     
@@ -25,9 +24,7 @@ for STEPS_version in [3, 4]:
         v2s[sidx] = nd[:,1]
         v3s[sidx] = nd[:,2]
         v4s[sidx] = nd[:,3]
-        
-        ts = nd[:,-1]
-        
+                
         sidx += 1
 
     v1mean = np.mean(v1s, axis=0)
