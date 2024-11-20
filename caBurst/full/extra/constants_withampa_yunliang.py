@@ -58,7 +58,7 @@ Qt_mslo = math.pow(Q10, ((TEMPERATURE-25)/10))
 
 ########## BULK RESISTIVITY ##########
 
-Ra = 235.7*1.0e-2
+Ra = 235.7*1.0e-2*100 # MODIFICTIONS FOR SMALL MODEL
 
 ########## MEMBRANE CAPACITANCE ##########
 
@@ -317,7 +317,7 @@ SK_O2_p= 7.7967e-05
 #Units (S)
 
 AMPA_G = 7e-12
-AMPA_TotalG = 500e-9
+AMPA_TotalG = 500e-9*0.01 # MODIFIED FOR SMALL MODEL
 
 #Units (1)
 

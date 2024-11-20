@@ -10,6 +10,8 @@ from steps.sim import *
 import numpy as np
 import pandas as pd
 import sys, os
+from math import pow
+import time
 
 sys.path.append('..')
 import extra.constants_withampa_yunliang as par
@@ -181,37 +183,60 @@ def run(seed, mesh_path, steps_version):
             OC_L = OhmicCurr.Create(L[Leak], par.L_G, par.L_rev)
 
     ########## MESH & COMPARTMENTALIZATION #################
+    scale=1.0
+    mesh = DistMesh(mesh_path, 1e-6) if steps_version == 4 else TetMesh.LoadGmsh(mesh_path, 1e-6*scale)
 
-    mesh = DistMesh(mesh_path, 1e-6) if steps_version == 4 else TetMesh.LoadGmsh(mesh_path, 1e-6)
-
-    with mesh:
-        if steps_version == 4:
-            __MESH__ = Compartment.Create(vsys, conductivity=1 / par.Ra)
-
-            smooth = Patch(__MESH__, None, ssys, name='smooth.__BOUNDARY__')
-            spiny = Patch(__MESH__, None, ssys, name='spiny.__BOUNDARY__')
-
-            memb_spiny = Membrane.Create([spiny], capacitance=par.memb_capac_spiny)
-            memb_smooth = Membrane.Create([smooth], capacitance=par.memb_capac_proximal)
-        else:
-            __MESH__ = Compartment.Create(mesh.tets, vsys)
-
+    if ('CNG_segmented' in mesh_path):
+        with mesh:
             smoothTris = mesh.tetGroups[(0, 'smooth')].surface & mesh.surface
             spinyTris = mesh.tetGroups[(0, 'spiny')].surface & mesh.surface
-            smooth = Patch(smoothTris, __MESH__, None, ssys, name='smooth.__BOUNDARY__')
-            spiny = Patch(spinyTris, __MESH__, None, ssys, name='spiny.__BOUNDARY__')
 
-            memb = Membrane.Create([spiny, smooth])
+            if steps_version == 4:
+                cyto = Compartment.Create(vsys, tetLst=mesh.tets, conductivity=1 / par.Ra)
+                smooth = Patch.Create(smooth_tris, cyto, None, ssys)
+                spiny = Patch.Create(spiny_tris, cyto, None, ssys)
+                memb_spiny = Membrane.Create([spiny], capacitance=par.memb_capac_spiny)
+                memb_smooth = Membrane.Create([smooth], capacitance=par.memb_capac_proximal)
+            else:
+                cyto = Compartment.Create(mesh.tets, vsys)
+                smooth = Patch.Create(smooth_tris, cyto, None, ssys)
+                spiny = Patch.Create(spiny_tris, cyto, None, ssys)
+                memb = Membrane.Create([spiny, smooth])
 
-        record_points = [
-            [-10.92105e-6, 14.184075e-6, -7.1073075e-6],  # Root point
-            [-105.8655e-6, 186.33875e-6, -35.8821e-6],  # Left branch tip
-            [53.546375e-6, 183.7195e-6, -70.0353e-6],  # Right branch tip
-            [-79.82415e-6, 75.895875e-6, -7.292655e-6],  # Left branch middle
-        ]
+            record_points = [
+                [-10.92105e-6, 14.184075e-6, -7.1073075e-6],  # Root point
+                [-105.8655e-6, 186.33875e-6, -35.8821e-6],  # Left branch tip
+                [53.546375e-6, 183.7195e-6, -70.0353e-6],  # Right branch tip
+                [-79.82415e-6, 75.895875e-6, -7.292655e-6],  # Left branch middle
+            ]
 
-        record_tets = TetList(mesh.tets[point] for point in record_points)
-        smooth_tris = TriList((tet.faces & mesh.surface)[0] for tet in record_tets[:1] + record_tets[3:])
+    else:
+        with mesh:
+            z_cut = -4.0e-6*scale # pyramid mesh is just length 10 on z-axis -5 to 5, size tapers from 1 to 0.2
+
+            smooth_tris = TriList(tri for tri in mesh.surface if tri.center.z <= z_cut)
+            spiny_tris = TriList(tri for tri in mesh.surface if tri.center.z > z_cut)
+
+            if steps_version == 4:
+                cyto = Compartment.Create(vsys, tetLst=mesh.tets, conductivity=1 / par.Ra)
+                smooth = Patch.Create(smooth_tris, cyto, None, ssys)
+                spiny = Patch.Create(spiny_tris, cyto, None, ssys)
+                memb_spiny = Membrane.Create([spiny], capacitance=par.memb_capac_spiny)
+                memb_smooth = Membrane.Create([smooth], capacitance=par.memb_capac_proximal)
+            else:
+                cyto = Compartment.Create(mesh.tets, vsys)
+                smooth = Patch.Create(smooth_tris, cyto, None, ssys)
+                spiny = Patch.Create(spiny_tris, cyto, None, ssys)
+                memb = Membrane.Create([spiny, smooth])
+            
+            record_points = [
+                [0,0,-4.5e-6*scale],
+                [0,0,-1.5e-6*scale],
+                [0.1e-6,0,1.5e-6*scale],
+                [0,0,4.5e-6*scale],
+            ]
+            
+            record_tets = TetList(mesh.tets[point] for point in record_points)
 
     # # # # # # # # # # # # # # # # # # # # # # # # SIMULATION  # # # # # # # # # # # # # # # # # # # # # #
 
@@ -254,132 +279,142 @@ def run(seed, mesh_path, steps_version):
     # pumpnbs per unit area (im m2) is Total pump times AVOGADRO's NUMBER (1e-11 mol/m2 * 6.022e23 /mol )
     pumpnbs = 6.022141e12 * smooth_area
 
-    sim.LIST(smooth.name).Pump.Count = round(pumpnbs)
-    sim.LIST(smooth.name).CaPump.Count = 0
+    sim.smooth.Pump.Count = round(pumpnbs)
+    sim.smooth.CaPump.Count = 0
 
-    sim.LIST(smooth.name).CaPchan[CaP_m0].Count = round(par.CaP_ro * smooth_area * par.CaP_m0_p)
-    sim.LIST(smooth.name).CaPchan[CaP_m1].Count = round(par.CaP_ro * smooth_area * par.CaP_m1_p)
-    sim.LIST(smooth.name).CaPchan[CaP_m2].Count = round(par.CaP_ro * smooth_area * par.CaP_m2_p)
-    sim.LIST(smooth.name).CaPchan[CaP_m3].Count = round(par.CaP_ro * smooth_area * par.CaP_m3_p)
+    sim.smooth.CaPchan[CaP_m0].Count = round(par.CaP_ro * smooth_area * par.CaP_m0_p)
+    sim.smooth.CaPchan[CaP_m1].Count = round(par.CaP_ro * smooth_area * par.CaP_m1_p)
+    sim.smooth.CaPchan[CaP_m2].Count = round(par.CaP_ro * smooth_area * par.CaP_m2_p)
+    sim.smooth.CaPchan[CaP_m3].Count = round(par.CaP_ro * smooth_area * par.CaP_m3_p)
 
-    sim.LIST(smooth.name).BKchan[BK_C0].Count = round(par.BK_ro * smooth_area * par.BK_C0_p)
-    sim.LIST(smooth.name).BKchan[BK_C1].Count = round(par.BK_ro * smooth_area * par.BK_C1_p)
-    sim.LIST(smooth.name).BKchan[BK_C2].Count = round(par.BK_ro * smooth_area * par.BK_C2_p)
-    sim.LIST(smooth.name).BKchan[BK_C3].Count = round(par.BK_ro * smooth_area * par.BK_C3_p)
-    sim.LIST(smooth.name).BKchan[BK_C4].Count = round(par.BK_ro * smooth_area * par.BK_C4_p)
+    sim.smooth.BKchan[BK_C0].Count = round(par.BK_ro * smooth_area * par.BK_C0_p)
+    sim.smooth.BKchan[BK_C1].Count = round(par.BK_ro * smooth_area * par.BK_C1_p)
+    sim.smooth.BKchan[BK_C2].Count = round(par.BK_ro * smooth_area * par.BK_C2_p)
+    sim.smooth.BKchan[BK_C3].Count = round(par.BK_ro * smooth_area * par.BK_C3_p)
+    sim.smooth.BKchan[BK_C4].Count = round(par.BK_ro * smooth_area * par.BK_C4_p)
 
-    sim.LIST(smooth.name).BKchan[BK_O0].Count = round(par.BK_ro * smooth_area * par.BK_O0_p)
-    sim.LIST(smooth.name).BKchan[BK_O1].Count = round(par.BK_ro * smooth_area * par.BK_O1_p)
-    sim.LIST(smooth.name).BKchan[BK_O2].Count = round(par.BK_ro * smooth_area * par.BK_O2_p)
-    sim.LIST(smooth.name).BKchan[BK_O3].Count = round(par.BK_ro * smooth_area * par.BK_O3_p)
-    sim.LIST(smooth.name).BKchan[BK_O4].Count = round(par.BK_ro * smooth_area * par.BK_O4_p)
+    sim.smooth.BKchan[BK_O0].Count = round(par.BK_ro * smooth_area * par.BK_O0_p)
+    sim.smooth.BKchan[BK_O1].Count = round(par.BK_ro * smooth_area * par.BK_O1_p)
+    sim.smooth.BKchan[BK_O2].Count = round(par.BK_ro * smooth_area * par.BK_O2_p)
+    sim.smooth.BKchan[BK_O3].Count = round(par.BK_ro * smooth_area * par.BK_O3_p)
+    sim.smooth.BKchan[BK_O4].Count = round(par.BK_ro * smooth_area * par.BK_O4_p)
 
-    sim.LIST(smooth.name).SKchan[SK_C1].Count = round(par.SK_ro * smooth_area * par.SK_C1_p)
-    sim.LIST(smooth.name).SKchan[SK_C2].Count = round(par.SK_ro * smooth_area * par.SK_C2_p)
-    sim.LIST(smooth.name).SKchan[SK_C3].Count = round(par.SK_ro * smooth_area * par.SK_C3_p)
-    sim.LIST(smooth.name).SKchan[SK_C4].Count = round(par.SK_ro * smooth_area * par.SK_C4_p)
+    sim.smooth.SKchan[SK_C1].Count = round(par.SK_ro * smooth_area * par.SK_C1_p)
+    sim.smooth.SKchan[SK_C2].Count = round(par.SK_ro * smooth_area * par.SK_C2_p)
+    sim.smooth.SKchan[SK_C3].Count = round(par.SK_ro * smooth_area * par.SK_C3_p)
+    sim.smooth.SKchan[SK_C4].Count = round(par.SK_ro * smooth_area * par.SK_C4_p)
 
-    sim.LIST(smooth.name).SKchan[SK_O1].Count = round(par.SK_ro * smooth_area * par.SK_O1_p)
-    sim.LIST(smooth.name).SKchan[SK_O2].Count = round(par.SK_ro * smooth_area * par.SK_O2_p)
+    sim.smooth.SKchan[SK_O1].Count = round(par.SK_ro * smooth_area * par.SK_O1_p)
+    sim.smooth.SKchan[SK_O2].Count = round(par.SK_ro * smooth_area * par.SK_O2_p)
 
-    sim.LIST(smooth.name).AMPA[AMPA_C].Count = round(par.AMPA_receptors)
-    sim.LIST(smooth.name).AMPA[AMPA_C1].Count = 0
-    sim.LIST(smooth.name).AMPA[AMPA_C2].Count = 0
-    sim.LIST(smooth.name).AMPA[AMPA_O].Count = 0
-    sim.LIST(smooth.name).AMPA[AMPA_D1].Count = 0
-    sim.LIST(smooth.name).AMPA[AMPA_D2].Count = 0
+    sim.smooth.AMPA[AMPA_C].Count = round(par.AMPA_receptors)
+    sim.smooth.AMPA[AMPA_C1].Count = 0
+    sim.smooth.AMPA[AMPA_C2].Count = 0
+    sim.smooth.AMPA[AMPA_O].Count = 0
+    sim.smooth.AMPA[AMPA_D1].Count = 0
+    sim.smooth.AMPA[AMPA_D2].Count = 0
 
-    sim.LIST(smooth.name).L[Leak].Count = round(par.L_ro_proximal * smooth_area)
+    sim.smooth.L[Leak].Count = round(par.L_ro_proximal * smooth_area)
+    
 
     # Total pump is 1e-15 mol/cm2 ---> 1e-11 mol/m2
     # pumpnbs per unit area (im m2) is Total pump times AVOGADRO's NUMBER (1e-11 mol/m2 * 6.022e23 /mol )
     pumpnbs = 6.022141e12 * spiny_area
 
-    sim.LIST(spiny.name).Pump.Count = round(pumpnbs)
-    sim.LIST(spiny.name).CaPump.Count = 0
+    sim.spiny.Pump.Count = round(pumpnbs)
+    sim.spiny.CaPump.Count = 0
 
-    sim.LIST(spiny.name).CaPchan[CaP_m0].Count = round(par.CaP_ro * spiny_area * par.CaP_m0_p)
-    sim.LIST(spiny.name).CaPchan[CaP_m1].Count = round(par.CaP_ro * spiny_area * par.CaP_m1_p)
-    sim.LIST(spiny.name).CaPchan[CaP_m2].Count = round(par.CaP_ro * spiny_area * par.CaP_m2_p)
-    sim.LIST(spiny.name).CaPchan[CaP_m3].Count = round(par.CaP_ro * spiny_area * par.CaP_m3_p)
+    sim.spiny.CaPchan[CaP_m0].Count = round(par.CaP_ro * spiny_area * par.CaP_m0_p)
+    sim.spiny.CaPchan[CaP_m1].Count = round(par.CaP_ro * spiny_area * par.CaP_m1_p)
+    sim.spiny.CaPchan[CaP_m2].Count = round(par.CaP_ro * spiny_area * par.CaP_m2_p)
+    sim.spiny.CaPchan[CaP_m3].Count = round(par.CaP_ro * spiny_area * par.CaP_m3_p)
 
-    sim.LIST(spiny.name).BKchan[BK_C0].Count = round(par.BK_ro * spiny_area * par.BK_C0_p)
-    sim.LIST(spiny.name).BKchan[BK_C1].Count = round(par.BK_ro * spiny_area * par.BK_C1_p)
-    sim.LIST(spiny.name).BKchan[BK_C2].Count = round(par.BK_ro * spiny_area * par.BK_C2_p)
-    sim.LIST(spiny.name).BKchan[BK_C3].Count = round(par.BK_ro * spiny_area * par.BK_C3_p)
-    sim.LIST(spiny.name).BKchan[BK_C4].Count = round(par.BK_ro * spiny_area * par.BK_C4_p)
+    sim.spiny.BKchan[BK_C0].Count = round(par.BK_ro * spiny_area * par.BK_C0_p)
+    sim.spiny.BKchan[BK_C1].Count = round(par.BK_ro * spiny_area * par.BK_C1_p)
+    sim.spiny.BKchan[BK_C2].Count = round(par.BK_ro * spiny_area * par.BK_C2_p)
+    sim.spiny.BKchan[BK_C3].Count = round(par.BK_ro * spiny_area * par.BK_C3_p)
+    sim.spiny.BKchan[BK_C4].Count = round(par.BK_ro * spiny_area * par.BK_C4_p)
 
-    sim.LIST(spiny.name).BKchan[BK_O0].Count = round(par.BK_ro * spiny_area * par.BK_O0_p)
-    sim.LIST(spiny.name).BKchan[BK_O1].Count = round(par.BK_ro * spiny_area * par.BK_O1_p)
-    sim.LIST(spiny.name).BKchan[BK_O2].Count = round(par.BK_ro * spiny_area * par.BK_O2_p)
-    sim.LIST(spiny.name).BKchan[BK_O3].Count = round(par.BK_ro * spiny_area * par.BK_O3_p)
-    sim.LIST(spiny.name).BKchan[BK_O4].Count = round(par.BK_ro * spiny_area * par.BK_O4_p)
+    sim.spiny.BKchan[BK_O0].Count = round(par.BK_ro * spiny_area * par.BK_O0_p)
+    sim.spiny.BKchan[BK_O1].Count = round(par.BK_ro * spiny_area * par.BK_O1_p)
+    sim.spiny.BKchan[BK_O2].Count = round(par.BK_ro * spiny_area * par.BK_O2_p)
+    sim.spiny.BKchan[BK_O3].Count = round(par.BK_ro * spiny_area * par.BK_O3_p)
+    sim.spiny.BKchan[BK_O4].Count = round(par.BK_ro * spiny_area * par.BK_O4_p)
 
-    sim.LIST(spiny.name).SKchan[SK_C1].Count = round(par.SK_ro * spiny_area * par.SK_C1_p)
-    sim.LIST(spiny.name).SKchan[SK_C2].Count = round(par.SK_ro * spiny_area * par.SK_C2_p)
-    sim.LIST(spiny.name).SKchan[SK_C3].Count = round(par.SK_ro * spiny_area * par.SK_C3_p)
-    sim.LIST(spiny.name).SKchan[SK_C4].Count = round(par.SK_ro * spiny_area * par.SK_C4_p)
+    sim.spiny.SKchan[SK_C1].Count = round(par.SK_ro * spiny_area * par.SK_C1_p)
+    sim.spiny.SKchan[SK_C2].Count = round(par.SK_ro * spiny_area * par.SK_C2_p)
+    sim.spiny.SKchan[SK_C3].Count = round(par.SK_ro * spiny_area * par.SK_C3_p)
+    sim.spiny.SKchan[SK_C4].Count = round(par.SK_ro * spiny_area * par.SK_C4_p)
 
-    sim.LIST(spiny.name).SKchan[SK_O1].Count = round(par.SK_ro * spiny_area * par.SK_O1_p)
-    sim.LIST(spiny.name).SKchan[SK_O2].Count = round(par.SK_ro * spiny_area * par.SK_O2_p)
+    sim.spiny.SKchan[SK_O1].Count = round(par.SK_ro * spiny_area * par.SK_O1_p)
+    sim.spiny.SKchan[SK_O2].Count = round(par.SK_ro * spiny_area * par.SK_O2_p)
 
-    sim.LIST(spiny.name).AMPA[AMPA_C].Count = 0
-    sim.LIST(spiny.name).AMPA[AMPA_C1].Count = 0
-    sim.LIST(spiny.name).AMPA[AMPA_C2].Count = 0
-    sim.LIST(spiny.name).AMPA[AMPA_O].Count = 0
-    sim.LIST(spiny.name).AMPA[AMPA_D1].Count = 0
-    sim.LIST(spiny.name).AMPA[AMPA_D2].Count = 0
+    sim.spiny.AMPA[AMPA_C].Count = 0
+    sim.spiny.AMPA[AMPA_C1].Count = 0
+    sim.spiny.AMPA[AMPA_C2].Count = 0
+    sim.spiny.AMPA[AMPA_O].Count = 0
+    sim.spiny.AMPA[AMPA_D1].Count = 0
+    sim.spiny.AMPA[AMPA_D2].Count = 0
 
-    sim.LIST(spiny.name).L[Leak].Count = round(par.L_ro_spiny * spiny_area)
+    sim.spiny.L[Leak].Count = round(par.L_ro_spiny * spiny_area)
 
-    sim.__MESH__.Ca.Conc = par.Ca_iconc
-    sim.__MESH__.Mg.Conc = par.Mg_conc
 
-    sim.__MESH__.iCBsf.Conc = par.iCBsf_conc
-    sim.__MESH__.iCBCaf.Conc = par.iCBCaf_conc
-    sim.__MESH__.iCBsCa.Conc = par.iCBsCa_conc
-    sim.__MESH__.iCBCaCa.Conc = par.iCBCaCa_conc
 
-    sim.__MESH__.CBsf.Conc = par.CBsf_conc
-    sim.__MESH__.CBCaf.Conc = par.CBCaf_conc
-    sim.__MESH__.CBsCa.Conc = par.CBsCa_conc
-    sim.__MESH__.CBCaCa.Conc = par.CBCaCa_conc
+    sim.cyto.Ca.Conc = par.Ca_iconc
+    
+    sim.cyto.Mg.Conc = par.Mg_conc # Note: STEPS3 can't cope with this magnesium concentration in Rallpack2
+    
+    sim.cyto.iCBsf.Conc = par.iCBsf_conc
+    sim.cyto.iCBCaf.Conc = par.iCBCaf_conc
+    sim.cyto.iCBsCa.Conc = par.iCBsCa_conc
+    sim.cyto.iCBCaCa.Conc = par.iCBCaCa_conc
 
-    sim.__MESH__.PV.Conc = par.PV_conc
-    sim.__MESH__.PVCa.Conc = par.PVCa_conc
-    sim.__MESH__.PVMg.Conc = par.PVMg_conc
+
+    
+    sim.cyto.CBsf.Conc = par.CBsf_conc
+    sim.cyto.CBCaf.Conc = par.CBCaf_conc
+    sim.cyto.CBsCa.Conc = par.CBsCa_conc
+    sim.cyto.CBCaCa.Conc = par.CBCaCa_conc
+
+    sim.cyto.PV.Conc = par.PV_conc
+    sim.cyto.PVCa.Conc = par.PVCa_conc
+    sim.cyto.PVMg.Conc = par.PVMg_conc
+
 
     if steps_version != 4:
         sim.ALL(Membrane).VolRes = par.Ra
         sim.TRIS(smooth.tris).Capac = par.memb_capac_proximal
         sim.TRIS(spiny.tris).Capac = par.memb_capac_spiny
 
+        
     sim.EfieldDT = par.EF_DT
 
     sim.ALL(Membrane).Potential = par.init_pot
 
     if MPI.rank == 0:
         print("simulation start")
-
+        btime=time.time()
     for l in range(par.NTIMEPOINTS):
         if MPI.rank == 0:
             print("Tpnt: ", l, "/", par.NTIMEPOINTS)
             print("Sim Time: ", 1.0e3 * par.TIMECONVERTER * l)
 
-        sim.LIST(smooth.name).AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
-        sim.LIST(smooth.name).AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
+        sim.smooth.AMPACC1['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
+        sim.smooth.AMPAC1C2['fwd'].K = 1.0e-3 * par.rb * Glut[l + 2000]
 
         sim.run(par.TIMECONVERTER * l)
 
     if MPI.rank == 0:
-        print("end simulation")
+        print("end simulation. Time:", time.time()-btime)
         print("start recording")
         folder_path = os.path.join("raw_traces", f"STEPS{steps_version}")
         os.makedirs(folder_path, exist_ok=True)
         dct = {name: Pots.data[0, :, i] for i, name in enumerate(record_labels)}
         dct["t"] = Pots.time[0]
         df = pd.DataFrame(dct)
-        df.to_csv(folder_path + f'/res{seed}_STEPS{steps_version}.txt', sep=" ", index=False)
+        mesh_str = 'CNG_segmented' if 'CNG_segmented' in mesh_path else 'pyramid'
+        df.to_csv(folder_path + f'/res{mesh_str}_{seed}_STEPS{steps_version}.txt', sep=" ", index=False)
+        
     return 0
 
 
